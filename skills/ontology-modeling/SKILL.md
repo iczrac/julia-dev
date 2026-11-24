@@ -6,6 +6,8 @@ description: "Ontology-driven modeling for medium-to-large business systems. Dec
 # 本體驅動建模
 
 > 方法論來源：`sharptoolbox/ontology_modeling_framework`（作者 @人月聊IT，Apache License 2.0）。本檔為該方法論的濃縮重述，非原文複製。原始規範：https://github.com/sharptoolbox/ontology_modeling_framework 。完整署名見同目錄 `ATTRIBUTION.md`。
+>
+> **與 `ontology-driven-dev` Skill 的分工**：本 Skill 管建模方法論細節；若要「需求探索 → 建模 → 可運行系統」的完整交付管線，見 `ontology-driven-dev` Skill。
 
 ## 一句話
 
