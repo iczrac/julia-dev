@@ -4,7 +4,7 @@
 
 ## 何時用
 
-麥克（工程師）在設計或重構 CLI、阿奇在review CLI 契約時載入。也適用於 Workflow C／D／J／K 中需要提供給 agent 呼叫的批次工具。
+Mike（工程師）在設計或重構 CLI、Archie在review CLI 契約時載入。也適用於 Workflow C／D／J／K 中需要提供給 agent 呼叫的批次工具。
 
 ## 設計清單
 

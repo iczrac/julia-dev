@@ -114,10 +114,10 @@ M1 → M5(角色) → M3 → M2 → M7 → ME → M5(權限) → M4 → M6 → M
 
 ## 與本團隊 Workflow 的接合
 
-- 在 Workflow A／D／I 的 Phase 2，阿奇可選用本 Skill 產出模型元文件，取代單純的 Mermaid 設計圖
-- 瑞克在 Phase 1 提供的驗收標準，需標出對應的 MU 操作功能點
-- 麥克在 Phase 3 依模型映射實作：M1→資料模型、M2→服務方法、M3→規則／校驗、M6→流程編排、MU→UI 元件
-- 維拉在 Phase 4 執行追溯門禁檢查，判定是否有孤兒行為與中斷的 callChain
+- 在 Workflow A／D／I 的 Phase 2，Archie可選用本 Skill 產出模型元文件，取代單純的 Mermaid 設計圖
+- Rick在 Phase 1 提供的驗收標準，需標出對應的 MU 操作功能點
+- Mike在 Phase 3 依模型映射實作：M1→資料模型、M2→服務方法、M3→規則／校驗、M6→流程編排、MU→UI 元件
+- Vera在 Phase 4 執行追溯門禁檢查，判定是否有孤兒行為與中斷的 callChain
 
 ## 來源與授權
 

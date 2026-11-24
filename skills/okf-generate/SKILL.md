@@ -42,4 +42,4 @@
 
 ## 與團隊協作
 
-知識管理師主導寫入；維拉（qa-engineer）独立驗證信任分层、时效与 attestation 契约；麦克（engineer）负责把 `llm-knowledge-base` 萃取的三层模型转成 OKF 概念草稿，由知識管理師依本 Skill 补齐溯源与信任栏位。主理人不得代写任何概念或驗證结论。
+知識管理師主導寫入；Vera（qa-engineer）独立驗證信任分层、时效与 attestation 契约；麦克（engineer）负责把 `llm-knowledge-base` 萃取的三层模型转成 OKF 概念草稿，由知識管理師依本 Skill 补齐溯源与信任栏位。主理人不得代写任何概念或驗證结论。

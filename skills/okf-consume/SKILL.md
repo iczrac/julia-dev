@@ -41,4 +41,4 @@
 
 ## 與團隊協作
 
-知識管理師主導查詢并产出信任摘要；維拉（qa-engineer）复核 attestation 裁决与过期判断。回答中的技术主张若来自 `codebase-reverse` 或 `ontology-modeling` 产物，应同时标注原产物路径。
+知識管理師主導查詢并产出信任摘要；Vera（qa-engineer）复核 attestation 裁决与过期判断。回答中的技术主张若来自 `codebase-reverse` 或 `ontology-modeling` 产物，应同时标注原产物路径。

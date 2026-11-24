@@ -10,8 +10,8 @@
 
 pstack 原版傾向「可逆工作直接做、不要問人」。本團隊的優先序如下，衝突時從上到下：
 
-1. Workflow L 的八階段人工確認門禁（瑞克逐階段硬暫停）
-2. 維拉的 `PASS`／`FAIL` 結論（不得代寫或軟化）
+1. Workflow L 的八階段人工確認門禁（Rick逐階段硬暫停）
+2. Vera的 `PASS`／`FAIL` 結論（不得代寫或軟化）
 3. 不可逆動作（force push、部署、資料刪除、對外訊息）必須暫停取得確認
 4. 其餘可逆工作：直接推進、完成後報告；能用實驗決定的分歧就做原型，不要回頭問人
 
@@ -48,7 +48,7 @@ pstack 原版傾向「可逆工作直接做、不要問人」。本團隊的優�
 
 1. **自己重現**：在對應介面重現；只有當控制介面確實到不了目標、且已盡力驅動後，才帶具體理由問使用者。重現不了就合成觸發條件、收緊條件或加 instrumentation 直到它發生。
 2. **二分法找因**：列出候選假設，取能切掉最多剩餘空間的那一刀，用執行期證據淘汰；狀態不明就加 log 並讀實際輸出。不要猜。「可能有用」的防護是假設，不是修復；證據反駁就回退。
-3. **規劃修復**：跨函式邊界先走 architect（阿奇）；委派實作時給明確範圍。
+3. **規劃修復**：跨函式邊界先走 architect（Archie）；委派實作時給明確範圍。
 4. **同一介面驗證**：原始重現必須通過；「inconclusive」或驗證在錯誤介面不算通過。
 5. **提交排序**：讓失敗的重現先進 git history，修復在其上（有便宜本地測試路徑時先寫失敗測試）。
 6. 開 PR；回報原文貼上「失敗→通過」的輸出。
@@ -59,7 +59,7 @@ pstack 原版傾向「可逆工作直接做、不要問人」。本團隊的優�
 
 ### Feature — 先命名資料形狀
 
-追蹤受影響子系統 → 阿奇定形狀 → 寫下吞吐量檢查點（阻塞前置步骤／可平行工作流／共享可變狀態／最小安全切分，不適用要寫 `n/a: 原因` 不可刪項）→ 委派實作時指定檔案路徑、資料形狀與其組織結構、成功條件 → 同一介面驗證 → 拆成小的有序 commit → 設計有爭議時先 interrogate → 開 PR。
+追蹤受影響子系統 → Archie定形狀 → 寫下吞吐量檢查點（阻塞前置步骤／可平行工作流／共享可變狀態／最小安全切分，不適用要寫 `n/a: 原因` 不可刪項）→ 委派實作時指定檔案路徑、資料形狀與其組織結構、成功條件 → 同一介面驗證 → 拆成小的有序 commit → 設計有爭議時先 interrogate → 開 PR。
 
 ### Session pickup — 讀足跡，不要重做
 
@@ -80,6 +80,6 @@ pstack 原版傾向「可逆工作直接做、不要問人」。本團隊的優�
 ## 與本團隊 Workflow 的對應
 
 - bug fix → Workflow E；perf／refactoring → Workflow F；investigation → Workflow C
-- shipping／babysit／session pickup → Workflow R（由席普主導）
+- shipping／babysit／session pickup → Workflow R（由Ship主導）
 - arena／interrogate 的並行操作見 `pstack-parallel-review`
 - 驗證細節見 `pstack-verification`；取捨標準見 `pstack-principles`

@@ -43,4 +43,4 @@
 
 ## 與團隊協作
 
-由**逆向工程師**（reverse-engineer）主導；維拉（qa-engineer）負責 B8/B9 的獨立覆蓋對帳與一致性校驗，阿奇（architect）基於逆向基線做影響分析。主理人不得代寫逆向結論。
+由**逆向工程師**（reverse-engineer）主導；Vera（qa-engineer）負責 B8/B9 的獨立覆蓋對帳與一致性校驗，Archie（architect）基於逆向基線做影響分析。主理人不得代寫逆向結論。

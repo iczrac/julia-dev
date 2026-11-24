@@ -1,8 +1,8 @@
 # 主理呀開發團 (Julia Dev Squad)
 
-團隊名取自主理人茱莉亞的諧音「主理呀」——先辨析任務、再編排流程、最後交付。英文保留 Julia 作為花名，改用 Squad 強調這是一支團隊，也避免被誤讀為 Julia 程式語言開發。
+團隊名取自主理人Julia的諧音「主理呀」——先辨析任務、再編排流程、最後交付。英文保留 Julia 作為花名，改用 Squad 強調這是一支團隊，也避免被誤讀為 Julia 程式語言開發。
 
-由茱莉亞統籌的全方位軟體開發專家團。不論是源碼逆向、從零建置、加功能、修 bug、重構、審查、遷移、串接第三方、數據／AI 應用或交付簡報，都會先辨析任務類型，再調度最合適的團隊流程交付。
+由Julia統籌的全方位軟體開發專家團。不論是源碼逆向、從零建置、加功能、修 bug、重構、審查、遷移、串接第三方、數據／AI 應用或交付簡報，都會先辨析任務類型，再調度最合適的團隊流程交付。
 
 ## 類型
 
@@ -12,21 +12,21 @@ Team 型（多角色協作團隊）· 版本 1.10.0 · 11 位成員
 
 | 成員 ID | 名字 | 職業 | 巧思 |
 |---------|------|------|------|
-| julia-dev-team-lead | 茱莉亞 Julia | 交付總監 | 諧音「主理呀」——主理人 |
-| product-manager | 瑞克 Rick | 產品經理 | req（requirement）需求 |
-| architect | 阿奇 Archie | 架構師 | arch（architecture）架構 |
-| engineer | 麥克 Mike | 工程師 | make——動手造東西的人 |
-| qa-engineer | 維拉 Vera | 品質保證工程師 | verify——驗證的化身 |
-| reverse-engineer | 翠西 Tracey | 逆向工程師 | trace——追溯源碼，從入口追到資料庫 |
-| delivery-designer | 黛拉 Della | 交付設計師 | deck／deliver——做出可放映的交付簡報 |
-| knowledge-curator | 寇娜 Kona | 知識管理師 | know——知識的守護者，管溯源、信任與時效 |
-| release-engineer | 席普 Ship | 發布工程師 | ship——把驗證過的東西安全送上線的人 |
-| decision-advisor | 艾德 Ed | 決策顧問 | advisor——在昂貴或不可逆之前被找來的第一個反對者 |
-| ledger-liaison | 盧卡 Luca | 帳本對接官 | route＋task card——把 ledger 的路線卡翻成 Julia 的任務 |
+| julia-dev-team-lead | Julia | 交付總監 | 諧音「主理呀」——主理人 |
+| product-manager | Rick | 產品經理 | req（requirement）需求 |
+| architect | Archie | 架構師 | arch（architecture）架構 |
+| engineer | Mike | 工程師 | make——動手造東西的人 |
+| qa-engineer | Vera | 品質保證工程師 | verify——驗證的化身 |
+| reverse-engineer | Tracey | 逆向工程師 | trace——追溯源碼，從入口追到資料庫 |
+| delivery-designer | Della | 交付設計師 | deck／deliver——做出可放映的交付簡報 |
+| knowledge-curator | Kona | 知識管理師 | know——知識的守護者，管溯源、信任與時效 |
+| release-engineer | Ship | 發布工程師 | ship——把驗證過的東西安全送上線的人 |
+| decision-advisor | Ed | 決策顧問 | advisor——在昂貴或不可逆之前被找來的第一個反對者 |
+| ledger-liaison | Luca | 帳本對接官 | route＋task card——把 ledger 的路線卡翻成 Julia 的任務 |
 
 ## 任務類型與流程對照
 
-主理人茱莉亞會先做 **Phase 0 任務辨析**，再從 21 條 Workflow 中選一條；不需要的階段直接略過，不浪費流程。
+主理人Julia會先做 **Phase 0 任務辨析**，再從 21 條 Workflow 中選一條；不需要的階段直接略過，不浪費流程。
 
 | 你說的話 | 任務類型 | 啟動流程 |
 |---------|----------|----------|
@@ -49,9 +49,9 @@ Team 型（多角色協作團隊）· 版本 1.10.0 · 11 位成員
 | 合併 PR／接手上一輪／我要睡覺 | 發布接續 | R 發布與會話接續 |
 | 拆並行任務／跑有界循環／讓 CI 全綠 | 結構化編排 | S 結構化編排與有界循環 |
 | 深度 review PR／安全＋可維護性雙軸 | 深度差異審查 | T 深度差異審查與決策複核 |
-| 找盲點／卡兩次／交付前再確認 | 決策複核 | T 或直調艾德 |
+| 找盲點／卡兩次／交付前再確認 | 決策複核 | T 或直調Ed |
 | 對接 ledger／照帳本路由走／從 next_queue 拿任務 | 帳本對接 | U 帳本對接與受控寫入 |
-| 用什麼技術比較好 | 技術咨詢 | B 或直接問阿奇 |
+| 用什麼技術比較好 | 技術咨詢 | B 或直接問Archie |
 
 ## 適用專案型態
 
@@ -63,7 +63,7 @@ Web 前端、後端 API、全端應用、CLI／自動化腳本、桌面應用、
 
 Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_modeling_framework](https://github.com/sharptoolbox/ontology_modeling_framework)（作者 @人月聊IT，Apache-2.0）。它把業務系統切成**正交、可獨立演進、可用 YAML 承載**的模型關切，建立「需求 → 設計 → 程式碼」的可追蹤鏈。
 
-**何時啟用**（由阿奇在 Phase 2 載入）：
+**何時啟用**（由Archie在 Phase 2 載入）：
 
 - 中大型業務系統（ERP／CRM／審批／合同管理）
 - 規則密集、跨物件聯動多、需要稽核溯源
@@ -73,7 +73,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 **版本選型**：v9（7 模型，單體同步，最適合 AI 穩定出碼）用於實際落地；v6（11 模型，含事件／介面／持久化映射）用於理解全貌與複雜整合。
 
-方法論已接入五位成員：瑞克標注驗收對應的操作功能點、阿奇產出正交模型、麥克做模型到程式碼映射、維拉做追溯門禁驗證。完整方法論見 `skills/ontology-modeling/SKILL.md`，署名與授權見同目錄 `ATTRIBUTION.md`。
+方法論已接入五位成員：Rick標注驗收對應的操作功能點、Archie產出正交模型、Mike做模型到程式碼映射、Vera做追溯門禁驗證。完整方法論見 `skills/ontology-modeling/SKILL.md`，署名與授權見同目錄 `ATTRIBUTION.md`。
 
 ## 選配管線：本體驅動端到端開發
 
@@ -83,7 +83,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - **人工確認門禁**：每階段用固定格式提問並硬暫停等確認；A 類自動補全、B 類（企業專屬）必須確認，有 `[待確認]` 不得標記完整
 - **10 步構建流水線**：從七模型 YAML 到 DDL、服務層、權限、流程引擎、頁面路由、AI 對話框（含唯讀 SQL 安全邊界）、全鏈路聯調與驗收
 
-觸發方式：直接說「幫我開發一個 XX 管理系統」或「做本體驅動開發」，主理人會走 **Workflow L**：瑞克需求探索和人工確認 → 阿奇七模型 → 麥克構建 `code-app/` → 維拉追溯驗收。
+觸發方式：直接說「幫我開發一個 XX 管理系統」或「做本體驅動開發」，主理人會走 **Workflow L**：Rick需求探索和人工確認 → Archie七模型 → Mike構建 `code-app/` → Vera追溯驗收。
 
 兩個 Skill 分工：`ontology-modeling` 管建模細節，`ontology-driven-dev` 管端到端管線與工程落地。技術底座原始碼不內嵌，使用時從原始 repo 取得。
 
@@ -93,10 +93,10 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 | Skill | 來源／授權 | 何時用 | 主責成員 |
 |-------|-----------|--------|----------|
-| `codebase-reverse` | [codebase-reverse](https://github.com/sharptoolbox/codebase-reverse) · MIT | 接手舊系統、遷移前置盤點、補寫需求文件 | 翠西（逆向）＋維拉（覆蓋對帳） |
-| `visual-model` | [visual-model](https://github.com/sharptoolbox/visual-model) · CC BY 4.0 | 交付級架構圖、SysML 五視圖、知識圖譜 | 阿奇 |
-| `consulting-html-ppt` | [consulting-html-ppt](https://github.com/sharptoolbox/consulting-html-ppt) · 未宣告授權 | 方案彙報、驗收簡報、可放映交付材料 | 黛拉 |
-| `llm-knowledge-base` | [LLM-knowledgeBase](https://github.com/sharptoolbox/LLM-knowledgeBase) · MIT | RAG 知識萃取、來源約束問答 | 麥克＋維拉 |
+| `codebase-reverse` | [codebase-reverse](https://github.com/sharptoolbox/codebase-reverse) · MIT | 接手舊系統、遷移前置盤點、補寫需求文件 | Tracey（逆向）＋Vera（覆蓋對帳） |
+| `visual-model` | [visual-model](https://github.com/sharptoolbox/visual-model) · CC BY 4.0 | 交付級架構圖、SysML 五視圖、知識圖譜 | Archie |
+| `consulting-html-ppt` | [consulting-html-ppt](https://github.com/sharptoolbox/consulting-html-ppt) · 未宣告授權 | 方案彙報、驗收簡報、可放映交付材料 | Della |
+| `llm-knowledge-base` | [LLM-knowledgeBase](https://github.com/sharptoolbox/LLM-knowledgeBase) · MIT | RAG 知識萃取、來源約束問答 | Mike＋Vera |
 
 ### 完整融合：Open Knowledge Format（OKF）
 
@@ -108,15 +108,15 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 | `okf-generate` | 建立／更新／遷移／修復／驗證 bundle 的六條鐵律與程序 |
 | `okf-consume` | 只讀問答，逐概念回報信任分層、status、新鮮度與來源 |
 
-新增第八位成員**寇娜 Kona（知識管理師）**主導 OKF 寫入與查詢，維拉獨立覆核信任分層與 attestation。
+新增第八位成員**Kona（知識管理師）**主導 OKF 寫入與查詢，Vera獨立覆核信任分層與 attestation。
 
 **三個補上缺口的機制**：
 
 - **信任分層**：unverified／machine-confirmed／human-reviewed。關鍵紀律是「AI 改寫已人工審核的概念後，人工審核立即失效」——這正是多智能體協作最容易自欺的地方。
 - **stale_after 時效**：用絕對時間點判定過期，可機械比較；沒有已知複查週期就省略，不臆造日期。
-- **可驗證計算**：agent 只能填參數、不能改公式；consumer 用確定性 attester 比對回執。這把幻覺防護從提示詞紀律升級為機械契約，也讓維拉的 `PASS/FAIL` 有可計算的依據。
+- **可驗證計算**：agent 只能填參數、不能改公式；consumer 用確定性 attester 比對回執。這把幻覺防護從提示詞紀律升級為機械契約，也讓Vera的 `PASS/FAIL` 有可計算的依據。
 
-`llm-knowledge-base` 與 OKF **明確分工**：前者管「如何從文章萃取場景／概念／實體」，後者管「知識如何持久化、交換與取信」。麥克萃取後交給寇娜補齊溯源與信任欄位，不重複做同一件事。原始 repo 的 Python 腳本不內嵌，署名見各 Skill 的 `ATTRIBUTION.md`。
+`llm-knowledge-base` 與 OKF **明確分工**：前者管「如何從文章萃取場景／概念／實體」，後者管「知識如何持久化、交換與取信」。Mike萃取後交給Kona補齊溯源與信任欄位，不重複做同一件事。原始 repo 的 Python 腳本不內嵌，署名見各 Skill 的 `ATTRIBUTION.md`。
 
 ### 嚴謹工程與可驗證交付：pstack
 
@@ -129,7 +129,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 | `pstack-verification` | 證明它可行、基準檢驗七問、建立專案本地驗證 Skill、形式化驗證、把錯誤釘進結構 |
 | `pstack-parallel-review` | swarm（分割／競速）、arena（競技與移植強項）、interrogate（對抗式審查，只留跑過的發現） |
 
-新增第九位成員**席普 Ship（發布工程師）**：維拉判定對不對，席普負責讓對的東西安全落地——獨立驗證每個 PR、只合併從底部起連續通過的區段、用 `git patch-id` 核對 rebase 前的裁決是否仍有效、落地期間不碰分支、停在上限。
+新增第九位成員**Ship（發布工程師）**：Vera判定對不對，Ship負責讓對的東西安全落地——獨立驗證每個 PR、只合併從底部起連續通過的區段、用 `git patch-id` 核對 rebase 前的裁決是否仍有效、落地期間不碰分支、停在上限。
 
 **三個最值得吸收的紀律**：
 
@@ -139,12 +139,12 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 **與既有能力的分工**：`ontology-modeling` 查需求到程式碼的對應、`pstack-verification` 查實際跑起來的行為、OKF attestation 查計算回執是否被竄改——三者互補。CI 專屬的模型設定與插件依賴沒有內嵌，署名見各 Skill 的 `ATTRIBUTION.md`。
 
-**門禁衝突的處理**：pstack 主張「可逆工作不要問人」，本團隊的優先序是人工確認門禁 > 維拉 `PASS` > 不可逆動作確認 > 其餘可逆工作直接做。
+**門禁衝突的處理**：pstack 主張「可逆工作不要問人」，本團隊的優先序是人工確認門禁 > Vera `PASS` > 不可逆動作確認 > 其餘可逆工作直接做。
 
 **設計取捨**：
 
-- **逆向是全量、深度可分層**：翠西先建立源碼資產台帳（B0–B9），再逐功能穿透到資料庫；維拉獨立做覆蓋對帳，未歸屬資產不放行。基線不全量就寫功能清單，是逆向最常見的失敗模式。
-- **簡報忠於事實**：黛拉的頁面可以有四種形態（真實圖表／架構圖／結構模型／文本分類），但不得虛構數據，且每個技術主張要標註來源。維拉未給 `PASS` 前不開始製作。
+- **逆向是全量、深度可分層**：Tracey先建立源碼資產台帳（B0–B9），再逐功能穿透到資料庫；Vera獨立做覆蓋對帳，未歸屬資產不放行。基線不全量就寫功能清單，是逆向最常見的失敗模式。
+- **簡報忠於事實**：Della的頁面可以有四種形態（真實圖表／架構圖／結構模型／文本分類），但不得虛構數據，且每個技術主張要標註來源。Vera未給 `PASS` 前不開始製作。
 - **授權分寸**：前三個有明確授權的專案僅濃縮重述並保留完整署名；`consulting-html-ppt` 原 repo **未宣告開源授權**，因此只吸收方法論要點，不複製其模板庫、圖標或成品，使用平台內建或自製模板替代。各 Skill 的 `ATTRIBUTION.md` 均保留來源與授權說明。
 
 ## 再進化：cursor/plugins 其他高價值專案
@@ -153,12 +153,12 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 | 新 Skill | 吸收來源 | 做什麼 | 主責成員 |
 |---------|---------|-------|---------|
-| `structured-orchestration` | `orchestrate`＋`ralph-loop`＋`cursor-team-kit/loop-on-ci`（MIT） | Planner／Worker／Verifier 職責邊界、逐字交接、五級 verifier 證據、完成承諾＋迭代上限、失敗模式與 Andon、`gh pr checks` CI 迴圈 | 茱莉亞（編排）＋席普（CI） |
-| `deep-diff-review` | `thermos`＋`dyl-stack`（MIT） | 正確性／安全與結構／可維護性雙軸平行審查、code judo／1k 行／spaghetti 尺標、去重後最多 7 則可貼 comment 與 🟢／🟡／🔴 | 維拉＋阿奇，艾德複核重大發現 |
-| `decision-gates` | `advisor`＋`dyl-stack`（MIT） | 重大決策／卡兩次／完成前四類檢查點、唯讀 `Verdict / Why / Recommendations / Risks / Answers / Confidence`、The Algorithm、根因句、合併與 taste veto 紀律 | 艾德 |
-| `agent-friendly-cli` | `cli-for-agent`（MIT） | 非互動 flag、分層 help 與範例、stdin／pipeline、可行動錯誤、冪等、`--dry-run`、JSON 輸出與退出碼 | 麥克＋阿奇 |
+| `structured-orchestration` | `orchestrate`＋`ralph-loop`＋`cursor-team-kit/loop-on-ci`（MIT） | Planner／Worker／Verifier 職責邊界、逐字交接、五級 verifier 證據、完成承諾＋迭代上限、失敗模式與 Andon、`gh pr checks` CI 迴圈 | Julia（編排）＋Ship（CI） |
+| `deep-diff-review` | `thermos`＋`dyl-stack`（MIT） | 正確性／安全與結構／可維護性雙軸平行審查、code judo／1k 行／spaghetti 尺標、去重後最多 7 則可貼 comment 與 🟢／🟡／🔴 | Vera＋Archie，Ed複核重大發現 |
+| `decision-gates` | `advisor`＋`dyl-stack`（MIT） | 重大決策／卡兩次／完成前四類檢查點、唯讀 `Verdict / Why / Recommendations / Risks / Answers / Confidence`、The Algorithm、根因句、合併與 taste veto 紀律 | Ed |
+| `agent-friendly-cli` | `cli-for-agent`（MIT） | 非互動 flag、分層 help 與範例、stdin／pipeline、可行動錯誤、冪等、`--dry-run`、JSON 輸出與退出碼 | Mike＋Archie |
 
-新增第十位成員**艾德 Ed（決策顧問）**：他不寫程式、不開 PR、不合併，只在昂貴或不可逆之前給第二意見。他的建議不能覆蓋人工確認門禁、維拉 `PASS` 或不可逆動作確認——這是本團隊刻意設定的優先序。
+新增第十位成員**Ed（決策顧問）**：他不寫程式、不開 PR、不合併，只在昂貴或不可逆之前給第二意見。他的建議不能覆蓋人工確認門禁、Vera `PASS` 或不可逆動作確認——這是本團隊刻意設定的優先序。
 
 **四個最值得吸收的紀律**：
 
@@ -171,18 +171,18 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 ## 選配協定：ledger-driven-dev 帳本橋接
 
-第十一位成員**盧卡 Luca（帳本對接官）**與第十八套 Skill `ledger-bridge`，把 [ledger-driven-dev](https://github.com/iczrac/ledger-driven-dev)（MIT，Copyright 2026 Ledger-Driven Dev contributors）的治理能力接進 Julia 的執行鏈。這不是把兩邊合併，而是一層**只讀薄橋**：
+第十一位成員**Luca（帳本對接官）**與第十八套 Skill `ledger-bridge`，把 [ledger-driven-dev](https://github.com/iczrac/ledger-driven-dev)（MIT，Copyright 2026 Ledger-Driven Dev contributors）的治理能力接進 Julia 的執行鏈。這不是把兩邊合併，而是一層**只讀薄橋**：
 
 | 交接物件 | 用途 |
 |---------|------|
 | `intent.json` | 把人話需求、非目標、能力碼與寫入範圍變成可校驗意圖 |
 | `route.handoff` / `next_queue` | 取得唯一專家、交接鏈與單張任務卡 |
-| `test_report` + `verify_ledger` JSON | 把維拉的證據換算成 `declared / verified` 與不變量結果 |
-| `approval_bundle` / `audit` | 只準備待批准命令，由人工簽核、席普執行 |
+| `test_report` + `verify_ledger` JSON | 把Vera的證據換算成 `declared / verified` 與不變量結果 |
+| `approval_bundle` / `audit` | 只準備待批准命令，由人工簽核、Ship執行 |
 
 **ledger-driven-dev 倉庫本身零改動**：不改 schema、不改 31 條不變量、不加新專家、不複製 24 個 Skill。需要在目標專案做的是一次性的治理接入：能力碼、`verify_ledger`、Agent 註冊與測試證據綁定。
 
-門禁優先序：**人工確認 > ledger 寫入門禁 > 不可逆動作確認 > 維拉 `PASS` > 其餘可逆工作**。盧卡只讀、只翻譯、只準備；不得帶 `--apply` 執行寫入，也不得把 ledger JSON 複製成 julia-dev 內的第二份事實源。方法論濃縮見 `skills/ledger-bridge/SKILL.md`，授權見同目錄 `ATTRIBUTION.md`。
+門禁優先序：**人工確認 > ledger 寫入門禁 > 不可逆動作確認 > Vera `PASS` > 其餘可逆工作**。Luca只讀、只翻譯、只準備；不得帶 `--apply` 執行寫入，也不得把 ledger JSON 複製成 julia-dev 內的第二份事實源。方法論濃縮見 `skills/ledger-bridge/SKILL.md`，授權見同目錄 `ATTRIBUTION.md`。
 
 ## v1.9.0：接縫修補
 
@@ -190,8 +190,8 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 | 機制 | 解決的缺口 | 落點 |
 |------|-----------|------|
-| **足跡規範（footprint）** | 三處引用足跡卻無格式、無落點、無責任人 | 主理人 SOP「足跡規範」＋維拉／席普／艾德 MD |
-| **契約唯一入口** | `intent.json` 與茱莉亞任務契約雙寫，誰為準未定 | Phase 0.5＋Workflow U＋ledger-bridge 硬規則 8 |
+| **足跡規範（footprint）** | 三處引用足跡卻無格式、無落點、無責任人 | 主理人 SOP「足跡規範」＋Vera／Ship／Ed MD |
+| **契約唯一入口** | `intent.json` 與Julia任務契約雙寫，誰為準未定 | Phase 0.5＋Workflow U＋ledger-bridge 硬規則 8 |
 | **PASS 分級** | 聊天式 `PASS` 與 ledger `verified` 混用導致含金量通脹 | Phase 4＋ledger-bridge 硬規則 10；治理專案一律 `verified-PASS` |
 | **解阻（Andon）** | fail-closed 一路「停」，但停了之後無恢復路徑 | ledger-bridge「解阻」節＋嚴禁行為；卡兩次必須向使用者 Andon |
 | **Preflight** | 橋接命令依賴目標專案安裝的 ledger 腳本，版本漂移無前置檢查 | Phase 0.5＋Workflow U 前置＋ledger-bridge「Preflight」節 |
@@ -203,8 +203,8 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - **任務路由**：先辨析類型與專案型態，再選流程；修 bug 不會被逼著寫 PRD
 - **結構化交接**：階段間以 PRD／設計文件／變更摘要／測試報告交接，不靠口述
 - **增量安全修改**：既有系統改動先做影響分析，保留向後相容
-- **多型態驗證**：維拉（QA）依 Web／API／數據／AI 調整測試方式，修改類任務必做回歸
-- **明確品質關卡**：維拉給出 `PASS`／`FAIL` 與證據，主理人不得代寫或軟化結論
+- **多型態驗證**：Vera（QA）依 Web／API／數據／AI 調整測試方式，修改類任務必做回歸
+- **明確品質關卡**：Vera給出 `PASS`／`FAIL` 與證據，主理人不得代寫或軟化結論
 - **人工確認門禁**：Workflow L 的需求探索逐階段提問並暫停等確認，杜絕 AI 自行假設企業專屬規則
 - **源碼逆向**：Workflow M 全量基線＋功能穿透鏈＋覆蓋對帳，把隱藏功能與資料庫映射一併挖出
 - **交付敘事**：Workflow N 把驗證通過的成果做成動作式標題的單檔 HTML 簡報
@@ -212,11 +212,11 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - **嚴謹工程**：Workflow Q 以執行期證據取代自我回報，Workflow R 只落地通過驗證的連續區段
 - **結構化編排**：Workflow S 用 worker／verifier 交接與有界循環推進大型任務，CI 以 `gh pr checks` 為準
 - **深度差異審查**：Workflow T 雙軸審查 diff，只輸出最多 7 則可貼 comment 與一個燈號，不貼 PR、不 approve
-- **決策第二意見**：艾德在重大決策、卡兩次與完成前給唯讀判決，並用 The Algorithm 與根因句擋掉症状修復
-- **帳本對接**：Workflow U 用盧卡串接 ledger 的復述門、專家路由、任務卡、證據分級與受控寫入，避免雙重路由與第二事實源
+- **決策第二意見**：Ed在重大決策、卡兩次與完成前給唯讀判決，並用 The Algorithm 與根因句擋掉症状修復
+- **帳本對接**：Workflow U 用Luca串接 ledger 的復述門、專家路由、任務卡、證據分級與受控寫入，避免雙重路由與第二事實源
 - **AI 評估雙基線**：Workflow K 進入實作前固化 golden set、版本號與成本預算，Phase 4 必須「效果＋成本」一起交付，缺一即 FAIL
-- **系統級安全清單**：上線前由維拉跑 secrets／依賴許可證／PII／權限／威脅建模／無障礙六項檢查，🔴 未釋清席普不得落地；威脅建模摘要是阿奇設計文件的必含節
-- **環境腳本有主**：launch／doctor／drive／evidence 等環境與取證腳本由麥克長期維護，環境故障先修腳本，不作為驗證藉口
+- **系統級安全清單**：上線前由Vera跑 secrets／依賴許可證／PII／權限／威脅建模／無障礙六項檢查，🔴 未釋清Ship不得落地；威脅建模摘要是Archie設計文件的必含節
+- **環境腳本有主**：launch／doctor／drive／evidence 等環境與取證腳本由Mike長期維護，環境故障先修腳本，不作為驗證藉口
 - **協作鐵律**：主理人親自建團、所有資訊經主理人中轉、團員不互相直連
 
 ## 使用示例
@@ -235,9 +235,9 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - 這串 PR 都綠燈了，幫我驗證後由底層往上合併，並告訴我停在哪個上限。
 - 把這個大任務拆成 worker／verifier，跑一個有完成承諾與上限的循環，最後給我交接紀錄。
 - 深度 review 這個 PR：安全與可維護性分開看，只給我最多 7 則可貼的 comment 和一個燈號。
-- 我卡在同一個錯誤兩次了，請艾德讀證據後給第二意見，並先用 The Algorithm 問需求。
+- 我卡在同一個錯誤兩次了，請Ed讀證據後給第二意見，並先用 The Algorithm 問需求。
 - 對接這個專案的 ledger，照 route 找負責人，從 next_queue 拿一張卡給我。
-- 把維拉的測試證據換算成 ledger 的 verified，準備批准包但先不要寫入。
+- 把Vera的測試證據換算成 ledger 的 verified，準備批准包但先不要寫入。
 
 ## 頭像
 
