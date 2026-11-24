@@ -22,6 +22,7 @@
 
 ## Preflight（對接前檢查，未通過不得呼叫任何橋接命令）
 
+0. **骨架就緒**：全新 greenfield 骨架必須先跑生成器再校驗——`init_project` → `build_capability_model --dry-run` → 正式生成 → `verify_ledger --strict`；registry 宣告的 impl 檔必須真實存在（`registry_impls_exist`），缺檔先補實現
 1. **帳本可信**：`governance/DECISION_LEDGER.json` 存在，且 `verify_ledger.py --strict` 無 fail
 2. **腳本可用**：`intent_restate`／`route_expert`／`expert_run`／`run_tests`／`verify_ledger`／`agent_gateway` 都能執行（`--help` 不報缺模組）；腳本不在包內，依賴目標專案安裝的 ledger 版本
 3. **版本留痕**：把 ledger 腳本版本／`method_assets` 摘要寫入足跡，後續每次對接先比對；漂移即重新路由，不沿用舊裁決
@@ -89,6 +90,12 @@ python3 governance/verify_ledger.py --root <P> --strict --json
 
 若只通過 `--dry-run`，不代表已寫入帳本；這是刻意保留的人工寫入點。
 
+**運行時綁定要求（smoke test 實測，2026-11-24）**——`verified` 是雙條件：報告有 pass 記錄 **且** 符號級綁定證明測的是本能力實現：
+
+- 測試必須放在 `tests/unit/`（L3 目錄約定），放在 `tests/` 根不會被派生為 unit_test 證據
+- 測試 import 必須能沿 `__init__.py` 鏈解析到 registry 宣告的 impl 檔——`src/` 各層要有 `__init__.py`，測試內 `sys.path` 深度要與目錄層級一致
+- `binding_status`：只有 `bound` 升級 `verified`；`via1`（隔一跳編排層）／`unbound`／`no_tests`／`no_impl` 一律維持 `declared`，不得宣稱已驗證
+
 ### 4. `approval_bundle` 與 `audit`
 
 ```bash
@@ -99,6 +106,8 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 ```
 
 `approval_bundle` 只列命令，不執行。被 `deny` 時不得換 id、換動作重試；回到 `route_expert` 或請人裁決。
+
+**網關實測紀律（smoke test）**：`--action` 是固定枚舉（`code`／`claim`／`decide`／`verify`／`route` 等，**沒有** `write`）；`request` 預設 dry-run（`applied=false`），未登記的 agent 一律 deny 且逐項給 fix 指引（access 登記、agent 身份、CAS 指紋、registry 摘要）——把 fix 原文放進解阻清單，由人工批准後再帶 `--apply`。
 
 ## 角色映射
 
