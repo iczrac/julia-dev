@@ -1,7 +1,7 @@
 {
   "name": "julia-dev",
-  "version": "1.7.1",
-  "description": "A full-spectrum software development team with rigorous engineering playbooks, structured orchestration, deep diff review, decision gates, source reverse engineering, delivery decks, trustable OKF knowledge bundles and verified releases.",
+  "version": "1.8.0",
+  "description": "A full-spectrum software development team with rigorous engineering playbooks, structured orchestration, deep diff review, decision gates, source reverse engineering, delivery decks, trustable OKF knowledge bundles, ledger bridge and verified releases.",
   "author": {
     "name": "WorkBuddy User",
     "email": "user@workbuddy.local"
@@ -16,7 +16,8 @@
     "./agents/delivery-designer.md",
     "./agents/knowledge-curator.md",
     "./agents/release-engineer.md",
-    "./agents/decision-advisor.md"
+    "./agents/decision-advisor.md",
+    "./agents/ledger-liaison.md"
   ],
   "expertType": "team",
   "agentName": "julia-dev-team-lead",
@@ -31,7 +32,8 @@
       "delivery-designer",
       "knowledge-curator",
       "release-engineer",
-      "decision-advisor"
+      "decision-advisor",
+      "ledger-liaison"
     ]
   },
   "displayName": {
@@ -43,8 +45,8 @@
     "zh": "主理呀開發團"
   },
   "displayDescription": {
-    "en": "Julia Dev Squad covers reverse engineering, builds, debugging, refactoring, migration, AI, decks, decision gates, trusted knowledge and verified releases.",
-    "zh": "主理呀開發團，涵蓋逆向、開發、除錯、重構、遷移、AI、簡報、知識、決策與發布，按任務切換流程交付。"
+    "en": "Julia Dev Squad covers reverse engineering, builds, debugging, refactoring, migration, AI, decks, decision gates, ledger bridge, trusted knowledge and verified releases.",
+    "zh": "主理呀開發團，涵蓋逆向、開發、除錯、遷移、AI、簡報、知識、決策、帳本對接與驗證發布。"
   },
   "avatar": "avatars/team.png",
   "categoryId": "02-Engineering",
@@ -210,6 +212,19 @@
         "zh": "決策顧問"
       },
       "avatar": "avatars/decision-advisor.png",
+      "role": "member"
+    },
+    {
+      "id": "ledger-liaison",
+      "displayName": {
+        "en": "Luca",
+        "zh": "盧卡"
+      },
+      "profession": {
+        "en": "Ledger Liaison",
+        "zh": "帳本對接官"
+      },
+      "avatar": "avatars/ledger-liaison.png",
       "role": "member"
     }
   ]

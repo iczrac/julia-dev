@@ -6,7 +6,7 @@
 
 ## 類型
 
-Team 型（多角色協作團隊）· 版本 1.7.1 · 10 位成員
+Team 型（多角色協作團隊）· 版本 1.8.0 · 11 位成員
 
 ## 成員與命名巧思
 
@@ -22,10 +22,11 @@ Team 型（多角色協作團隊）· 版本 1.7.1 · 10 位成員
 | knowledge-curator | 寇娜 Kona | 知識管理師 | know——知識的守護者，管溯源、信任與時效 |
 | release-engineer | 席普 Ship | 發布工程師 | ship——把驗證過的東西安全送上線的人 |
 | decision-advisor | 艾德 Ed | 決策顧問 | advisor——在昂貴或不可逆之前被找來的第一個反對者 |
+| ledger-liaison | 盧卡 Luca | 帳本對接官 | route＋task card——把 ledger 的路線卡翻成 Julia 的任務 |
 
 ## 任務類型與流程對照
 
-主理人茱莉亞會先做 **Phase 0 任務辨析**，再從 20 條 Workflow 中選一條；不需要的階段直接略過，不浪費流程。
+主理人茱莉亞會先做 **Phase 0 任務辨析**，再從 21 條 Workflow 中選一條；不需要的階段直接略過，不浪費流程。
 
 | 你說的話 | 任務類型 | 啟動流程 |
 |---------|----------|----------|
@@ -49,6 +50,7 @@ Team 型（多角色協作團隊）· 版本 1.7.1 · 10 位成員
 | 拆並行任務／跑有界循環／讓 CI 全綠 | 結構化編排 | S 結構化編排與有界循環 |
 | 深度 review PR／安全＋可維護性雙軸 | 深度差異審查 | T 深度差異審查與決策複核 |
 | 找盲點／卡兩次／交付前再確認 | 決策複核 | T 或直調艾德 |
+| 對接 ledger／照帳本路由走／從 next_queue 拿任務 | 帳本對接 | U 帳本對接與受控寫入 |
 | 用什麼技術比較好 | 技術咨詢 | B 或直接問阿奇 |
 
 ## 適用專案型態
@@ -167,6 +169,21 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 **沒有吸收的部分**：`orchestrate` 的 Cursor SDK／Bun CLI／Slack Andon 腳本、`ralph-loop` 的 hooks、`advisor` 的模型綁定與 state 檔、`thermos` 的 subagent 定義、`dyl-stack` 的 Figma／UI judge 流程——這些都綁定特定平台或工具，移植成本高於收益；`agent-compatibility`、`continual-learning`、`workflow-from-chats` 的洞察已分別被既有驗證、知識管理與偏好沉澱機制覆蓋，不重複造一套。
 
+## 選配協定：ledger-driven-dev 帳本橋接
+
+第十一位成員**盧卡 Luca（帳本對接官）**與第十八套 Skill `ledger-bridge`，把 [ledger-driven-dev](https://github.com/iczrac/ledger-driven-dev)（MIT，Copyright 2026 Ledger-Driven Dev contributors）的治理能力接進 Julia 的執行鏈。這不是把兩邊合併，而是一層**只讀薄橋**：
+
+| 交接物件 | 用途 |
+|---------|------|
+| `intent.json` | 把人話需求、非目標、能力碼與寫入範圍變成可校驗意圖 |
+| `route.handoff` / `next_queue` | 取得唯一專家、交接鏈與單張任務卡 |
+| `test_report` + `verify_ledger` JSON | 把維拉的證據換算成 `declared / verified` 與不變量結果 |
+| `approval_bundle` / `audit` | 只準備待批准命令，由人工簽核、席普執行 |
+
+**ledger-driven-dev 倉庫本身零改動**：不改 schema、不改 31 條不變量、不加新專家、不複製 24 個 Skill。需要在目標專案做的是一次性的治理接入：能力碼、`verify_ledger`、Agent 註冊與測試證據綁定。
+
+門禁優先序：**人工確認 > ledger 寫入門禁 > 不可逆動作確認 > 維拉 `PASS` > 其餘可逆工作**。盧卡只讀、只翻譯、只準備；不得帶 `--apply` 執行寫入，也不得把 ledger JSON 複製成 julia-dev 內的第二份事實源。方法論濃縮見 `skills/ledger-bridge/SKILL.md`，授權見同目錄 `ATTRIBUTION.md`。
+
 ## 功能
 
 - **任務路由**：先辨析類型與專案型態，再選流程；修 bug 不會被逼著寫 PRD
@@ -182,6 +199,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - **結構化編排**：Workflow S 用 worker／verifier 交接與有界循環推進大型任務，CI 以 `gh pr checks` 為準
 - **深度差異審查**：Workflow T 雙軸審查 diff，只輸出最多 7 則可貼 comment 與一個燈號，不貼 PR、不 approve
 - **決策第二意見**：艾德在重大決策、卡兩次與完成前給唯讀判決，並用 The Algorithm 與根因句擋掉症状修復
+- **帳本對接**：Workflow U 用盧卡串接 ledger 的復述門、專家路由、任務卡、證據分級與受控寫入，避免雙重路由與第二事實源
 - **協作鐵律**：主理人親自建團、所有資訊經主理人中轉、團員不互相直連
 
 ## 使用示例
@@ -201,6 +219,8 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - 把這個大任務拆成 worker／verifier，跑一個有完成承諾與上限的循環，最後給我交接紀錄。
 - 深度 review 這個 PR：安全與可維護性分開看，只給我最多 7 則可貼的 comment 和一個燈號。
 - 我卡在同一個錯誤兩次了，請艾德讀證據後給第二意見，並先用 The Algorithm 問需求。
+- 對接這個專案的 ledger，照 route 找負責人，從 next_queue 拿一張卡給我。
+- 把維拉的測試證據換算成 ledger 的 verified，準備批准包但先不要寫入。
 
 ## 頭像
 
