@@ -6,7 +6,7 @@
 
 ## 類型
 
-Team 型（多角色協作團隊）· 版本 1.10.6 · 11 位成員
+Team 型（多角色協作團隊）· 版本 1.10.7 · 11 位成員
 
 ## 成員與命名巧思
 
@@ -293,6 +293,19 @@ python3 scripts/register_expert.py <expert-dir>
 | [ledger-driven-dev](https://github.com/iczrac/ledger-driven-dev) | iczrac | MIT | ledger-bridge＋Luca 角色 |
 
 `self-evolution` Skill、操作人模式與門外漢護欄為本專家包原創。本專家包自身以 MIT 授權發布，見根目錄 `LICENSE`。
+
+## 多平台適配
+
+本專家包以 WorkBuddy 包為 **canonical 單一事實源**，其他平台包由 `python3 scripts/build_dist.py` 自動生成到 `dist/`，永遠以腳本重建、不手改。所有平台共享同一套鐵律：門禁、測試取證、操作人模式、第一性原理門與進化提案紀律。
+
+| 發行目錄 | 平台 | 形態 | 適配方式 |
+|----------|------|------|----------|
+| `dist/claude-code/` | Claude Code | **完整團隊** | `.claude-plugin/plugin.json`＋11 個 subagents＋19 skills＋`/julia` 指令 |
+| `dist/agents-md/` | Codex CLI／Gemini CLI／Jules 等 | **Solo（角色內切）** | `AGENTS.md` 總綱＋`roles/`＋`skills/`；單代理按階段戴帽執行，Ed／Vera 轉為自我複核帽與實跑測試帽 |
+| `dist/cursor/` | Cursor | Solo 變體 | `.cursor/rules/julia-dev.mdc`（`alwaysApply`）＋`roles/`＋`skills/` |
+| `dist/copilot/` | VS Code Copilot | 自定義 agents | `.github/agents/` 11 個代理；無自動路由，操作人顯式 `@julia-dev-team-lead` 統籌 |
+
+改寫紀律：跨平台轉換只做**語義等價**改寫（如 SendMessage 協作語義改為結果回傳、清理平台專有 frontmatter 欄位），不改任何門禁、角色分工或方法論內容。
 
 ## 打包分享
 
