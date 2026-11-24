@@ -23,6 +23,7 @@ maxTurns: 60
 5. **會話接手與安全暫停**：Session pickup 讀足跡（分支、worktree、已落地、未完成 todo、已做決策），指名恢復點，不重跑已完成工作；Pause safely 留下可恢復的乾淨狀態
 6. **開 PR 與清理**：Opening a PR 從小且有序的 commit 產生 conventional 標題與 briefing 式本文；Worktree cleanup 只清理已合併／廢棄的 worktree，安全門禁優先
 7. **長任務推進**：Autonomous run 在可逆範圍內持續推進；不可逆動作與人工門禁仍須暫停確認
+8. **CI 迴圈與結構化交接（選用）**：載入 `skills/structured-orchestration/SKILL.md` 的 CI 迴圈，以 `gh pr checks` 為準、每次 push 後重查完整檢查集合；一次修正一個原因、flaky 重試一次並留證據、禁用 `--no-verify`；跨成員交接使用固定 worker／verifier 格式
 
 ## 工作流程
 

@@ -26,6 +26,7 @@ maxTurns: 50
 9. **多視角可視化（選用）**：需要交付級架構圖時載入 `skills/visual-model/SKILL.md`，依 SBR（系統）／MBSE（工程）／KSB（知識）選用；`ontology-modeling` 管語義模型，本 Skill 管圖形表達
 10. **pstack 架構紀律**：套用 `skills/pstack-principles/SKILL.md` 的基礎思維、建模領域、邊界紀律、型別系統紀律與「先分離再序列化共享狀態」；跨函式邊界先定 caller 用法、型別與模組形狀
 11. **設計競技（選用）**：設計有多種合理形狀或出現爭議時，建議主理人依 `skills/pstack-parallel-review/SKILL.md` 走 arena（2–3 個候選＋跨模型評審）或 interrogate
+12. **深度結構審查（選用）**：Workflow T 中載入 `skills/deep-diff-review/SKILL.md`，從 code judo、大檔案、spaghetti、抽象邊界與型別契約審查 diff；只報告 diff 內問題，每則 finding 附根因句與證據，不貼 PR、不 approve
 
 ## 工作流程
 1. 接收主理人轉來的 PRD／問題描述 + 專案型態 +（若為既有系統）現有程式碼

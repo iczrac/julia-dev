@@ -25,6 +25,8 @@ maxTurns: 50
 8. **知識庫溯源驗證**：Workflow K 載入 `skills/llm-knowledge-base/SKILL.md` 時，檢查來源覆蓋率與引用正確性，回報孤兒概念與幻覺風險
 9. **OKF 信任覆核**：Workflow P 中獨立重算信任分層（只用 `at >= generated.at` 的 current 事件）、檢查 `stale_after` 是否可解析且未過期、確認 `verified` 未冒充人工簽核，並覆核 attestation 裁決
 10. **pstack 可驗證性方法**：載入 `skills/pstack-verification/SKILL.md`——針對真實產物證明可行、基準檢驗七問、建立／維護專案本地驗證 Skill、必要時用形式化驗證、把反覆錯誤釘死在結構裡
+11. **深度正確性與安全審查（選用）**：Workflow T 中載入 `skills/deep-diff-review/SKILL.md`，與阿奇的結構軸平行審查 diff 的 bug、破壞、安全、devex 與 feature gate 外洩；只報告 diff 內問題，先完成自己的稽查再讀 PR 討論，不貼 PR、不 approve
+12. **Verifier 證據分級**：Workflow S 中擔任 verifier 時，明確給出 `live-ui-verified`／`unit-test-verified`／`type-check-only`／`verifier-blocked`／`verifier-failed`；讀 diff 不算驗證，環境故障不得冒充通過
 
 ## 工作流程
 1. 接收主理人轉來的驗收標準 + 完整產出 +（若為修改類任務）修改前基準

@@ -1,7 +1,7 @@
 {
   "name": "julia-dev",
-  "version": "1.6.0",
-  "description": "A full-spectrum software development team with rigorous engineering playbooks, source reverse engineering, delivery decks, trustable OKF knowledge bundles and verified releases.",
+  "version": "1.7.0",
+  "description": "A full-spectrum software development team with rigorous engineering playbooks, structured orchestration, deep diff review, decision gates, source reverse engineering, delivery decks, trustable OKF knowledge bundles and verified releases.",
   "author": {
     "name": "WorkBuddy User",
     "email": "user@workbuddy.local"
@@ -15,7 +15,8 @@
     "./agents/reverse-engineer.md",
     "./agents/delivery-designer.md",
     "./agents/knowledge-curator.md",
-    "./agents/release-engineer.md"
+    "./agents/release-engineer.md",
+    "./agents/decision-advisor.md"
   ],
   "expertType": "team",
   "agentName": "julia-dev-team-lead",
@@ -29,7 +30,8 @@
       "reverse-engineer",
       "delivery-designer",
       "knowledge-curator",
-      "release-engineer"
+      "release-engineer",
+      "decision-advisor"
     ]
   },
   "displayName": {
@@ -41,8 +43,8 @@
     "zh": "茱莉亞開發團隊"
   },
   "displayDescription": {
-    "en": "Julia's full-spectrum dev team covers reverse engineering, builds, debugging, refactoring, migration, AI, decks, trusted knowledge and verified releases.",
-    "zh": "茱莉亞全能開發團，涵蓋逆向、新建、除錯、重構、遷移、AI、簡報、知識與發布，按任務切換流程交付。"
+    "en": "Julia's full-spectrum dev team covers reverse engineering, builds, debugging, refactoring, migration, AI, decks, decision gates, trusted knowledge and verified releases.",
+    "zh": "茱莉亞全能開發團，涵蓋逆向、開發、除錯、重構、遷移、AI、簡報、知識、決策與發布，按任務切換流程。"
   },
   "avatar": "avatars/team.png",
   "categoryId": "02-Engineering",
@@ -195,6 +197,19 @@
         "zh": "發布工程師"
       },
       "avatar": "avatars/release-engineer.png",
+      "role": "member"
+    },
+    {
+      "id": "decision-advisor",
+      "displayName": {
+        "en": "Ed",
+        "zh": "艾德"
+      },
+      "profession": {
+        "en": "Decision Advisor",
+        "zh": "決策顧問"
+      },
+      "avatar": "avatars/decision-advisor.png",
       "role": "member"
     }
   ]

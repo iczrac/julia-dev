@@ -4,7 +4,7 @@
 
 ## 類型
 
-Team 型（多角色協作團隊）· 版本 1.6.0 · 9 位成員
+Team 型（多角色協作團隊）· 版本 1.7.0 · 10 位成員
 
 ## 成員與命名巧思
 
@@ -19,10 +19,11 @@ Team 型（多角色協作團隊）· 版本 1.6.0 · 9 位成員
 | delivery-designer | 黛拉 Della | 交付設計師 | deck／deliver——做出可放映的交付簡報 |
 | knowledge-curator | 寇娜 Kona | 知識管理師 | know——知識的守護者，管溯源、信任與時效 |
 | release-engineer | 席普 Ship | 發布工程師 | ship——把驗證過的東西安全送上線的人 |
+| decision-advisor | 艾德 Ed | 決策顧問 | advisor——在昂貴或不可逆之前被找來的第一個反對者 |
 
 ## 任務類型與流程對照
 
-主理人茱莉亞會先做 **Phase 0 任務辨析**，再從 15 條 Workflow 中選一條；不需要的階段直接略過，不浪費流程。
+主理人茱莉亞會先做 **Phase 0 任務辨析**，再從 20 條 Workflow 中選一條；不需要的階段直接略過，不浪費流程。
 
 | 你說的話 | 任務類型 | 啟動流程 |
 |---------|----------|----------|
@@ -43,6 +44,9 @@ Team 型（多角色協作團隊）· 版本 1.6.0 · 9 位成員
 | 建立知識庫／這個數字可信嗎 | OKF 知識管理 | P OKF 知識管理 |
 | 先重現再修／證明真的可用 | 嚴謹工程 | Q pstack 嚴謹工程 |
 | 合併 PR／接手上一輪／我要睡覺 | 發布接續 | R 發布與會話接續 |
+| 拆並行任務／跑有界循環／讓 CI 全綠 | 結構化編排 | S 結構化編排與有界循環 |
+| 深度 review PR／安全＋可維護性雙軸 | 深度差異審查 | T 深度差異審查與決策複核 |
+| 找盲點／卡兩次／交付前再確認 | 決策複核 | T 或直調艾德 |
 | 用什麼技術比較好 | 技術咨詢 | B 或直接問阿奇 |
 
 ## 適用專案型態
@@ -131,13 +135,35 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 **與既有能力的分工**：`ontology-modeling` 查需求到程式碼的對應、`pstack-verification` 查實際跑起來的行為、OKF attestation 查計算回執是否被竄改——三者互補。CI 專屬的模型設定與插件依賴沒有內嵌，署名見各 Skill 的 `ATTRIBUTION.md`。
 
-**门禁衝突的處理**：pstack 主張「可逆工作不要問人」，本團隊的優先序是人工確認門禁 > 維拉 `PASS` > 不可逆動作確認 > 其餘可逆工作直接做。
+**門禁衝突的處理**：pstack 主張「可逆工作不要問人」，本團隊的優先序是人工確認門禁 > 維拉 `PASS` > 不可逆動作確認 > 其餘可逆工作直接做。
 
 **設計取捨**：
 
-- **逆向是全量、深度可分层**：翠西先建立源碼資產台帳（B0–B9），再逐功能穿透到資料庫；維拉獨立做覆蓋對帳，未歸屬資產不放行。基線不全量就寫功能清單，是逆向最常見的失敗模式。
+- **逆向是全量、深度可分層**：翠西先建立源碼資產台帳（B0–B9），再逐功能穿透到資料庫；維拉獨立做覆蓋對帳，未歸屬資產不放行。基線不全量就寫功能清單，是逆向最常見的失敗模式。
 - **簡報忠於事實**：黛拉的頁面可以有四種形態（真實圖表／架構圖／結構模型／文本分類），但不得虛構數據，且每個技術主張要標註來源。維拉未給 `PASS` 前不開始製作。
 - **授權分寸**：前三個有明確授權的專案僅濃縮重述並保留完整署名；`consulting-html-ppt` 原 repo **未宣告開源授權**，因此只吸收方法論要點，不複製其模板庫、圖標或成品，使用平台內建或自製模板替代。各 Skill 的 `ATTRIBUTION.md` 均保留來源與授權說明。
+
+## 再進化：cursor/plugins 其他高價值專案
+
+本版再掃描 [cursor/plugins](https://github.com/cursor/plugins/tree/main) 全庫，挑出四組對多智能體軟體交付真正有增量的做法，全部轉成**選配 Skill**；Cursor 專屬的 SDK、Bun 腳本、hooks 與 Slack 整合一律不內嵌，只保留可移植的方法論。
+
+| 新 Skill | 吸收來源 | 做什麼 | 主責成員 |
+|---------|---------|-------|---------|
+| `structured-orchestration` | `orchestrate`＋`ralph-loop`＋`cursor-team-kit/loop-on-ci`（MIT） | Planner／Worker／Verifier 職責邊界、逐字交接、五級 verifier 證據、完成承諾＋迭代上限、失敗模式與 Andon、`gh pr checks` CI 迴圈 | 茱莉亞（編排）＋席普（CI） |
+| `deep-diff-review` | `thermos`＋`dyl-stack`（MIT） | 正確性／安全與結構／可維護性雙軸平行審查、code judo／1k 行／spaghetti 尺標、去重後最多 7 則可貼 comment 與 🟢／🟡／🔴 | 維拉＋阿奇，艾德複核重大發現 |
+| `decision-gates` | `advisor`＋`dyl-stack`（MIT） | 重大決策／卡兩次／完成前四類檢查點、唯讀 `Verdict / Why / Recommendations / Risks / Answers / Confidence`、The Algorithm、根因句、合併與 taste veto 紀律 | 艾德 |
+| `agent-friendly-cli` | `cli-for-agent`（MIT） | 非互動 flag、分層 help 與範例、stdin／pipeline、可行動錯誤、冪等、`--dry-run`、JSON 輸出與退出碼 | 麥克＋阿奇 |
+
+新增第十位成員**艾德 Ed（決策顧問）**：他不寫程式、不開 PR、不合併，只在昂貴或不可逆之前給第二意見。他的建議不能覆蓋人工確認門禁、維拉 `PASS` 或不可逆動作確認——這是本團隊刻意設定的優先序。
+
+**四個最值得吸收的紀律**：
+
+- **Planner 不寫程式，Worker 不互聯，Verifier 不改目標原始碼**。`orchestrate` 用逐字 handoff 取代共享狀態，讓平行任務可以收斂而不靠全域協調；下游需要上游資訊就宣告依賴，由主理人轉交。
+- **完成要有承諾與上限**。Ralph Loop 的同一提示詞反覆迭代、只能在工作真的完成時輸出承諾；到上限就如實回報未完成，防止 agent 為了結案說謊。Verifier 的 `verifier-blocked` 也禁止把環境故障偽裝成通過。
+- **深度審查要雙軸、要只罵 diff、要少而準**。Thermos 把 bug／安全／devex／feature gate 與可維護性分開；dyl-stack 把發現壓縮成最多 7 則可貼 comment 與一個燈號，且永遠不貼到 PR、不 approve、不合併。
+- **先問需求、先刪除、再優化**。`The Algorithm` 與 `Root cause: X because Y` 補上 pstack 的根因紀律：null guard、retry、sleep、skip、snapshot 更新在根因句成立前都只是症状修復。
+
+**沒有吸收的部分**：`orchestrate` 的 Cursor SDK／Bun CLI／Slack Andon 腳本、`ralph-loop` 的 hooks、`advisor` 的模型綁定與 state 檔、`thermos` 的 subagent 定義、`dyl-stack` 的 Figma／UI judge 流程——這些都綁定特定平台或工具，移植成本高於收益；`agent-compatibility`、`continual-learning`、`workflow-from-chats` 的洞察已分別被既有驗證、知識管理與偏好沉澱機制覆蓋，不重複造一套。
 
 ## 功能
 
@@ -151,6 +177,9 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - **交付敘事**：Workflow N 把驗證通過的成果做成動作式標題的單檔 HTML 簡報
 - **可信知識**：Workflow P 的 OKF bundle 讓每個概念都帶來源、信任層級與時效，拒絕靜默過時
 - **嚴謹工程**：Workflow Q 以執行期證據取代自我回報，Workflow R 只落地通過驗證的連續區段
+- **結構化編排**：Workflow S 用 worker／verifier 交接與有界循環推進大型任務，CI 以 `gh pr checks` 為準
+- **深度差異審查**：Workflow T 雙軸審查 diff，只輸出最多 7 則可貼 comment 與一個燈號，不貼 PR、不 approve
+- **決策第二意見**：艾德在重大決策、卡兩次與完成前給唯讀判決，並用 The Algorithm 與根因句擋掉症状修復
 - **協作鐵律**：主理人親自建團、所有資訊經主理人中轉、團員不互相直連
 
 ## 使用示例
@@ -167,6 +196,9 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - 幫我建立一個 OKF 知識庫，並告訴我哪些概念未驗證或已經過期。
 - 用嚴謹工程流程修這個 bug：先重現、二分法找根因，再給我失敗到通過的輸出。
 - 這串 PR 都綠燈了，幫我驗證後由底層往上合併，並告訴我停在哪個上限。
+- 把這個大任務拆成 worker／verifier，跑一個有完成承諾與上限的循環，最後給我交接紀錄。
+- 深度 review 這個 PR：安全與可維護性分開看，只給我最多 7 則可貼的 comment 和一個燈號。
+- 我卡在同一個錯誤兩次了，請艾德讀證據後給第二意見，並先用 The Algorithm 問需求。
 
 ## 頭像
 

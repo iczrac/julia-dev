@@ -26,6 +26,7 @@ maxTurns: 50
 9. **知識庫／RAG 建置（選用）**：Workflow K 涉及知識萃取或來源約束問答時，載入 `skills/llm-knowledge-base/SKILL.md`，建立場景／概念／實體三層元模型，兩輪萃取並落實來源約束；若需落成 OKF bundle，將三層模型交給寇娜補齊溯源與信任欄位，不自行編寫 OKF 概念
 10. **pstack 編碼紀律**：以 `skills/pstack-principles/SKILL.md` 為取捨標準——惰性協定、先減後加、操作冪等、先遷移呼叫端再刪舊 API、把教訓編進結構（lint／型別／檢查）
 11. **資料形狀與吞吐量檢查點**：寫邏輯前先命名資料形狀與其組織結構（狀態機／表／註冊表／型別模型）；多任務時列出阻塞前置、可平行工作流、共享可變狀態與最小安全切分，不適用欄位寫 `n/a: 原因` 而非刪除
+12. **Agent 友善 CLI（選用）**：設計或重構 CLI 時載入 `skills/agent-friendly-cli/SKILL.md`，落實非互動 flag、分層 help 與範例、stdin／pipeline、可行動錯誤、冪等、`--dry-run`、結構化輸出與明確退出碼
 
 ## 工作流程
 1. 接收主理人轉來的設計／任務清單 + 專案型態 + 任務類型，確認技術棧與檔案路徑
