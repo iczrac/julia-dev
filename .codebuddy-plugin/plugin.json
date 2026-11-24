@@ -1,7 +1,7 @@
 {
   "name": "julia-dev",
-  "version": "1.3.0",
-  "description": "A versatile software development team that routes greenfield builds, enhancements, debugging, refactoring, review, migration, integration and AI/data work through adaptive workflows.",
+  "version": "1.4.0",
+  "description": "A full-spectrum software development team with source reverse engineering and consulting-style delivery decks, routing every task type through adaptive workflows.",
   "author": {
     "name": "WorkBuddy User",
     "email": "user@workbuddy.local"
@@ -11,16 +11,23 @@
     "./agents/product-manager.md",
     "./agents/architect.md",
     "./agents/engineer.md",
-    "./agents/qa-engineer.md"
+    "./agents/qa-engineer.md",
+    "./agents/reverse-engineer.md",
+    "./agents/delivery-designer.md"
   ],
-
   "expertType": "team",
   "agentName": "julia-dev-team-lead",
   "teamInfo": {
     "leadAgent": "julia-dev-team-lead",
-    "memberAgents": ["product-manager", "architect", "engineer", "qa-engineer"]
+    "memberAgents": [
+      "product-manager",
+      "architect",
+      "engineer",
+      "qa-engineer",
+      "reverse-engineer",
+      "delivery-designer"
+    ]
   },
-
   "displayName": {
     "en": "Julia Dev Team",
     "zh": "茱莉亞開發團隊"
@@ -30,8 +37,8 @@
     "zh": "茱莉亞開發團隊"
   },
   "displayDescription": {
-    "en": "A versatile dev team covering greenfield, debugging, refactoring, review, migration and AI work, routed by task type.",
-    "zh": "茱莉亞統籌的全能開發團，覆蓋新建、除錯、重構、審查、遷移與 AI 應用，按任務類型切換流程交付成果。"
+    "en": "Julia's full-spectrum dev team covers reverse engineering, builds, debugging, refactoring, review, migration, AI and delivery decks, routed by task type.",
+    "zh": "茱莉亞全能開發團，覆蓋逆向、新建、除錯、重構、審查、遷移、AI 與簡報，按任務類型切換流程交付。"
   },
   "avatar": "avatars/team.png",
   "categoryId": "02-Engineering",
@@ -41,49 +48,123 @@
   },
   "plugin": "julia-dev",
   "tags": [
-    { "en": "Full-spectrum Dev", "zh": "全方位開發" },
-    { "en": "Adaptive Workflow", "zh": "彈性流程" },
-    { "en": "Verified Quality", "zh": "品質驗證" }
+    {
+      "en": "Full-spectrum Dev",
+      "zh": "全方位開發"
+    },
+    {
+      "en": "Source Reverse",
+      "zh": "源碼逆向"
+    },
+    {
+      "en": "Delivery Deck",
+      "zh": "簡報交付"
+    }
   ],
   "quickPrompts": [
-    { "en": "I have a development task. Identify its type and deliver it with the right workflow.", "zh": "我有一個開發需求，請判斷類型並用合適的流程交付。" },
-    { "en": "Fix this bug, add a feature, or refactor this code for me.", "zh": "幫我修這個 bug、加功能或重構這段程式碼。" },
-    { "en": "Review this code and give me test cases plus a quality report.", "zh": "審查這份程式碼，給出測試用例與品質報告。" }
+    {
+      "en": "I have a development task. Identify its type and deliver it with the right workflow.",
+      "zh": "我有一個開發需求，請判斷類型並用合適的流程交付。"
+    },
+    {
+      "en": "Reverse engineer this legacy codebase into a complete traceable meta-model.",
+      "zh": "把這份舊程式碼逆向成完整可追溯的功能與資料庫元模型。"
+    },
+    {
+      "en": "Turn the verified deliverable into a consulting-style HTML presentation deck.",
+      "zh": "把驗證通過的成果做成一份諮詢風格的 HTML 簡報。"
+    }
   ],
   "members": [
     {
       "id": "julia-dev-team-lead",
-      "displayName": { "en": "Julia", "zh": "茱莉亞" },
-      "profession": { "en": "Delivery Director", "zh": "交付總監" },
+      "displayName": {
+        "en": "Julia",
+        "zh": "茱莉亞"
+      },
+      "profession": {
+        "en": "Delivery Director",
+        "zh": "交付總監"
+      },
       "avatar": "avatars/julia-dev-team-lead.png",
       "role": "lead"
     },
     {
       "id": "product-manager",
-      "displayName": { "en": "Rick", "zh": "瑞克" },
-      "profession": { "en": "Product Manager", "zh": "產品經理" },
+      "displayName": {
+        "en": "Rick",
+        "zh": "瑞克"
+      },
+      "profession": {
+        "en": "Product Manager",
+        "zh": "產品經理"
+      },
       "avatar": "avatars/product-manager.png",
       "role": "member"
     },
     {
       "id": "architect",
-      "displayName": { "en": "Archie", "zh": "阿奇" },
-      "profession": { "en": "Architect", "zh": "架構師" },
+      "displayName": {
+        "en": "Archie",
+        "zh": "阿奇"
+      },
+      "profession": {
+        "en": "Architect",
+        "zh": "架構師"
+      },
       "avatar": "avatars/architect.png",
       "role": "member"
     },
     {
       "id": "engineer",
-      "displayName": { "en": "Mike", "zh": "麥克" },
-      "profession": { "en": "Engineer", "zh": "工程師" },
+      "displayName": {
+        "en": "Mike",
+        "zh": "麥克"
+      },
+      "profession": {
+        "en": "Engineer",
+        "zh": "工程師"
+      },
       "avatar": "avatars/engineer.png",
       "role": "member"
     },
     {
       "id": "qa-engineer",
-      "displayName": { "en": "Vera", "zh": "維拉" },
-      "profession": { "en": "QA Engineer", "zh": "品質保證工程師" },
+      "displayName": {
+        "en": "Vera",
+        "zh": "維拉"
+      },
+      "profession": {
+        "en": "QA Engineer",
+        "zh": "品質保證工程師"
+      },
       "avatar": "avatars/qa-engineer.png",
+      "role": "member"
+    },
+    {
+      "id": "reverse-engineer",
+      "displayName": {
+        "en": "Tracey",
+        "zh": "翠西"
+      },
+      "profession": {
+        "en": "Reverse Engineer",
+        "zh": "逆向工程師"
+      },
+      "avatar": "avatars/reverse-engineer.png",
+      "role": "member"
+    },
+    {
+      "id": "delivery-designer",
+      "displayName": {
+        "en": "Della",
+        "zh": "黛拉"
+      },
+      "profession": {
+        "en": "Delivery Designer",
+        "zh": "交付設計師"
+      },
+      "avatar": "avatars/delivery-designer.png",
       "role": "member"
     }
   ]
