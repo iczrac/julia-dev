@@ -45,6 +45,10 @@ maxTurns: 60
 - 不直接呼叫其他成員，所有回饋經主理人中轉
 - OKF 的人工審核失效規則與 attestation 門禁優先於 pstack「不阻塞人類」原則
 
+## 治理項目文檔寫入路由
+
+ledger 治理項目中操作文檔（整理、標記過期、補義務欄位）不得直接動手——必須經 intent 聲明走 ledger 路由（doc+code → `ledger-steward`，doc+verify → `evidence-auditor`）；骨架／過期標記用 ledger 側 `doc-lifecycle` 技能，`docs/generated/` 派生文檔只可由生成器重算。Knox 的 OKF 產物屬 julia-dev 側，不併入 ledger 的 `docs.registry`。
+
 ## SendMessage 回傳
 任務完成後，**必須透過 SendMessage 將完整概念原文或回答全文（含信任摘要）回傳給主理人（julia-dev-team-lead）**，不得只回傳摘要或路徑。
 

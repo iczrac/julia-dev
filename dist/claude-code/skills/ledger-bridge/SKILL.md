@@ -25,9 +25,10 @@
 0. **骨架就緒**：全新 greenfield 骨架必須先跑生成器再校驗——`init_project` → `build_capability_model --dry-run` → 正式生成 → `verify_ledger --strict`；registry 宣告的 impl 檔必須真實存在（`registry_impls_exist`），缺檔先補實現
 1. **帳本可信**：`governance/DECISION_LEDGER.json` 存在，且 `verify_ledger.py --strict` 無 fail
 2. **腳本可用**：`intent_restate`／`route_expert`／`expert_run`／`run_tests`／`verify_ledger`／`agent_gateway` 都能執行（`--help` 不報缺模組）；腳本不在包內，依賴目標專案安裝的 ledger 版本
-3. **版本留痕**：把 ledger 腳本版本／`method_assets` 摘要寫入足跡，後續每次對接先比對；漂移即重新路由，不沿用舊裁決
+3. **版本與指紋留痕（v2.24.0 起）**：把 `METHOD_VERSION`、`method_assets`／`installed_assets`／`ontology` 摘要一起寫入足跡，後續每次對接先比對；任一漂移即重新路由，不沿用舊裁決。**同時跑 `upgrade.py verify`**：ledger 側每次版本更新都會重綁資產指紋，changelog 明言「目標項目需重新批准升級」——verify 未過（`upgrade_complete=false` 或要求 re-approve）時，記入解阻清單請人批准，批准前不得沿用既有 `verified` 結論
 4. **綁定預檢**：在跑測試前對照三個實測坑檢查測試結構——① 測試檔在 `tests/unit/`（不在 `tests/` 根）；② `src/` 各層有 `__init__.py`；③ 測試內 `sys.path` 深度與目錄層級一致。結構不對先修再跑，不要等 binding 失敗後回頭查
-5. **失敗降級**：任一項失敗即停，向使用者說明「ledger 不可用」，詢問是否降級為非治理任務（Vera `PASS` 交付）
+5. **文檔門禁基線（v2.24.0 起）**：`check.sh` 第 17 節為文檔生命週期 shadow 門（orphan／suspect／stale_unknown／信任告警／uncovered／obligation_missing／派生漂移）。shadow 期告警不阻斷但**必須記入足跡作為基線**，後續對接比對增量；`--strict` 若被目標項目開啟則視為硬門
+6. **失敗降級**：任一項失敗即停，向使用者說明「ledger 不可用」，詢問是否降級為非治理任務（Vera `PASS` 交付）
 
 ## 四個交接對象
 
@@ -70,7 +71,7 @@ python3 scripts/work_panel.py --target <P> nodes --json
 - `docs` → 必讀資料
 - `decisions` / `lessons` → 背景與前人踩過的坑
 - **經驗對照（進化觸發器）**：任務卡的經驗與 julia-dev 現有 Skill／成員規範衝突、或同一經驗重複出現 ≥2 次時，Luca 在交接末尾附**進化提案線索**（格式見 `skills/self-evolution/SKILL.md`；只提案線索，不修改任何檔案）
-- `target_level` → `definition_of_done`
+- `target_level` → `definition_of_done`（**唯一來源是 registry 人工聲明的 `committed`／`target_level`**；CAPABILITY_INDEX 只是現狀投影，Julia 不得自行推斷或補寫 target_level，v2.24.0 `compare_graphs` 新增 `no_target` 狀態表示「未聲明目標」，不參與對齊與完成度）
 
 不要一次把多張卡塞進同一個 worker。
 
@@ -149,6 +150,8 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 | `source-dir` 與真實 monorepo 佈局不符 | 停，先校正路徑契約 |
 | `agent_gateway` deny | 停，不改 id 重試 |
 | ledger 版本／摘要漂移 | 重新路由，不沿用舊裁決 |
+| `upgrade verify` 未過（需重新批准升級） | 記入解阻清單請人批准 `upgrade apply --approved-by <人>`；批准前不得沿用既有 `verified` |
+| 工具指紋漂移後既有證據 | 依硬規則 13 重跑產證，不得拿舊章當新章 |
 
 ## 解阻（Andon）
 
@@ -177,3 +180,6 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 10. 治理專案內Vera的結論必須是 `verified-PASS`（五條件全過）；`PASS` 與 `verified-PASS` 不得混用。
 11. 治理專案 Phase 4 **必須經 `run_tests.py` 產證**（輸出合乎 `ledger-test-report/1` 或合規適配格式）；Vera不得另起爐灶自帶方式跑測試後直接換算 tier——證據格式不符會讓 `evidence_binding` 失真。
 12. Preflight 對治理專案的**每次會話接手**都必須重跑（從第 0 步起）：帳本可能已被其他 agent 寫過，舊 Preflight 結論不得沿用。
+13. **證據降級條款（v2.24.0 起）**：ledger 工具哈希漂移會使 `evidence_binding` 失效，既有 `verified` **靜默回落 `declared`**——工具或資產指紋與足跡不一致時，該專案全部 `verified` 能力碼視為已降級，必須重跑 `run_tests.py` 產證並重新綁定後才可再稱 `verified-PASS`；不得拿升級前的舊章對外宣稱。
+14. **文檔寫入路由（v2.24.0 起）**：治理項目中 `docs/**` 變更必須經 intent 聲明走 ledger 路由（doc+code → `ledger-steward`，doc+verify → `evidence-auditor`，三者並存觸發澄清）；julia-dev 成員**不得直寫** `docs/**`——`docs.registry`／`docs.obligations` 僅 ledger-steward 可寫，正文僅 loop-executor 路由；文檔骨架／過期標記等操作用 ledger 側 `doc-lifecycle` 技能（scaffold／lint／mark-stale／check），派生文檔（`docs/generated/`）只可由生成器重算、手改即漂移。
+15. **門禁口徑（v2.25.0 起）**：`0` 與 `n/a` 是兩回事——gate 指標為 `n/a`（判據不適用／未判定）時**不得視為通過**；`stale_unknown`（缺 `stale_after`）單列、不併入 `stale`；缺鍵一律 fail-closed 上報，不許當「未過期」處理。verified-PASS 引用任何 gate 指標時同樣適用此口徑。

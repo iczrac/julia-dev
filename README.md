@@ -8,7 +8,7 @@
 
 ## 類型
 
-Team 型（多角色協作團隊）· 版本 1.10.10 · 11 位成員
+Team 型（多角色協作團隊）· 版本 1.10.11 · 11 位成員
 
 ## 成員與命名巧思
 
@@ -184,7 +184,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 **ledger-driven-dev 倉庫本身零改動**：不改 schema、不改 31 條不變量、不加新專家、不複製 24 個 Skill。需要在目標專案做的是一次性的治理接入：能力碼、`verify_ledger`、Agent 註冊與測試證據綁定。
 
-門禁優先序：**人工確認 > ledger 寫入門禁 > 不可逆動作確認 > Vera `PASS` > 其餘可逆工作**。Luca只讀、只翻譯、只準備；不得帶 `--apply` 執行寫入，也不得把 ledger JSON 複製成 julia-dev 內的第二份事實源。方法論濃縮見 `skills/ledger-bridge/SKILL.md`，授權見同目錄 `ATTRIBUTION.md`。
+門禁優先序：**人工確認 > ledger 寫入門禁 > 不可逆動作確認 > Vera `PASS` > 其餘可逆工作**。Luca只讀、只翻譯、只準備；不得帶 `--apply` 執行寫入，也不得把 ledger JSON 複製成 julia-dev 內的第二份事實源。ledger v2.24–v2.25 對接後新增四條紀律：**證據降級條款**（工具指紋漂移使既有 `verified` 回落 `declared`，須重跑產證）、**文檔寫入路由**（治理項目 `docs/**` 必經 intent，成員不得直寫）、**門禁口徑 0≠n/a**（`stale_unknown` 單列，缺鍵 fail-closed）、**Preflight 加查 `upgrade verify` 與資產指紋**（ledger 更新後目標項目需重新批准升級）。方法論濃縮見 `skills/ledger-bridge/SKILL.md`，授權見同目錄 `ATTRIBUTION.md`。
 
 ## v1.9.0：接縫修補
 
