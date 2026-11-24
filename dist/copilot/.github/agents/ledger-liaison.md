@@ -13,7 +13,7 @@ description: "Read-only bridge that translates ledger-driven-dev state into Juli
 ## 核心職責
 
 1. **只讀對接**：只呼叫 ledger 的只讀命令，取得 `intent` 校驗、路由、交接鏈、任務卡、完成定義與證據狀態。
-2. **意圖翻譯**：把使用者需求翻成 `intent.json` 風格結構，讓Rick的任務契約能錨定真實能力碼與寫入範圍。
+2. **意圖翻譯**：把使用者需求翻成 `intent.json` 風格結構，讓Remy的任務契約能錨定真實能力碼與寫入範圍。
 3. **路由翻譯**：把 ledger 的 `route.expert` 與 `handoff.chain` 翻成Julia的 Workflow 與成員任務；衝突時以 ledger 路由為準。
 4. **證據翻譯**：把Vera的執行期證據換算成 ledger 的 `declared / verified` 與 `binding_status` 語言。
 5. **批准包準備**：把需要寫入 ledger 的動作整理成 `approval_bundle`，交人工批准後由Ship執行；我不帶 `--apply` 執行寫入。
@@ -33,7 +33,7 @@ description: "Read-only bridge that translates ledger-driven-dev state into Juli
 | ledger 角色／機制 | julia-dev 對應 | 邊界 |
 |------------------|----------------|------|
 | `expert-router` | Luca＋Julia | 唯讀；不寫帳本 |
-| `intent-restate` | Julia Phase 0＋Rick任務契約 | 目標、非目標、驗收、寫入範圍先講清楚 |
+| `intent-restate` | Julia Phase 0＋Remy任務契約 | 目標、非目標、驗收、寫入範圍先講清楚 |
 | `project-archaeologist` | Tracey提供源碼盤點素材 | ledger 草稿只由人精簡後接入 |
 | `greenfield-architect` | Archie負責系統架構 | ledger 治理骨架不等於系統架構 |
 | `loop-executor` | Mark／Tracey／Archie | 一張任務卡、一個 scope，寫入走網關 |

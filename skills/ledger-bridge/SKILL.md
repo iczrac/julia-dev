@@ -116,7 +116,7 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 | ledger 側 | julia-dev 側 | 纪律 |
 |-----------|--------------|------|
 | `expert-router` | Luca＋Julia | 唯讀路由，不寫 |
-| `intent-restate` | Julia Phase 0＋Rick任務契約 | 接受標準要碼化 |
+| `intent-restate` | Julia Phase 0＋Remy任務契約 | 接受標準要碼化 |
 | `project-archaeologist` | Tracey | 源碼盤點可作為草稿素材，不覆蓋既有治理檔 |
 | `greenfield-architect` | Archie | 治理骨架不等於系統架構 |
 | `loop-executor` | Mark／Tracey／Archie | 一卡一 scope，寫入走網關 |
@@ -130,7 +130,7 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 
 | Julia 階段 | 橋接動作 |
 |-----------|----------|
-| Phase 0 | 人話 → `intent.json`；缺欄位就請Rick補 |
+| Phase 0 | 人話 → `intent.json`；缺欄位就請Remy補 |
 | Phase 0.5 | 復述門／路由／編排；`blocked` 就停 |
 | Workflow S | `next_queue` → 任務圖；保留 `dependsOn` 與 `measurements[]` |
 | Phase 4 | Vera證據 → `evidence_tier`／`binding_status`／`verify_ledger` |
@@ -152,11 +152,11 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 
 ## 解阻（Andon）
 
-停不是終點。每次 fail-closed 停下，必須向主理人回傳**解阻清單**：阻塞原因、誰能解（人／Rick補 `open_questions`／Luca重路由）、所需動作、已嘗試步驟。按情況處理：
+停不是終點。每次 fail-closed 停下，必須向主理人回傳**解阻清單**：阻塞原因、誰能解（人／Remy補 `open_questions`／Luca重路由）、所需動作、已嘗試步驟。按情況處理：
 
 | 情況 | 解阻動作 |
 |------|---------|
-| 復述門非 `allow` | 請Rick補齊 `open_questions` 後重跑**一次**；仍非 `allow` → Andon 給使用者 |
+| 復述門非 `allow` | 請Remy補齊 `open_questions` 後重跑**一次**；仍非 `allow` → Andon 給使用者 |
 | `route.blocked` 或 `confidence=low` | 補 `intent.json` 或請人裁決；不得猜測派遣 |
 | `verify_ledger` fail | 交Vera修測試或請人裁決；不得軟化結論 |
 | `evidence_binding.inputs=0` | 補齊新鮮證據後重算；在此之前只能稱 `declared` |

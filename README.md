@@ -1,12 +1,14 @@
 # 主理呀開發團 (Julia Dev Squad)
 
+> **語言 / Language**：繁體中文（本檔）· [English](docs/README.en.md) · [简体中文](docs/README.zh-Hans.md)
+
 團隊名取自主理人Julia的諧音「主理呀」——先辨析任務、再編排流程、最後交付。英文保留 Julia 作為花名，改用 Squad 強調這是一支團隊，也避免被誤讀為 Julia 程式語言開發。
 
 由Julia統籌的全方位軟體開發專家團。不論是源碼逆向、從零建置、加功能、修 bug、重構、審查、遷移、串接第三方、數據／AI 應用或交付簡報，都會先辨析任務類型，再調度最合適的團隊流程交付。
 
 ## 類型
 
-Team 型（多角色協作團隊）· 版本 1.10.9 · 11 位成員
+Team 型（多角色協作團隊）· 版本 1.10.10 · 11 位成員
 
 ## 成員與命名巧思
 
@@ -73,7 +75,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 **版本選型**：v9（7 模型，單體同步，最適合 AI 穩定出碼）用於實際落地；v6（11 模型，含事件／介面／持久化映射）用於理解全貌與複雜整合。
 
-方法論已接入五位成員：Rick標注驗收對應的操作功能點、Archie產出正交模型、Mike做模型到程式碼映射、Vera做追溯門禁驗證。完整方法論見 `skills/ontology-modeling/SKILL.md`，署名與授權見同目錄 `ATTRIBUTION.md`。
+方法論已接入五位成員：Remy標注驗收對應的操作功能點、Archie產出正交模型、Mark做模型到程式碼映射、Vera做追溯門禁驗證。完整方法論見 `skills/ontology-modeling/SKILL.md`，署名與授權見同目錄 `ATTRIBUTION.md`。
 
 ## 選配管線：本體驅動端到端開發
 
@@ -83,7 +85,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - **人工確認門禁**：每階段用固定格式提問並硬暫停等確認；A 類自動補全、B 類（企業專屬）必須確認，有 `[待確認]` 不得標記完整
 - **10 步構建流水線**：從七模型 YAML 到 DDL、服務層、權限、流程引擎、頁面路由、AI 對話框（含唯讀 SQL 安全邊界）、全鏈路聯調與驗收
 
-觸發方式：直接說「幫我開發一個 XX 管理系統」或「做本體驅動開發」，主理人會走 **Workflow L**：Rick需求探索和人工確認 → Archie七模型 → Mike構建 `code-app/` → Vera追溯驗收。
+觸發方式：直接說「幫我開發一個 XX 管理系統」或「做本體驅動開發」，主理人會走 **Workflow L**：Remy需求探索和人工確認 → Archie七模型 → Mark構建 `code-app/` → Vera追溯驗收。
 
 兩個 Skill 分工：`ontology-modeling` 管建模細節，`ontology-driven-dev` 管端到端管線與工程落地。技術底座原始碼不內嵌，使用時從原始 repo 取得。
 
@@ -116,7 +118,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - **stale_after 時效**：用絕對時間點判定過期，可機械比較；沒有已知複查週期就省略，不臆造日期。
 - **可驗證計算**：agent 只能填參數、不能改公式；consumer 用確定性 attester 比對回執。這把幻覺防護從提示詞紀律升級為機械契約，也讓Vera的 `PASS/FAIL` 有可計算的依據。
 
-`llm-knowledge-base` 與 OKF **明確分工**：前者管「如何從文章萃取場景／概念／實體」，後者管「知識如何持久化、交換與取信」。Mike萃取後交給Kona補齊溯源與信任欄位，不重複做同一件事。原始 repo 的 Python 腳本不內嵌，署名見各 Skill 的 `ATTRIBUTION.md`。
+`llm-knowledge-base` 與 OKF **明確分工**：前者管「如何從文章萃取場景／概念／實體」，後者管「知識如何持久化、交換與取信」。Mark萃取後交給Knox補齊溯源與信任欄位，不重複做同一件事。原始 repo 的 Python 腳本不內嵌，署名見各 Skill 的 `ATTRIBUTION.md`。
 
 ### 嚴謹工程與可驗證交付：pstack
 
@@ -226,7 +228,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - **系統級安全清單**：上線前由Vera跑 secrets／依賴許可證／PII／權限／威脅建模／無障礙六項檢查，🔴 未釋清Ship不得落地；威脅建模摘要是Archie設計文件的必含節
 - **環境腳本有主**：launch／doctor／drive／evidence 等環境與取證腳本由 Mark 長期維護，環境故障先修腳本，不作為驗證藉口
 - **受控自我進化**：成員提案、Ed 複核、人拍板、主理人執行；git commit 即回滾點，進化全程可追溯
-- **規劃期第一性原理分解**：Rick對每條需求標註「硬約束／慣例」歸類（慣例必附依據），Archie設計文件必含「基本事實表」（各註來源），類比式設計在規劃期即被攔截
+- **規劃期第一性原理分解**：Remy對每條需求標註「硬約束／慣例」歸類（慣例必附依據），Archie設計文件必含「基本事實表」（各註來源），類比式設計在規劃期即被攔截
 - **操作人模式可切換**：門外漢／標準／專家三檔，Phase 0 聲明、隨時切換；門外漢模式附白話摘要與行為驗收清單、技術決策代勞 opt-out；不可逆門禁與測試門任何模式都不放鬆
 - **門外漢模式五護欄**：模式探測（偏門外漢語言主動建議切換）、代勞決策清單（人話記錄、可逐條翻案）、人話交接卡（成品位置＋使用說明＋回訪召喚語）、快捷回覆提問（A/B 選項可一句答完）、「感覺不對」有效信號通道
 - **協作鐵律**：主理人親自建團、所有資訊經主理人中轉、團員不互相直連
@@ -271,6 +273,10 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 ```bash
 python3 scripts/register_expert.py <expert-dir>
 ```
+
+## 開發迭代史
+
+本專家包的進化全部來自四個渠道：使用者拍板、缺口評估走查、實測回灌、外部開源吸收，並一律走「提案 → Ed 複核 → 人拍板 → 主理人執行 → commit」的受控回路。從包建立期（v1.0–v1.8.x）、接縫修補（v1.9.0）、實測回灌（v1.9.1）、制度化期（v1.10.0–1.10.2）、可用性期（v1.10.3–1.10.5）、發行與治理期（v1.10.6–1.10.8）到命名與文檔期（v1.10.9–1.10.10）的完整敘事、各版本來源與歷史教訓清單，見 [`docs/iteration-history.md`](docs/iteration-history.md)；逐條變更記錄見 [`docs/evolution-log.md`](docs/evolution-log.md)。
 
 ## 致謝
 
