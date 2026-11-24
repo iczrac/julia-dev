@@ -6,7 +6,7 @@
 
 ## 類型
 
-Team 型（多角色協作團隊）· 版本 1.10.5 · 11 位成員
+Team 型（多角色協作團隊）· 版本 1.10.6 · 11 位成員
 
 ## 成員與命名巧思
 
@@ -271,6 +271,28 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 ```bash
 python3 scripts/register_expert.py <expert-dir>
 ```
+
+## 致謝
+
+本專家包是對下列開源專案方法論的**濃縮重述**，不是原始文件複製；每個派生 Skill 目錄下有獨立 `ATTRIBUTION.md` 記錄確切來源與授權條款。各來源專案依其自身授權（MIT／Apache 2.0／CC BY 4.0）持續有效，感謝原作者的開源貢獻：
+
+| 來源專案 | 作者／持有者 | 授權 | 吸收為 |
+|----------|-------------|------|--------|
+| [pstack](https://github.com/cursor/plugins/tree/main/pstack) | Lauren Tan | MIT | pstack-principles／playbooks／verification／parallel-review |
+| [orchestrate](https://github.com/cursor/plugins/tree/main/orchestrate)、[ralph-loop](https://github.com/cursor/plugins/tree/main/ralph-loop)、[cursor-team-kit](https://github.com/cursor/plugins/tree/main/cursor-team-kit) | Cursor | MIT | structured-orchestration |
+| [thermos](https://github.com/cursor/plugins/tree/main/thermos)、[dyl-stack](https://github.com/cursor/plugins/tree/main/dyl-stack) | Cursor／Dylan Gattey | MIT | deep-diff-review |
+| [advisor](https://github.com/cursor/plugins/tree/main/advisor)、dyl-stack | Cursor／Dylan Gattey | MIT | decision-gates |
+| [cli-for-agent](https://github.com/cursor/plugins/tree/main/cli-for-agent) | Eric Zakariasson | MIT | agent-friendly-cli |
+| [ontology-driven-dev](https://github.com/sharptoolbox/ontology-driven-dev) | sharptoolbox | MIT | ontology-driven-dev |
+| [codebase-reverse](https://github.com/sharptoolbox/codebase-reverse) | sharptoolbox | MIT | codebase-reverse |
+| [LLM-knowledgeBase](https://github.com/sharptoolbox/LLM-knowledgeBase) | sharptoolbox | MIT | llm-knowledge-base |
+| [ontology_modeling_framework](https://github.com/sharptoolbox/ontology_modeling_framework) | sharptoolbox（@人月聊IT） | Apache 2.0 | ontology-modeling |
+| [open-knowledge-format](https://github.com/open-knowledge-format/open-knowledge-format) | open-knowledge-format contributors（Google） | Apache 2.0 | okf-format／generate／consume |
+| [visual-model](https://github.com/sharptoolbox/visual-model) | sharptoolbox | CC BY 4.0 | visual-model |
+| [consulting-html-ppt](https://github.com/sharptoolbox/consulting-html-ppt) | sharptoolbox | 未宣告授權 | consulting-html-ppt（僅吸收方法要點，未複製模板或素材） |
+| [ledger-driven-dev](https://github.com/iczrac/ledger-driven-dev) | iczrac | MIT | ledger-bridge＋Luca 角色 |
+
+`self-evolution` Skill、操作人模式與門外漢護欄為本專家包原創。本專家包自身以 MIT 授權發布，見根目錄 `LICENSE`。
 
 ## 打包分享
 
