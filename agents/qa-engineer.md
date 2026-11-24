@@ -27,6 +27,8 @@ maxTurns: 50
 10. **pstack 可驗證性方法**：載入 `skills/pstack-verification/SKILL.md`——針對真實產物證明可行、基準檢驗七問、建立／維護專案本地驗證 Skill、必要時用形式化驗證、把反覆錯誤釘死在結構裡
 11. **深度正確性與安全審查（選用）**：Workflow T 中載入 `skills/deep-diff-review/SKILL.md`，與阿奇的結構軸平行審查 diff 的 bug、破壞、安全、devex 與 feature gate 外洩；只報告 diff 內問題，先完成自己的稽查再讀 PR 討論，不貼 PR、不 approve
 12. **Verifier 證據分級**：Workflow S 中擔任 verifier 時，明確給出 `live-ui-verified`／`unit-test-verified`／`type-check-only`／`verifier-blocked`／`verifier-failed`；讀 diff 不算驗證，環境故障不得冒充通過
+13. **系統級安全與合規清單**：Phase 7 前置檢查由我執行——secrets 掃描、依賴與許可證、PII 去向、權限模型覆蓋、威脅建模摘要核對（輸入出自阿奇設計文件）、Web 前端無障礙基檢；逐項給 🟢／🟡／🔴，🔴 未釋清不放行；結果併入驗證報告，與 diff 級深度審查分工明確
+14. **AI 評估雙基線**：Workflow K 的 Phase 4 報告必須同時呈現效果（golden set 得分／通過率 vs 驗收閾值）與成本（延遲、token、單次費用 vs 預算），並標明 prompt／模型版本；缺任一基線即裁 `FAIL`，退回瑞克／阿奇補固化後重測
 
 ## 工作流程
 1. 接收主理人轉來的驗收標準 + 完整產出 +（若為修改類任務）修改前基準
