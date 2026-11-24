@@ -1,7 +1,7 @@
 {
   "name": "julia-dev",
-  "version": "1.5.0",
-  "description": "A full-spectrum software development team with source reverse engineering, consulting-style delivery decks and trustable OKF knowledge bundles, routed by task type.",
+  "version": "1.6.0",
+  "description": "A full-spectrum software development team with rigorous engineering playbooks, source reverse engineering, delivery decks, trustable OKF knowledge bundles and verified releases.",
   "author": {
     "name": "WorkBuddy User",
     "email": "user@workbuddy.local"
@@ -14,7 +14,8 @@
     "./agents/qa-engineer.md",
     "./agents/reverse-engineer.md",
     "./agents/delivery-designer.md",
-    "./agents/knowledge-curator.md"
+    "./agents/knowledge-curator.md",
+    "./agents/release-engineer.md"
   ],
   "expertType": "team",
   "agentName": "julia-dev-team-lead",
@@ -27,7 +28,8 @@
       "qa-engineer",
       "reverse-engineer",
       "delivery-designer",
-      "knowledge-curator"
+      "knowledge-curator",
+      "release-engineer"
     ]
   },
   "displayName": {
@@ -39,8 +41,8 @@
     "zh": "茱莉亞開發團隊"
   },
   "displayDescription": {
-    "en": "Julia's full-spectrum dev team covers reverse engineering, builds, debugging, refactoring, migration, AI, decks and trustable knowledge bundles.",
-    "zh": "茱莉亞全能開發團，涵蓋逆向、新建、除錯、重構、遷移、AI、簡報與可信知識庫，按任務切換流程交付。"
+    "en": "Julia's full-spectrum dev team covers reverse engineering, builds, debugging, refactoring, migration, AI, decks, trusted knowledge and verified releases.",
+    "zh": "茱莉亞全能開發團，涵蓋逆向、新建、除錯、重構、遷移、AI、簡報、知識與發布，按任務切換流程交付。"
   },
   "avatar": "avatars/team.png",
   "categoryId": "02-Engineering",
@@ -59,8 +61,8 @@
       "zh": "源碼逆向"
     },
     {
-      "en": "Trustable Knowledge",
-      "zh": "可信知識"
+      "en": "Verified Delivery",
+      "zh": "可驗證交付"
     }
   ],
   "quickPrompts": [
@@ -69,8 +71,8 @@
       "zh": "我有一個開發需求，請判斷類型並用合適的流程交付。"
     },
     {
-      "en": "Reverse engineer this legacy codebase into a complete traceable meta-model.",
-      "zh": "把這份舊程式碼逆向成完整可追溯的功能與資料庫元模型。"
+      "en": "Fix this bug rigorously: reproduce first, find the root cause, then show failing-to-passing evidence.",
+      "zh": "用嚴謹工程流程修這個 bug：先重現、找根因，再給我失敗到通過的證據。"
     },
     {
       "en": "Build an OKF knowledge bundle and tell me how much each concept can be trusted.",
@@ -180,6 +182,19 @@
         "zh": "知識管理師"
       },
       "avatar": "avatars/knowledge-curator.png",
+      "role": "member"
+    },
+    {
+      "id": "release-engineer",
+      "displayName": {
+        "en": "Ship",
+        "zh": "席普"
+      },
+      "profession": {
+        "en": "Release Engineer",
+        "zh": "發布工程師"
+      },
+      "avatar": "avatars/release-engineer.png",
       "role": "member"
     }
   ]

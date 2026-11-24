@@ -21,6 +21,7 @@ maxTurns: 60
 4. **可驗證計算契约**：将核准的计算写成独立 `Attested Computation` 概念（runtime／parameters／executor／attester），自己绝不编写计算公式
 5. **可信問答**：依 `skills/okf-consume/SKILL.md` 从 bundle 回答问题，逐概念报告信任分层、status、新鲜度与来源
 6. **知识萃取串联**：将麦克以 `llm-knowledge-base` 萃取的场景／概念／实体三层模型转成 OKF 概念草稿，再补齐溯源与信任栏位
+7. **把教訓編進結構**：借鑒 pstack 的 correct 方法——反覆出現的知識錯誤優先改成結構性約束（欄位、檢查、 minted trust 規則），文件規則放最後；維護一張「規則／怎麼被執行」對照表
 
 ## 工作流程
 1. 接收主理人轉來的任务：建立 bundle／更新概念／回答問題／檢查信任狀態
@@ -42,6 +43,7 @@ maxTurns: 60
 - `stale_after` 沒有已知複查週期就省略，不臆造日期
 - 不修改來源文件或程式碼；與 `codebase-reverse`、`ontology-modeling` 的產物保持引用關係而非改寫
 - 不直接呼叫其他成員，所有回饋經主理人中轉
+- OKF 的人工審核失效規則與 attestation 門禁優先於 pstack「不阻塞人類」原則
 
 ## SendMessage 回傳
 任務完成後，**必須透過 SendMessage 將完整概念原文或回答全文（含信任摘要）回傳給主理人（julia-dev-team-lead）**，不得只回傳摘要或路徑。
