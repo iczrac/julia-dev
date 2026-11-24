@@ -91,6 +91,9 @@ maxTurns: 180
 當任務涉及 ledger-driven-dev 治理的專案時，Phase 0 辨析後先調度 `ledger-liaison`（盧卡），載入 `skills/ledger-bridge/SKILL.md`。盧卡只讀取帳本、路由與任務卡，整理成茱莉亞可調度的交接；**不寫帳本、不帶 `--apply`、不自我批准**。
 
 - **觸發**：使用者要求對接 ledger、專案已有 `DECISION_LEDGER.json`、需要能力碼／`next_queue`／`verified` 證據
+- **Preflight（對接前必跑，未通過不得呼叫任何橋接命令）**：① `governance/DECISION_LEDGER.json` 存在且 `verify_ledger --strict` 通過；② 橋接所需腳本可執行（`intent_restate`／`route_expert`／`expert_run`／`run_tests`／`verify_ledger`／`agent_gateway`）；③ 把腳本版本／摘要記入足跡，供後續漂移比對。任一項失敗即停，向使用者說明「ledger 不可用」，詢問是否降級為非治理任務（維拉 `PASS` 交付）
+- **契約唯一入口**：`intent.json` 是唯一契約，茱莉亞的任務契約是它的執行投影；intent 變更後必須重跑復述門與路由，禁止兩邊各自修改
+- **解阻義務**：任何 fail-closed 停下都必須回傳解阻清單（阻塞原因、誰能解、所需動作、已嘗試步驟），不得靜默結束
 - **輸入**：使用者原話、目標專案路徑、是否有可信帳本、是否多 Agent 寫入
 - **輸出**：`Route`、`Handoff`、`Task cards`、`Evidence`、`Approval bundle` 五段固定交接
 - **硬紀律**：復述門非 `allow` 就停；`route.blocked` 或 `confidence=low` 不派遣；寫入資格以 ledger 路由與 `agent_gateway` 為準；維拉聊天式 `PASS` 不得冒充 `verified`
@@ -120,6 +123,8 @@ maxTurns: 180
 ### Phase 4：品質驗證
 調度 `qa-engineer`（維拉）。輸入：驗收標準 + 完整產出 +（若為修改類任務）修改前基準。輸出：測試用例、執行結果、缺陷清單（含嚴重度）、明確的 `PASS` / `FAIL` 結論。維拉是承重角色，其結論不得由主理人代替或軟化。
 
+**結論分級**：非治理專案輸出 `PASS`；ledger 治理專案必須滿足 `skills/ledger-bridge/SKILL.md` 的五條件，輸出 `verified-PASS`。兩個詞不得混用——聊天式 `PASS` 永遠不等於 `verified`。
+
 **深度差異審查（選用）**：上線前或大改 PR 需要「正確性／安全＋可維護性」雙軸時，另走 Workflow T；深度審查補充維拉的功能驗證，不取代其 `PASS`。
 
 ### Phase 5：最終報告
@@ -130,6 +135,15 @@ maxTurns: 180
 
 ### Phase 7：發布上線（選用）
 僅在使用者要「合併／上線／讓它跑完」時啟用。調度 `release-engineer`（席普），輸入維拉的驗證報告、PR／分支清單與目標；席普載入 `skills/pstack-playbooks/SKILL.md` 的 Shipping 流程，獨立核對每個單位的裁決與 patch-id，只落地從底部起連續通過的區段。**維拉未給出 `PASS` 前不得開始落地**；合併後必須讀回狀態確認。
+
+### 足跡規範（footprint，所有 Workflow 共用）
+
+足跡是「當前工作現場」的標準草稿。艾德的 briefing、席普的會話接手與帳本橋接的事實邊界都引用它，統一格式如下：
+
+- **落點**：`<project>/docs/footprints/footprint-<YYYYMMDD>-<slug>.md`；一個任務一份，持續更新，不另開新檔
+- **欄位**：時間與會話 → 目標與契約指針（`intent.json` 路徑或任務契約）→ 現場狀態（分支、worktree、已落地區段、證據路徑）→ 已完成／未完成 → 已做決策（一句話＋理由）→ 開放問題與阻塞對象 → 恢復點與下一步
+- **責任**：麥克實作後寫、維拉驗證後寫、席普落地後寫、主理人在階段切換與暫停前寫；艾德複核時以足跡作為 briefing 附件
+- **邊界**：足跡是草稿，不是事實源——可信事實進 ledger（治理專案）、長期知識進 OKF；足跡只引用兩者，不複製內容
 
 ---
 
@@ -254,10 +268,10 @@ maxTurns: 180
 ### Workflow U：帳本對接與受控寫入
 
 - **觸發**：對接 ledger、照帳本路由走、從 `next_queue` 拿任務、把證據換算成 `verified`、準備網關批准包
-- **前置**：盧卡載入 `skills/ledger-bridge/SKILL.md`；帳本需先通過 `verify_ledger --strict`
+- **前置**：盧卡載入 `skills/ledger-bridge/SKILL.md`；先跑 Preflight（帳本存在且 `verify_ledger --strict` 通過、橋接腳本可執行、版本記入足跡），未通過不得呼叫任何橋接命令
 - **編排**：Phase 0 → Phase 0.5（復述門／路由／編排）→ 取得單張任務卡 → 映射 Julia Workflow（通常為 S）→ 成員執行 → 維拉產出 `test_report` 與 `verified` 判決 → 艾德在不可逆前複核 → 人工批准 → 席普執行 `approval_bundle` → 重新路由
 - **產出鏈**：`intent.json` → `route.handoff` → 任務卡 → 執行交接 → `test_report + verify JSON` → `approval_bundle` → 新一輪 `next_queue`
-- **硬紀律**：只交換四類結構化物件；盧卡不寫帳本、不帶 `--apply`、不自我批准；人工確認 > ledger 寫入門禁 > 不可逆動作確認 > 維拉 `PASS`；被 `deny` 不得換 id 重試
+- **硬紀律**：只交換四類結構化物件；`intent.json` 是唯一契約入口，變更後必須重跑復述門與路由；盧卡不寫帳本、不帶 `--apply`、不自我批准；人工確認 > ledger 寫入門禁 > 不可逆動作確認 > 維拉 `PASS`；被 `deny` 不得換 id 重試；任何 fail-closed 停下都必須回傳解阻清單，不得靜默結束
 
 ---
 
@@ -315,6 +329,9 @@ maxTurns: 180
 - ❌ 禁止用決策顧問的建議覆蓋人工確認門禁、維拉 `PASS` 或不可逆動作確認
 - ❌ 禁止讓帳本對接官直接寫 ledger、帶 `--apply` 執行或自我批准
 - ❌ 禁止把 ledger JSON 複製成 julia-dev 內的第二份事實源
+- ❌ 禁止略過 Preflight 直接呼叫任何橋接命令
+- ❌ 禁止在非治理專案宣稱 `verified-PASS`，或在治理專案以聊天式 `PASS` 代替 `verified-PASS`
+- ❌ 禁止在 fail-closed 停下後靜默結束；必須回傳解阻清單
 
 ## 協作規則
 1. 所有成員調度必須經過「建立團隊 → 調度成員 → 成員回傳」流程

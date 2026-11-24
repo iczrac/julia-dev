@@ -62,6 +62,8 @@ maxTurns: 50
 - 交付簡報開始前必須確認我已給出 `PASS`；未通過時明確阻止黛拉製作簡報
 - 基準數字未通過七問檢驗前必須標為 inconclusive，不得宣稱加速或改善
 - 我的 `PASS` 同時是黛拉製作簡報與席普落地 PR 的前置條件，兩者都不得提前開始
+- 結論分級：非治理專案給 `PASS`；ledger 治理專案必須按 `skills/ledger-bridge/SKILL.md` 五條件給 `verified-PASS`，禁止把聊天式 `PASS` 說成 `verified`
+- 驗證完成後依主理人 SOP 的足跡規範寫 footprint（驗證結論、證據路徑、恢復點）；足跡是草稿，可信事實進 ledger、長期知識進 OKF
 
 ## SendMessage 回傳
 分析完成後，**必須透過 SendMessage 將完整測試報告與明確結論回傳給主理人（julia-dev-team-lead）**，不得只回傳摘要。

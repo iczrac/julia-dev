@@ -6,7 +6,7 @@
 
 ## 類型
 
-Team 型（多角色協作團隊）· 版本 1.8.0 · 11 位成員
+Team 型（多角色協作團隊）· 版本 1.9.0 · 11 位成員
 
 ## 成員與命名巧思
 
@@ -183,6 +183,20 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 **ledger-driven-dev 倉庫本身零改動**：不改 schema、不改 31 條不變量、不加新專家、不複製 24 個 Skill。需要在目標專案做的是一次性的治理接入：能力碼、`verify_ledger`、Agent 註冊與測試證據綁定。
 
 門禁優先序：**人工確認 > ledger 寫入門禁 > 不可逆動作確認 > 維拉 `PASS` > 其餘可逆工作**。盧卡只讀、只翻譯、只準備；不得帶 `--apply` 執行寫入，也不得把 ledger JSON 複製成 julia-dev 內的第二份事實源。方法論濃縮見 `skills/ledger-bridge/SKILL.md`，授權見同目錄 `ATTRIBUTION.md`。
+
+## v1.9.0：接縫修補
+
+協作落地後的缺口再評估發現，問題已從「能力不足」轉為「接縫與可運行性」。本版在不加成員、不加 Workflow 的前提下補上五項機制：
+
+| 機制 | 解決的缺口 | 落點 |
+|------|-----------|------|
+| **足跡規範（footprint）** | 三處引用足跡卻無格式、無落點、無責任人 | 主理人 SOP「足跡規範」＋維拉／席普／艾德 MD |
+| **契約唯一入口** | `intent.json` 與茱莉亞任務契約雙寫，誰為準未定 | Phase 0.5＋Workflow U＋ledger-bridge 硬規則 8 |
+| **PASS 分級** | 聊天式 `PASS` 與 ledger `verified` 混用導致含金量通脹 | Phase 4＋ledger-bridge 硬規則 10；治理專案一律 `verified-PASS` |
+| **解阻（Andon）** | fail-closed 一路「停」，但停了之後無恢復路徑 | ledger-bridge「解阻」節＋嚴禁行為；卡兩次必須向使用者 Andon |
+| **Preflight** | 橋接命令依賴目標專案安裝的 ledger 腳本，版本漂移無前置檢查 | Phase 0.5＋Workflow U 前置＋ledger-bridge「Preflight」節 |
+
+足跡與 ledger、OKF 的分工固定為：**ledger＝專案事實源，OKF＝外部知識可信層，footprint＝當前工作現場草稿**；三者不互相複製，足跡只引用前兩者。
 
 ## 功能
 

@@ -20,6 +20,13 @@
 | 路由邊界 | ledger 決定「誰有資格寫」，Julia 決定「誰來執行」。衝突時寫入資格以 ledger 為準 |
 | 寫入邊界 | 橋接角色不直接寫帳本；寫入只經 `agent_gateway`，且必須有人批准本輪授權 |
 
+## Preflight（對接前檢查，未通過不得呼叫任何橋接命令）
+
+1. **帳本可信**：`governance/DECISION_LEDGER.json` 存在，且 `verify_ledger.py --strict` 無 fail
+2. **腳本可用**：`intent_restate`／`route_expert`／`expert_run`／`run_tests`／`verify_ledger`／`agent_gateway` 都能執行（`--help` 不報缺模組）；腳本不在包內，依賴目標專案安裝的 ledger 版本
+3. **版本留痕**：把 ledger 腳本版本／`method_assets` 摘要寫入足跡，後續每次對接先比對；漂移即重新路由，不沿用舊裁決
+4. **失敗降級**：任一項失敗即停，向使用者說明「ledger 不可用」，詢問是否降級為非治理任務（維拉 `PASS` 交付）
+
 ## 四個交接對象
 
 ### 1. `intent.json`
@@ -132,6 +139,19 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 | `agent_gateway` deny | 停，不改 id 重試 |
 | ledger 版本／摘要漂移 | 重新路由，不沿用舊裁決 |
 
+## 解阻（Andon）
+
+停不是終點。每次 fail-closed 停下，必須向主理人回傳**解阻清單**：阻塞原因、誰能解（人／瑞克補 `open_questions`／盧卡重路由）、所需動作、已嘗試步驟。按情況處理：
+
+| 情況 | 解阻動作 |
+|------|---------|
+| 復述門非 `allow` | 請瑞克補齊 `open_questions` 後重跑**一次**；仍非 `allow` → Andon 給使用者 |
+| `route.blocked` 或 `confidence=low` | 補 `intent.json` 或請人裁決；不得猜測派遣 |
+| `verify_ledger` fail | 交維拉修測試或請人裁決；不得軟化結論 |
+| `evidence_binding.inputs=0` | 補齊新鮮證據後重算；在此之前只能稱 `declared` |
+| `agent_gateway` deny | 停，回到 `route_expert` 或請人裁決；**禁止換 id、換動作重試** |
+| 同一阻塞卡兩次 | 主理人向使用者 Andon：事實／選項／建議／需要的決定，四段固定格式 |
+
 ## 硬規則
 
 1. 盧卡只讀、只翻譯、只準備；不寫帳本、不開 PR、不合併、不批准。
@@ -141,3 +161,6 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 5. 人工確認門禁 > ledger 寫入門禁 > 不可逆動作確認 > 維拉 `PASS` > 其餘可逆工作。
 6. 任何 `--apply`、`register`、`unfreeze`、`archive` 都屬批准包，不是橋接角色可自行執行的命令。
 7. 所有交接經茱莉亞中轉，團員不互相直連。
+8. `intent.json` 是唯一契約入口；茱莉亞的任務契約是它的執行投影。intent 變更後必須重跑復述門與路由，禁止兩邊各自修改。
+9. 對接前必須先跑 Preflight；未通過不得呼叫任何橋接命令。
+10. 治理專案內維拉的結論必須是 `verified-PASS`（五條件全過）；`PASS` 與 `verified-PASS` 不得混用。
