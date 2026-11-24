@@ -98,8 +98,8 @@ def write_readme(dest: Path, title: str, body: str):
 def build_claude_code(members, meta):
     out = DIST / "claude-code"
     (out / ".claude-plugin").mkdir(parents=True, exist_ok=True)
-    (out / "agents").mkdir(exist_ok=True)
-    (out / "commands").mkdir(exist_ok=True)
+    (out / "agents").mkdir(parents=True, exist_ok=True)
+    (out / "commands").mkdir(parents=True, exist_ok=True)
 
     plugin = {
         "name": "julia-dev",
@@ -185,8 +185,19 @@ SOLO_MASTER = """# julia-dev · Solo 形態總綱（AGENTS.md）
 | 重構優化 | Archie（現況＋優化設計）→ Mike → Vera（效能對比＋回歸） |
 | 測試補齊 | Rick（驗收標準）→ Vera（測試設計執行） |
 | 源碼逆向 | Tracey（B0–B9 全量基線）→ Vera（覆蓋對帳）→ 彙編 |
+| 帳本對接 | Luca 帽（Preflight → 復述門 → 路由 → 執行 → `run_tests.py` 產證 → 批准包） |
 
 規劃期第一性原理門（全新開發與大型功能增強適用）：Rick 帽階段對每條需求標註「硬約束／慣例」歸類（慣例必附依據）；Archie 帽階段設計文件必含「基本事實表」（3–5 條各註來源）。
+
+## 帳本對接帽（Luca）
+
+操作人要求對接 ledger、專案存在 `governance/DECISION_LEDGER.json`、或任務需要能力碼／`next_queue`／`verified` 證據時，進入 Luca 帽，**先讀 `skills/ledger-bridge/SKILL.md` 全文**再動作：
+
+1. **Preflight（每次會話接手都重跑，從第 0 步起）**：骨架就緒 → 帳本 `verify_ledger --strict` 無 fail → 六個腳本可執行 → 版本留痕進足跡 → 綁定預檢（`tests/unit/`／`__init__.py`／sys.path 深度三坑）。任一失敗即停，回解阻清單
+2. **復述門與路由**：人話需求轉 `intent.json`（唯一契約入口）；復述門非 `allow`、路由 `blocked` 或 `confidence=low` 一律不派遣
+3. **產證**：治理專案 Phase 4 必須經 `run_tests.py` 產證，結論只能是 `verified-PASS`；聊天式 PASS 不得冒充 verified
+4. **寫入**：只經 `agent_gateway`，且必須操作人批准本輪授權後才可 `--apply`；`deny` 不得換 id、換動作重試
+5. **經驗對照**：任務卡經驗與現有 Skill 衝突或重複 ≥2 次時，在交接末尾附進化提案線索（不修改檔案）
 
 ## 操作人模式（隨時可切）
 
@@ -276,7 +287,7 @@ alwaysApply: true
 def build_cursor(members, meta):
     out = DIST / "cursor"
     (out / ".cursor" / "rules").mkdir(parents=True, exist_ok=True)
-    (out / "roles").mkdir(exist_ok=True)
+    (out / "roles").mkdir(parents=True, exist_ok=True)
 
     (out / ".cursor" / "rules" / "julia-dev.mdc").write_text(
         CURSOR_RULE, encoding="utf-8")
@@ -339,8 +350,8 @@ def main():
     members = load_members()
     print(f"canonical v{meta['version']} · {len(members)} agents · "
           f"{len(list(SKILLS_DIR.glob('*/SKILL.md')))} skills")
-    if DIST.exists():
-        shutil.rmtree(DIST)
+    # 原地覆蓋重建：不刪除既有 dist 檔案（確定性生成，覆蓋寫即可）；
+    # 若 canonical 刪除了某 Skill，需人工清掉 dist 中對應舊目錄
     build_claude_code(members, meta)
     build_agents_md(members, meta)
     build_cursor(members, meta)

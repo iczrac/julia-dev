@@ -1,6 +1,6 @@
 # julia-dev · Cursor 發行版（Solo 形態）
 
-版本 1.10.7。本目錄由 canonical 自動生成，**請勿手改**。
+版本 1.10.8。本目錄由 canonical 自動生成，**請勿手改**。
 
 ## 安裝
 

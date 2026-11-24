@@ -26,7 +26,8 @@
 1. **帳本可信**：`governance/DECISION_LEDGER.json` 存在，且 `verify_ledger.py --strict` 無 fail
 2. **腳本可用**：`intent_restate`／`route_expert`／`expert_run`／`run_tests`／`verify_ledger`／`agent_gateway` 都能執行（`--help` 不報缺模組）；腳本不在包內，依賴目標專案安裝的 ledger 版本
 3. **版本留痕**：把 ledger 腳本版本／`method_assets` 摘要寫入足跡，後續每次對接先比對；漂移即重新路由，不沿用舊裁決
-4. **失敗降級**：任一項失敗即停，向使用者說明「ledger 不可用」，詢問是否降級為非治理任務（Vera `PASS` 交付）
+4. **綁定預檢**：在跑測試前對照三個實測坑檢查測試結構——① 測試檔在 `tests/unit/`（不在 `tests/` 根）；② `src/` 各層有 `__init__.py`；③ 測試內 `sys.path` 深度與目錄層級一致。結構不對先修再跑，不要等 binding 失敗後回頭查
+5. **失敗降級**：任一項失敗即停，向使用者說明「ledger 不可用」，詢問是否降級為非治理任務（Vera `PASS` 交付）
 
 ## 四個交接對象
 
@@ -68,6 +69,7 @@ python3 scripts/work_panel.py --target <P> nodes --json
 - `missing_evidence` → `acceptance` 與 `verify`
 - `docs` → 必讀資料
 - `decisions` / `lessons` → 背景與前人踩過的坑
+- **經驗對照（進化觸發器）**：任務卡的經驗與 julia-dev 現有 Skill／成員規範衝突、或同一經驗重複出現 ≥2 次時，Luca 在交接末尾附**進化提案線索**（格式見 `skills/self-evolution/SKILL.md`；只提案線索，不修改任何檔案）
 - `target_level` → `definition_of_done`
 
 不要一次把多張卡塞進同一個 worker。
@@ -173,3 +175,5 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 8. `intent.json` 是唯一契約入口；Julia的任務契約是它的執行投影。intent 變更後必須重跑復述門與路由，禁止兩邊各自修改。
 9. 對接前必須先跑 Preflight；未通過不得呼叫任何橋接命令。
 10. 治理專案內Vera的結論必須是 `verified-PASS`（五條件全過）；`PASS` 與 `verified-PASS` 不得混用。
+11. 治理專案 Phase 4 **必須經 `run_tests.py` 產證**（輸出合乎 `ledger-test-report/1` 或合規適配格式）；Vera不得另起爐灶自帶方式跑測試後直接換算 tier——證據格式不符會讓 `evidence_binding` 失真。
+12. Preflight 對治理專案的**每次會話接手**都必須重跑（從第 0 步起）：帳本可能已被其他 agent 寫過，舊 Preflight 結論不得沿用。

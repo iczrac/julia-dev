@@ -26,7 +26,7 @@ description: "Controlled self-evolution loop: members propose capability-doc ame
 - 目標：擬修改的檔案與段落（精確到小節）
 - 修改內容：修改前 → 修改後的文字
 - 回滾方式：對應的還原操作（git revert 範圍）
-- 影響評估：影響哪些 Workflow／Skill／成員，是否觸碰禁區
+- 影響評估：影響哪些 Workflow／Skill／成員，是否觸碰禁區；**是否觸碰 ledger 契約**（改動 PASS 語義／證據格式／寫入邊界的提案必須註明受影響的能力碼與不變量，Ed複核時加查此項）
 - 建議版本：patch 版本號建議
 ```
 
