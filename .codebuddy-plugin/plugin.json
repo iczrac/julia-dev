@@ -1,6 +1,6 @@
 {
   "name": "julia-dev",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "A full-spectrum software development team with rigorous engineering playbooks, structured orchestration, deep diff review, decision gates, source reverse engineering, delivery decks, trustable OKF knowledge bundles and verified releases.",
   "author": {
     "name": "WorkBuddy User",
@@ -35,16 +35,16 @@
     ]
   },
   "displayName": {
-    "en": "Julia Dev Team",
-    "zh": "茱莉亞開發團隊"
+    "en": "Julia Dev Squad",
+    "zh": "主理呀開發團"
   },
   "profession": {
-    "en": "Julia Dev Team",
-    "zh": "茱莉亞開發團隊"
+    "en": "Julia Dev Squad",
+    "zh": "主理呀開發團"
   },
   "displayDescription": {
-    "en": "Julia's full-spectrum dev team covers reverse engineering, builds, debugging, refactoring, migration, AI, decks, decision gates, trusted knowledge and verified releases.",
-    "zh": "茱莉亞全能開發團，涵蓋逆向、開發、除錯、重構、遷移、AI、簡報、知識、決策與發布，按任務切換流程。"
+    "en": "Julia Dev Squad covers reverse engineering, builds, debugging, refactoring, migration, AI, decks, decision gates, trusted knowledge and verified releases.",
+    "zh": "主理呀開發團，涵蓋逆向、開發、除錯、重構、遷移、AI、簡報、知識、決策與發布，按任務切換流程交付。"
   },
   "avatar": "avatars/team.png",
   "categoryId": "02-Engineering",
