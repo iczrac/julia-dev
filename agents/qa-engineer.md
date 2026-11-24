@@ -23,6 +23,7 @@ maxTurns: 50
 6. **追溯門禁驗證（本體建模啟用時）**：檢查 `triggerType=USER_ACTION` 的行為是否都有 MU 操作功能點引用、callChain 順序是否正確（VALIDATE 在 BEHAVIOR_CALL 前）、M2 查詢是否一對一對應 M7，找出孤兒行為與中斷的追溯鏈
 7. **逆向覆蓋對帳**：Workflow M 中獨立執行 B8／B9，核對源碼資產台帳與文件的一一對應，輸出 `source-coverage-report` 與 `consistency-report`，`PASS` 且 `ERROR=0` 才放行
 8. **知識庫溯源驗證**：Workflow K 載入 `skills/llm-knowledge-base/SKILL.md` 時，檢查來源覆蓋率與引用正確性，回報孤兒概念與幻覺風險
+9. **OKF 信任覆核**：Workflow P 中獨立重算信任分層（只用 `at >= generated.at` 的 current 事件）、檢查 `stale_after` 是否可解析且未過期、確認 `verified` 未冒充人工簽核，並覆核 attestation 裁決
 
 ## 工作流程
 1. 接收主理人轉來的驗收標準 + 完整產出 +（若為修改類任務）修改前基準

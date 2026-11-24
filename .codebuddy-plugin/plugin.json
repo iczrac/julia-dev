@@ -1,7 +1,7 @@
 {
   "name": "julia-dev",
-  "version": "1.4.0",
-  "description": "A full-spectrum software development team with source reverse engineering and consulting-style delivery decks, routing every task type through adaptive workflows.",
+  "version": "1.5.0",
+  "description": "A full-spectrum software development team with source reverse engineering, consulting-style delivery decks and trustable OKF knowledge bundles, routed by task type.",
   "author": {
     "name": "WorkBuddy User",
     "email": "user@workbuddy.local"
@@ -13,7 +13,8 @@
     "./agents/engineer.md",
     "./agents/qa-engineer.md",
     "./agents/reverse-engineer.md",
-    "./agents/delivery-designer.md"
+    "./agents/delivery-designer.md",
+    "./agents/knowledge-curator.md"
   ],
   "expertType": "team",
   "agentName": "julia-dev-team-lead",
@@ -25,7 +26,8 @@
       "engineer",
       "qa-engineer",
       "reverse-engineer",
-      "delivery-designer"
+      "delivery-designer",
+      "knowledge-curator"
     ]
   },
   "displayName": {
@@ -37,8 +39,8 @@
     "zh": "茱莉亞開發團隊"
   },
   "displayDescription": {
-    "en": "Julia's full-spectrum dev team covers reverse engineering, builds, debugging, refactoring, review, migration, AI and delivery decks, routed by task type.",
-    "zh": "茱莉亞全能開發團，覆蓋逆向、新建、除錯、重構、審查、遷移、AI 與簡報，按任務類型切換流程交付。"
+    "en": "Julia's full-spectrum dev team covers reverse engineering, builds, debugging, refactoring, migration, AI, decks and trustable knowledge bundles.",
+    "zh": "茱莉亞全能開發團，涵蓋逆向、新建、除錯、重構、遷移、AI、簡報與可信知識庫，按任務切換流程交付。"
   },
   "avatar": "avatars/team.png",
   "categoryId": "02-Engineering",
@@ -57,8 +59,8 @@
       "zh": "源碼逆向"
     },
     {
-      "en": "Delivery Deck",
-      "zh": "簡報交付"
+      "en": "Trustable Knowledge",
+      "zh": "可信知識"
     }
   ],
   "quickPrompts": [
@@ -71,8 +73,8 @@
       "zh": "把這份舊程式碼逆向成完整可追溯的功能與資料庫元模型。"
     },
     {
-      "en": "Turn the verified deliverable into a consulting-style HTML presentation deck.",
-      "zh": "把驗證通過的成果做成一份諮詢風格的 HTML 簡報。"
+      "en": "Build an OKF knowledge bundle and tell me how much each concept can be trusted.",
+      "zh": "建立 OKF 知識 Bundle，並告訴我每個概念有多可信。"
     }
   ],
   "members": [
@@ -165,6 +167,19 @@
         "zh": "交付設計師"
       },
       "avatar": "avatars/delivery-designer.png",
+      "role": "member"
+    },
+    {
+      "id": "knowledge-curator",
+      "displayName": {
+        "en": "Kona",
+        "zh": "寇娜"
+      },
+      "profession": {
+        "en": "Knowledge Curator",
+        "zh": "知識管理師"
+      },
+      "avatar": "avatars/knowledge-curator.png",
       "role": "member"
     }
   ]

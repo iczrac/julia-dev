@@ -4,7 +4,7 @@
 
 ## 類型
 
-Team 型（多角色協作團隊）· 版本 1.4.0 · 7 位成員
+Team 型（多角色協作團隊）· 版本 1.5.0 · 8 位成員
 
 ## 成員與命名巧思
 
@@ -17,6 +17,7 @@ Team 型（多角色協作團隊）· 版本 1.4.0 · 7 位成員
 | qa-engineer | 維拉 Vera | 品質保證工程師 | verify——驗證的化身 |
 | reverse-engineer | 翠西 Tracey | 逆向工程師 | trace——追溯源碼，從入口追到資料庫 |
 | delivery-designer | 黛拉 Della | 交付設計師 | deck／deliver——做出可放映的交付簡報 |
+| knowledge-curator | 寇娜 Kona | 知識管理師 | know——知識的守護者，管溯源、信任與時效 |
 
 ## 任務類型與流程對照
 
@@ -38,6 +39,7 @@ Team 型（多角色協作團隊）· 版本 1.4.0 · 7 位成員
 | 接手舊專案／盤點程式碼 | 源碼逆向 | M 源碼逆向 |
 | 做成簡報／方案彙報 | 交付敘事 | N 交付敘事簡報 |
 | 畫架構圖／知識圖譜 | 可視化建模 | O 多視角建模 |
+| 建立知識庫／這個數字可信嗎 | OKF 知識管理 | P OKF 知識管理 |
 | 用什麼技術比較好 | 技術咨詢 | B 或直接問阿奇 |
 
 ## 適用專案型態
@@ -85,6 +87,26 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 | `consulting-html-ppt` | [consulting-html-ppt](https://github.com/sharptoolbox/consulting-html-ppt) · 未宣告授權 | 方案彙報、驗收簡報、可放映交付材料 | 黛拉 |
 | `llm-knowledge-base` | [LLM-knowledgeBase](https://github.com/sharptoolbox/LLM-knowledgeBase) · MIT | RAG 知識萃取、來源約束問答 | 麥克＋維拉 |
 
+### 完整融合：Open Knowledge Format（OKF）
+
+逆向文件、架構決策與指標定義最大的風險是**默默過時**——檔案還在，但已不可信。本版完整引入 [open-knowledge-format](https://github.com/open-knowledge-format/open-knowledge-format)（Apache-2.0，publisher: Google，v0.3）的三套 Skill：
+
+| Skill | 職責 |
+|-------|------|
+| `okf-format` | v0.3 格式規範：bundle 結構、frontmatter、溯源、信任分層、生命週期、可驗證計算 |
+| `okf-generate` | 建立／更新／遷移／修復／驗證 bundle 的六條鐵律與程序 |
+| `okf-consume` | 只讀問答，逐概念回報信任分層、status、新鮮度與來源 |
+
+新增第八位成員**寇娜 Kona（知識管理師）**主導 OKF 寫入與查詢，維拉獨立覆核信任分層與 attestation。
+
+**三個補上缺口的機制**：
+
+- **信任分層**：unverified／machine-confirmed／human-reviewed。關鍵紀律是「AI 改寫已人工審核的概念後，人工審核立即失效」——這正是多智能體協作最容易自欺的地方。
+- **stale_after 時效**：用絕對時間點判定過期，可機械比較；沒有已知複查週期就省略，不臆造日期。
+- **可驗證計算**：agent 只能填參數、不能改公式；consumer 用確定性 attester 比對回執。這把幻覺防護從提示詞紀律升級為機械契約，也讓維拉的 `PASS/FAIL` 有可計算的依據。
+
+`llm-knowledge-base` 與 OKF **明確分工**：前者管「如何從文章萃取場景／概念／實體」，後者管「知識如何持久化、交換與取信」。麥克萃取後交給寇娜補齊溯源與信任欄位，不重複做同一件事。原始 repo 的 Python 腳本不內嵌，署名見各 Skill 的 `ATTRIBUTION.md`。
+
 **設計取捨**：
 
 - **逆向是全量、深度可分层**：翠西先建立源碼資產台帳（B0–B9），再逐功能穿透到資料庫；維拉獨立做覆蓋對帳，未歸屬資產不放行。基線不全量就寫功能清單，是逆向最常見的失敗模式。
@@ -101,6 +123,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - **人工確認門禁**：Workflow L 的需求探索逐階段提問並暫停等確認，杜絕 AI 自行假設企業專屬規則
 - **源碼逆向**：Workflow M 全量基線＋功能穿透鏈＋覆蓋對帳，把隱藏功能與資料庫映射一併挖出
 - **交付敘事**：Workflow N 把驗證通過的成果做成動作式標題的單檔 HTML 簡報
+- **可信知識**：Workflow P 的 OKF bundle 讓每個概念都帶來源、信任層級與時效，拒絕靜默過時
 - **協作鐵律**：主理人親自建團、所有資訊經主理人中轉、團員不互相直連
 
 ## 使用示例
@@ -114,6 +137,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - 用本體驅動開發做一個合同管理系統，需求探索每個階段都要我確認。
 - 接手這個舊專案，幫我逆向出完整的功能清單、穿透鏈和資料庫表，還要找出沒有菜單的定時任務。
 - 把這次的交付成果做成一份 12 頁的諮詢風格 HTML 簡報，技術結論要標註來源。
+- 幫我建立一個 OKF 知識庫，並告訴我哪些概念未驗證或已經過期。
 
 ## 頭像
 
