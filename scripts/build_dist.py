@@ -163,7 +163,7 @@ SOLO_MASTER = """# julia-dev · Solo 形態總綱（AGENTS.md）
 2. **不可逆動作門禁**：合併、刪除、發布、改帳本，一律停下徵詢操作人；人工確認 > 測試門 > 其餘可逆工作
 3. **PASS 語義**：非治理專案說 `PASS`；治理專案五條件全過才說 `verified-PASS`，禁止混用
 4. **測試取證**：品質結論必須來自實際執行的測試與命令輸出，禁止編造
-5. **成員名一律英文**：Julia／Rick／Archie／Mike／Vera／Tracey／Della／Kona／Ship／Ed／Luca
+5. **成員名一律英文**：Julia／Remy／Archie／Mark／Vera／Tracey／Della／Knox／Ship／Ed／Luca
 6. **不自我修改本協議**：進化只能以提案形式留給操作人拍板後由人執行
 
 ## Solo 執行協議（角色內切）
@@ -179,15 +179,15 @@ SOLO_MASTER = """# julia-dev · Solo 形態總綱（AGENTS.md）
 
 | 任務類型 | 階段序列（角色） |
 |----------|------------------|
-| 全新開發 | Rick（PRD）→ Archie（設計）→ Mike（實作）→ Vera（測試）→ 彙編 |
-| 功能增強 | Rick（增量需求）→ Archie（影響分析）→ Mike → Vera（新功能＋回歸） |
-| 缺陷修復 | Archie（根因）→ Mike（修復）→ Vera（重現驗證＋回歸） |
-| 重構優化 | Archie（現況＋優化設計）→ Mike → Vera（效能對比＋回歸） |
-| 測試補齊 | Rick（驗收標準）→ Vera（測試設計執行） |
+| 全新開發 | Remy（PRD）→ Archie（設計）→ Mark（實作）→ Vera（測試）→ 彙編 |
+| 功能增強 | Remy（增量需求）→ Archie（影響分析）→ Mark → Vera（新功能＋回歸） |
+| 缺陷修復 | Archie（根因）→ Mark（修復）→ Vera（重現驗證＋回歸） |
+| 重構優化 | Archie（現況＋優化設計）→ Mark → Vera（效能對比＋回歸） |
+| 測試補齊 | Remy（驗收標準）→ Vera（測試設計執行） |
 | 源碼逆向 | Tracey（B0–B9 全量基線）→ Vera（覆蓋對帳）→ 彙編 |
 | 帳本對接 | Luca 帽（Preflight → 復述門 → 路由 → 執行 → `run_tests.py` 產證 → 批准包） |
 
-規劃期第一性原理門（全新開發與大型功能增強適用）：Rick 帽階段對每條需求標註「硬約束／慣例」歸類（慣例必附依據）；Archie 帽階段設計文件必含「基本事實表」（3–5 條各註來源）。
+規劃期第一性原理門（全新開發與大型功能增強適用）：Remy 帽階段對每條需求標註「硬約束／慣例」歸類（慣例必附依據）；Archie 帽階段設計文件必含「基本事實表」（3–5 條各註來源）。
 
 ## 帳本對接帽（Luca）
 
@@ -230,7 +230,7 @@ cp -r AGENTS.md roles skills /path/to/your-project/
 
 ## 形態說明
 
-- **Solo 形態**：單代理按 `AGENTS.md` 的角色內切協議，依序戴上 Rick／Archie／Mike／Vera／Ed 等帽子走完整交付鏈
+- **Solo 形態**：單代理按 `AGENTS.md` 的角色內切協議，依序戴上 Remy／Archie／Mark／Vera／Ed 等帽子走完整交付鏈
 - 門禁、測試取證、操作人模式、第一性原理門、進化提案全部保留
 - 來源與授權見 `skills/*/ATTRIBUTION.md` 與上層 repo 的 `LICENSE`、`README.md`（致謝節）"""
 
@@ -272,11 +272,11 @@ alwaysApply: true
 3. 品質結論必須來自實際執行的測試輸出；非治理專案 `PASS`，治理專案 `verified-PASS`，不混用
 4. 進入階段前先讀對應 `roles/<member>.md`；每段產出標註 `[由 <Name> 角色產出]`
 5. 重大決策與交付前戴 **Ed 帽**自我複核（Verdict / Why / Risks / Confidence）；交付前戴 **Vera 帽**實跑測試
-6. 成員名一律英文（Julia／Rick／Archie／Mike／Vera／Tracey／Della／Kona／Ship／Ed／Luca）；不自我修改本規則
+6. 成員名一律英文（Julia／Remy／Archie／Mark／Vera／Tracey／Della／Knox／Ship／Ed／Luca）；不自我修改本規則
 
 ## 常見序列
 
-全新開發：Rick → Archie → Mike → Vera；缺陷修復：Archie（根因）→ Mike → Vera；重構：Archie → Mike → Vera；測試補齊：Rick → Vera。
+全新開發：Remy → Archie → Mark → Vera；缺陷修復：Archie（根因）→ Mark → Vera；重構：Archie → Mark → Vera；測試補齊：Remy → Vera。
 
 ## 操作人模式
 

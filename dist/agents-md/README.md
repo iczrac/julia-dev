@@ -11,6 +11,6 @@ cp -r AGENTS.md roles skills /path/to/your-project/
 
 ## 形態說明
 
-- **Solo 形態**：單代理按 `AGENTS.md` 的角色內切協議，依序戴上 Rick／Archie／Mike／Vera／Ed 等帽子走完整交付鏈
+- **Solo 形態**：單代理按 `AGENTS.md` 的角色內切協議，依序戴上 Remy／Archie／Mark／Vera／Ed 等帽子走完整交付鏈
 - 門禁、測試取證、操作人模式、第一性原理門、進化提案全部保留
 - 來源與授權見 `skills/*/ATTRIBUTION.md` 與上層 repo 的 `LICENSE`、`README.md`（致謝節）

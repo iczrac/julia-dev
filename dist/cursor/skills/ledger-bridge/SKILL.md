@@ -119,12 +119,12 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 | `intent-restate` | Julia Phase 0＋Rick任務契約 | 接受標準要碼化 |
 | `project-archaeologist` | Tracey | 源碼盤點可作為草稿素材，不覆蓋既有治理檔 |
 | `greenfield-architect` | Archie | 治理骨架不等於系統架構 |
-| `loop-executor` | Mike／Tracey／Archie | 一卡一 scope，寫入走網關 |
+| `loop-executor` | Mark／Tracey／Archie | 一卡一 scope，寫入走網關 |
 | `evidence-auditor` | Vera | 只讀驗證，不自己修帳本 |
 | `ledger-steward` | 人工裁決；Ed只給建議 | 橋接角色不代寫決策或經驗 |
 | `release-steward` | Ship | 解凍／歸檔／退役必須人批准 |
 | `goal-orchestrator` | Julia Workflow S | 方向鎖、預算與停滯檢查照 ledger |
-| OKF／簡報 | Kona／Della | 不併入 ledger 核心 |
+| OKF／簡報 | Knox／Della | 不併入 ledger 核心 |
 
 ## 與 julia-dev Workflow 的接合點
 

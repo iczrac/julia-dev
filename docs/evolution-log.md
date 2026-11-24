@@ -7,7 +7,7 @@
 | 日期 | 版本 | 提案來源 | 變更摘要 | 證據指針 | 裁決 |
 |------|------|----------|----------|----------|------|
 | 2026-11-24 | v1.9.1 | Workflow U smoke test 運行時發現 | `ledger-bridge` 回灌四條實測規則：Preflight 第 0 步（先跑生成器再 verify）、測試須放 `tests/unit/` 且 `src/` 補 `__init__.py`、網關動作為固定枚舉、deny 附 fix 指引 | `/tmp/julia-smoke/docs/footprints/footprint-20261124-smoke-u.md` | 人批准（「繼續」） |
-| 2026-11-24 | v1.10.0 | 缺口評估 P1 三項 | Workflow K 評估雙基線硬性要求；Phase 7 系統級安全清單六項；環境腳本責任歸 Mike | 對話內缺口分析（接縫與可運行性評估） | 人批准（「落地」） |
+| 2026-11-24 | v1.10.0 | 缺口評估 P1 三項 | Workflow K 評估雙基線硬性要求；Phase 7 系統級安全清單六項；環境腳本責任歸 Mark | 對話內缺口分析（接縫與可運行性評估） | 人批准（「落地」） |
 | 2026-11-24 | v1.10.1 | 使用者風格要求 | 成員名統一英文化（390 處）＋輸出約定入 SOP | 使用者指示「回覆中的成員名用英文表達」 | 人拍板 |
 | 2026-11-24 | v1.10.2 | 使用者發起 | 建立受控自我進化機制：`skills/self-evolution`＋SOP 進化提案處理節＋三條禁止項＋本日誌 | 使用者指示「決策由人拍板」並確認落地 | 人拍板（「落地」） |
 | 2026-11-24 | v1.10.3 | 使用者發起（第一性原理評估） | 規劃期第一性原理分解：Rick需求標註「硬約束／慣例」歸類（慣例必附依據）、Archie設計文件必含「基本事實表」（3–5 條各註來源）、Julia Phase 0 增設規劃期第一性原理門 | 現狀評估：pstack-principles 覆蓋工程層、Ed 根因關卡覆蓋失敗層，規劃期事前分解為真實缺口 | 人拍板（「按你建議做」） |
@@ -16,3 +16,4 @@
 | 2026-11-24 | v1.10.6 | 使用者發起（致謝核查） | 補根目錄 `LICENSE`（MIT，含第三方授權聲明）＋README 集中「致謝」節（13 項來源專案、作者、授權、吸收去向總表）；署名資訊由分散引用整合為單一入口 | 致謝走查：18 份 ATTRIBUTION.md 已齊備，缺根 LICENSE 與集中致謝章節 | 人拍板（「補」） |
 | 2026-11-24 | v1.10.7 | 使用者發起（多平台適配） | 發行轉換器 `scripts/build_dist.py`＋四平台發行包：claude-code（完整團隊：plugin.json＋subagents＋skills＋/julia 指令）、agents-md（solo 角色內切：總綱＋roles＋skills）、cursor（rules alwaysApply＋roles）、copilot（.github/agents）；canonical 單一事實源、dist 永遠腳本重建；跨平台僅語義等價改寫（SendMessage→結果回傳），門禁與方法論零改動 | 平台能力差異評估（子代理／路由支持度矩陣）；使用者四平台全選 | 人拍板（多選「Claude Code／AGENTS.md／Cursor／Copilot」） |
 | 2026-11-24 | v1.10.8 | ledger 結合再評估（P0＋P1） | 六項修補：A solo 總綱補「帳本對接帽」（Preflight／復述門／產證／寫入／經驗對照五步）；B Preflight 加綁定預檢（三坑）＋硬規則 11（Phase 4 必經 `run_tests.py` 產證）＋硬規則 12（接手必重跑 Preflight）；C 門外漢×治理專案人話批准卡；D 進化提案影響評估加「ledger 契約影響」；E Luca 經驗對照進化觸發器；F Workflow R 接手重跑 Preflight | ledger 結合走查：solo 總綱零帳本路徑（形態漏洞）、產證路徑非硬規則＋三坑無預檢（smoke test 實踩）、approval_bundle 門外漢裸批准風險、進化無契約影響檢查、雙向經驗缺觸發器、Workflow R 無 Preflight 重跑 | 人拍板（「好 推進」） |
+| 2026-11-24 | v1.10.9 | 使用者發起（命名統一） | 三位成員改名對齊巧思單詞前兩字母：Rick→**Remy**（req／re）、Mike→**Mark**（make／ma）、Kona→**Knox**（know／kn＋Fort Knox 金庫意象）；全詞邊界替換 53 處（成員 MD／team-lead／README 命名表巧思欄更新／Skill 引用／進化日誌歷史條目／build_dist 模板），無殘留，dist 重建同步 | 命名走查：三舊名與巧思單詞首二字母不對齊；全域掃描確認無 URL／代碼嵌入用法後執行 | 人拍板（「用Remy， mark， Knox」） |

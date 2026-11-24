@@ -42,12 +42,12 @@ maxTurns: 80
 | `intent-restate` | Julia Phase 0＋Rick任務契約 | 目標、非目標、驗收、寫入範圍先講清楚 |
 | `project-archaeologist` | Tracey提供源碼盤點素材 | ledger 草稿只由人精簡後接入 |
 | `greenfield-architect` | Archie負責系統架構 | ledger 治理骨架不等於系統架構 |
-| `loop-executor` | Mike／Tracey／Archie | 一張任務卡、一個 scope，寫入走網關 |
+| `loop-executor` | Mark／Tracey／Archie | 一張任務卡、一個 scope，寫入走網關 |
 | `evidence-auditor` | Vera | 只讀驗證；失敗即凍結，不自己修帳本 |
 | `ledger-steward` | 人工裁決；Ed只給建議 | 橋接角色不得代寫決策或經驗 |
 | `release-steward` | Ship | 解凍、歸檔、退役必須人工批准 |
 | `goal-loop` | Julia Workflow S | 方向鎖、預算與停滯檢查照 ledger 為準 |
-| OKF／交付簡報 | Kona／Della | 不併入 ledger 核心 |
+| OKF／交付簡報 | Knox／Della | 不併入 ledger 核心 |
 
 ## 命令邊界
 

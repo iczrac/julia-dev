@@ -6,20 +6,20 @@
 
 ## 類型
 
-Team 型（多角色協作團隊）· 版本 1.10.8 · 11 位成員
+Team 型（多角色協作團隊）· 版本 1.10.9 · 11 位成員
 
 ## 成員與命名巧思
 
 | 成員 ID | 名字 | 職業 | 巧思 |
 |---------|------|------|------|
 | julia-dev-team-lead | Julia | 交付總監 | 諧音「主理呀」——主理人 |
-| product-manager | Rick | 產品經理 | req（requirement）需求 |
+| product-manager | Remy | 產品經理 | req（requirement）需求——取 re 起首 |
 | architect | Archie | 架構師 | arch（architecture）架構 |
-| engineer | Mike | 工程師 | make——動手造東西的人 |
+| engineer | Mark | 工程師 | make——動手造東西的人（取 ma 起首） |
 | qa-engineer | Vera | 品質保證工程師 | verify——驗證的化身 |
 | reverse-engineer | Tracey | 逆向工程師 | trace——追溯源碼，從入口追到資料庫 |
 | delivery-designer | Della | 交付設計師 | deck／deliver——做出可放映的交付簡報 |
-| knowledge-curator | Kona | 知識管理師 | know——知識的守護者，管溯源、信任與時效 |
+| knowledge-curator | Knox | 知識管理師 | know——知識的守護者（kn 起首；Fort Knox 金庫意象，管溯源、信任與時效） |
 | release-engineer | Ship | 發布工程師 | ship——把驗證過的東西安全送上線的人 |
 | decision-advisor | Ed | 決策顧問 | advisor——在昂貴或不可逆之前被找來的第一個反對者 |
 | ledger-liaison | Luca | 帳本對接官 | route＋task card——把 ledger 的路線卡翻成 Julia 的任務 |
@@ -96,7 +96,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 | `codebase-reverse` | [codebase-reverse](https://github.com/sharptoolbox/codebase-reverse) · MIT | 接手舊系統、遷移前置盤點、補寫需求文件 | Tracey（逆向）＋Vera（覆蓋對帳） |
 | `visual-model` | [visual-model](https://github.com/sharptoolbox/visual-model) · CC BY 4.0 | 交付級架構圖、SysML 五視圖、知識圖譜 | Archie |
 | `consulting-html-ppt` | [consulting-html-ppt](https://github.com/sharptoolbox/consulting-html-ppt) · 未宣告授權 | 方案彙報、驗收簡報、可放映交付材料 | Della |
-| `llm-knowledge-base` | [LLM-knowledgeBase](https://github.com/sharptoolbox/LLM-knowledgeBase) · MIT | RAG 知識萃取、來源約束問答 | Mike＋Vera |
+| `llm-knowledge-base` | [LLM-knowledgeBase](https://github.com/sharptoolbox/LLM-knowledgeBase) · MIT | RAG 知識萃取、來源約束問答 | Mark＋Vera |
 
 ### 完整融合：Open Knowledge Format（OKF）
 
@@ -108,7 +108,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 | `okf-generate` | 建立／更新／遷移／修復／驗證 bundle 的六條鐵律與程序 |
 | `okf-consume` | 只讀問答，逐概念回報信任分層、status、新鮮度與來源 |
 
-新增第八位成員**Kona（知識管理師）**主導 OKF 寫入與查詢，Vera獨立覆核信任分層與 attestation。
+新增第八位成員**Knox（知識管理師）**主導 OKF 寫入與查詢，Vera獨立覆核信任分層與 attestation。
 
 **三個補上缺口的機制**：
 
@@ -156,7 +156,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 | `structured-orchestration` | `orchestrate`＋`ralph-loop`＋`cursor-team-kit/loop-on-ci`（MIT） | Planner／Worker／Verifier 職責邊界、逐字交接、五級 verifier 證據、完成承諾＋迭代上限、失敗模式與 Andon、`gh pr checks` CI 迴圈 | Julia（編排）＋Ship（CI） |
 | `deep-diff-review` | `thermos`＋`dyl-stack`（MIT） | 正確性／安全與結構／可維護性雙軸平行審查、code judo／1k 行／spaghetti 尺標、去重後最多 7 則可貼 comment 與 🟢／🟡／🔴 | Vera＋Archie，Ed複核重大發現 |
 | `decision-gates` | `advisor`＋`dyl-stack`（MIT） | 重大決策／卡兩次／完成前四類檢查點、唯讀 `Verdict / Why / Recommendations / Risks / Answers / Confidence`、The Algorithm、根因句、合併與 taste veto 紀律 | Ed |
-| `agent-friendly-cli` | `cli-for-agent`（MIT） | 非互動 flag、分層 help 與範例、stdin／pipeline、可行動錯誤、冪等、`--dry-run`、JSON 輸出與退出碼 | Mike＋Archie |
+| `agent-friendly-cli` | `cli-for-agent`（MIT） | 非互動 flag、分層 help 與範例、stdin／pipeline、可行動錯誤、冪等、`--dry-run`、JSON 輸出與退出碼 | Mark＋Archie |
 
 新增第十位成員**Ed（決策顧問）**：他不寫程式、不開 PR、不合併，只在昂貴或不可逆之前給第二意見。他的建議不能覆蓋人工確認門禁、Vera `PASS` 或不可逆動作確認——這是本團隊刻意設定的優先序。
 
@@ -224,7 +224,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - **帳本對接**：Workflow U 用Luca串接 ledger 的復述門、專家路由、任務卡、證據分級與受控寫入，避免雙重路由與第二事實源
 - **AI 評估雙基線**：Workflow K 進入實作前固化 golden set、版本號與成本預算，Phase 4 必須「效果＋成本」一起交付，缺一即 FAIL
 - **系統級安全清單**：上線前由Vera跑 secrets／依賴許可證／PII／權限／威脅建模／無障礙六項檢查，🔴 未釋清Ship不得落地；威脅建模摘要是Archie設計文件的必含節
-- **環境腳本有主**：launch／doctor／drive／evidence 等環境與取證腳本由 Mike 長期維護，環境故障先修腳本，不作為驗證藉口
+- **環境腳本有主**：launch／doctor／drive／evidence 等環境與取證腳本由 Mark 長期維護，環境故障先修腳本，不作為驗證藉口
 - **受控自我進化**：成員提案、Ed 複核、人拍板、主理人執行；git commit 即回滾點，進化全程可追溯
 - **規劃期第一性原理分解**：Rick對每條需求標註「硬約束／慣例」歸類（慣例必附依據），Archie設計文件必含「基本事實表」（各註來源），類比式設計在規劃期即被攔截
 - **操作人模式可切換**：門外漢／標準／專家三檔，Phase 0 聲明、隨時切換；門外漢模式附白話摘要與行為驗收清單、技術決策代勞 opt-out；不可逆門禁與測試門任何模式都不放鬆
