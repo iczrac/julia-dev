@@ -14,6 +14,7 @@ description: "Controlled self-evolution loop: members propose capability-doc ame
 1. **重複門**：同一教訓在同一成員身上重複出現 ≥2 次（對齊「卡兩次」紀律）
 2. **外部輸入**：使用者要求吸收新方法論或修正流程
 3. **主動邀請**：使用者明確要求成員反思並提案
+4. **體檢裁決**：Workflow V 內部體檢中 Ed 裁定為「必修」的發現（裁決替代重複門；「緩議」項不具備資格，累計重複後走重複門）
 
 ## 提案格式（固定七段）
 
