@@ -2,7 +2,7 @@
   "ledger_version": "1.0",
   "title": "Julia Dev Squad（执行层专家团） 决策与能力账本",
   "purpose": "单一事实源：决策、裁决、待办及能力索引的唯一写入点。",
-  "last_updated": "2026-11-25 20:06 HKT",
+  "last_updated": "2026-11-25 20:08 HKT",
   "owner": "待定",
   "provenance": {
     "mode": "adopt",
@@ -2946,6 +2946,803 @@
         },
         "trigger": "derive",
         "note": "证据 / 等级 / 文档索引变化，由生成器自动侦测。"
+      },
+      {
+        "seq": 6,
+        "ts": "2026-11-25 20:08 HKT",
+        "type": "change",
+        "fingerprint_before": "ebaed60fa30ea861",
+        "fingerprint_after": "13c4f58ec50c89b5",
+        "changes": {
+          "level_transitions": [],
+          "added": [],
+          "removed": [],
+          "completion_delta": [],
+          "evidence_changes": [
+            {
+              "code": "JULIA.SKILL.AGENTFRIENDLYCLI.01",
+              "added": [
+                "src/contracts/doc_agentfriendlycli_01.py"
+              ],
+              "removed": [
+                "src/contracts/doc_agentfriendlycli.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.CODEBASEREVERSE.02",
+              "added": [
+                "src/contracts/doc_codebasereverse_02.py"
+              ],
+              "removed": [
+                "src/contracts/doc_codebasereverse.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.CONSULTINGHTMLPPT.03",
+              "added": [
+                "src/contracts/doc_consultinghtmlppt_03.py"
+              ],
+              "removed": [
+                "src/contracts/doc_consultinghtmlppt.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.DECISIONGATES.04",
+              "added": [
+                "src/contracts/doc_decisiongates_04.py"
+              ],
+              "removed": [
+                "src/contracts/doc_decisiongates.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.DEEPDIFFREVIEW.05",
+              "added": [
+                "src/contracts/doc_deepdiffreview_05.py"
+              ],
+              "removed": [
+                "src/contracts/doc_deepdiffreview.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.LEDGERBRIDGE.06",
+              "added": [
+                "src/contracts/doc_ledgerbridge_06.py"
+              ],
+              "removed": [
+                "src/contracts/doc_ledgerbridge.py",
+                "src/contracts/skill_ledger_bridge.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.LLMKNOWLEDGEBASE.07",
+              "added": [
+                "src/contracts/doc_llmknowledgebase_07.py"
+              ],
+              "removed": [
+                "src/contracts/doc_llmknowledgebase.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.OKFCONSUME.08",
+              "added": [
+                "src/contracts/doc_okfconsume_08.py"
+              ],
+              "removed": [
+                "src/contracts/doc_okfconsume.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.OKFFORMAT.09",
+              "added": [
+                "src/contracts/doc_okfformat_09.py"
+              ],
+              "removed": [
+                "src/contracts/doc_okfformat.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.OKFGENERATE.10",
+              "added": [
+                "src/contracts/doc_okfgenerate_10.py"
+              ],
+              "removed": [
+                "src/contracts/doc_okfgenerate.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.ONTOLOGYDRIVENDEV.11",
+              "added": [
+                "src/contracts/doc_ontologydrivendev_11.py"
+              ],
+              "removed": [
+                "src/contracts/doc_ontologydrivendev.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.ONTOLOGYMODELING.12",
+              "added": [
+                "src/contracts/doc_ontologymodeling_12.py"
+              ],
+              "removed": [
+                "src/contracts/doc_ontologymodeling.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.PSTACKPARALLELREVIEW.13",
+              "added": [
+                "src/contracts/doc_pstackparallelreview_13.py"
+              ],
+              "removed": [
+                "src/contracts/doc_pstackparallelreview.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.PSTACKPLAYBOOKS.14",
+              "added": [
+                "src/contracts/doc_pstackplaybooks_14.py"
+              ],
+              "removed": [
+                "src/contracts/doc_pstackplaybooks.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.PSTACKPRINCIPLES.15",
+              "added": [
+                "src/contracts/doc_pstackprinciples_15.py"
+              ],
+              "removed": [
+                "src/contracts/doc_pstackprinciples.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.PSTACKVERIFICATION.16",
+              "added": [
+                "src/contracts/doc_pstackverification_16.py"
+              ],
+              "removed": [
+                "src/contracts/doc_pstackverification.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.SELFEVOLUTION.17",
+              "added": [
+                "src/contracts/doc_selfevolution_17.py"
+              ],
+              "removed": [
+                "src/contracts/doc_selfevolution.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.STRUCTUREDORCHESTRATION.18",
+              "added": [
+                "src/contracts/doc_structuredorchestration_18.py"
+              ],
+              "removed": [
+                "src/contracts/doc_structuredorchestration.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.VISUALMODEL.19",
+              "added": [
+                "src/contracts/doc_visualmodel_19.py"
+              ],
+              "removed": [
+                "src/contracts/doc_visualmodel.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.ARCH.05",
+              "added": [
+                "src/contracts/doc_arch_05.py"
+              ],
+              "removed": [
+                "src/contracts/doc_arch.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.DSG.09",
+              "added": [
+                "src/contracts/doc_dsg_09.py"
+              ],
+              "removed": [
+                "src/contracts/doc_dsg.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.ENG.06",
+              "added": [
+                "src/contracts/doc_eng_06.py"
+              ],
+              "removed": [
+                "src/contracts/doc_eng.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.GOV.01",
+              "added": [
+                "src/contracts/doc_gov_01.py"
+              ],
+              "removed": [
+                "src/contracts/doc_gov.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.GOV.02",
+              "added": [
+                "src/contracts/doc_gov_02.py"
+              ],
+              "removed": [
+                "src/contracts/doc_gov.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.GOV.03",
+              "added": [
+                "src/contracts/doc_gov_03.py"
+              ],
+              "removed": [
+                "src/contracts/doc_gov.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.KMS.10",
+              "added": [
+                "src/contracts/doc_kms_10.py"
+              ],
+              "removed": [
+                "src/contracts/doc_kms.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.QA.07",
+              "added": [
+                "src/contracts/doc_qa_07.py"
+              ],
+              "removed": [
+                "src/contracts/doc_qa.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.REL.11",
+              "added": [
+                "src/contracts/doc_rel_11.py"
+              ],
+              "removed": [
+                "src/contracts/doc_rel.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.REQ.04",
+              "added": [
+                "src/contracts/doc_req_04.py"
+              ],
+              "removed": [
+                "src/contracts/doc_req.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.REV.08",
+              "added": [
+                "src/contracts/doc_rev_08.py"
+              ],
+              "removed": [
+                "src/contracts/doc_rev.py"
+              ]
+            }
+          ]
+        },
+        "state_digest": {
+          "JULIA.TEAM.GOV.01": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "agents/julia-dev-team-lead.md",
+              "src/contracts/doc_gov_01.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "agents/julia-dev-team-lead.md",
+              "src/contracts/doc_gov_01.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": [
+              "D-001",
+              "D-002"
+            ]
+          },
+          "JULIA.TEAM.GOV.02": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "agents/decision-advisor.md",
+              "src/contracts/doc_gov_02.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "agents/decision-advisor.md",
+              "src/contracts/doc_gov_02.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": [
+              "D-001",
+              "D-002"
+            ]
+          },
+          "JULIA.TEAM.GOV.03": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "agents/ledger-liaison.md",
+              "src/contracts/doc_gov_03.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "agents/ledger-liaison.md",
+              "src/contracts/doc_gov_03.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": [
+              "D-001",
+              "D-002"
+            ]
+          },
+          "JULIA.TEAM.REQ.04": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "agents/product-manager.md",
+              "src/contracts/doc_req_04.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "agents/product-manager.md",
+              "src/contracts/doc_req_04.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.TEAM.ARCH.05": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "agents/architect.md",
+              "src/contracts/doc_arch_05.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "agents/architect.md",
+              "src/contracts/doc_arch_05.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.TEAM.ENG.06": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "agents/engineer.md",
+              "src/contracts/doc_eng_06.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "agents/engineer.md",
+              "src/contracts/doc_eng_06.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.TEAM.QA.07": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "agents/qa-engineer.md",
+              "src/contracts/doc_qa_07.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "agents/qa-engineer.md",
+              "src/contracts/doc_qa_07.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.TEAM.REV.08": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "agents/reverse-engineer.md",
+              "src/contracts/doc_rev_08.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "agents/reverse-engineer.md",
+              "src/contracts/doc_rev_08.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.TEAM.DSG.09": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "agents/delivery-designer.md",
+              "src/contracts/doc_dsg_09.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "agents/delivery-designer.md",
+              "src/contracts/doc_dsg_09.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.TEAM.KMS.10": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "agents/knowledge-curator.md",
+              "src/contracts/doc_kms_10.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "agents/knowledge-curator.md",
+              "src/contracts/doc_kms_10.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.TEAM.REL.11": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "agents/release-engineer.md",
+              "src/contracts/doc_rel_11.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "agents/release-engineer.md",
+              "src/contracts/doc_rel_11.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.AGENTFRIENDLYCLI.01": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/agent-friendly-cli/SKILL.md",
+              "src/contracts/doc_agentfriendlycli_01.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/agent-friendly-cli/SKILL.md",
+              "src/contracts/doc_agentfriendlycli_01.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.CODEBASEREVERSE.02": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/codebase-reverse/SKILL.md",
+              "src/contracts/doc_codebasereverse_02.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/codebase-reverse/SKILL.md",
+              "src/contracts/doc_codebasereverse_02.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.CONSULTINGHTMLPPT.03": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/consulting-html-ppt/SKILL.md",
+              "src/contracts/doc_consultinghtmlppt_03.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/consulting-html-ppt/SKILL.md",
+              "src/contracts/doc_consultinghtmlppt_03.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.DECISIONGATES.04": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/decision-gates/SKILL.md",
+              "src/contracts/doc_decisiongates_04.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/decision-gates/SKILL.md",
+              "src/contracts/doc_decisiongates_04.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.DEEPDIFFREVIEW.05": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/deep-diff-review/SKILL.md",
+              "src/contracts/doc_deepdiffreview_05.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/deep-diff-review/SKILL.md",
+              "src/contracts/doc_deepdiffreview_05.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.LEDGERBRIDGE.06": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/ledger-bridge/SKILL.md",
+              "src/contracts/doc_ledgerbridge_06.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/ledger-bridge/SKILL.md",
+              "src/contracts/doc_ledgerbridge_06.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.LLMKNOWLEDGEBASE.07": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/llm-knowledge-base/SKILL.md",
+              "src/contracts/doc_llmknowledgebase_07.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/llm-knowledge-base/SKILL.md",
+              "src/contracts/doc_llmknowledgebase_07.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.OKFCONSUME.08": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/okf-consume/SKILL.md",
+              "src/contracts/doc_okfconsume_08.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/okf-consume/SKILL.md",
+              "src/contracts/doc_okfconsume_08.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.OKFFORMAT.09": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/okf-format/SKILL.md",
+              "src/contracts/doc_okfformat_09.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/okf-format/SKILL.md",
+              "src/contracts/doc_okfformat_09.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.OKFGENERATE.10": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/okf-generate/SKILL.md",
+              "src/contracts/doc_okfgenerate_10.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/okf-generate/SKILL.md",
+              "src/contracts/doc_okfgenerate_10.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.ONTOLOGYDRIVENDEV.11": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/ontology-driven-dev/SKILL.md",
+              "src/contracts/doc_ontologydrivendev_11.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/ontology-driven-dev/SKILL.md",
+              "src/contracts/doc_ontologydrivendev_11.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.ONTOLOGYMODELING.12": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/ontology-modeling/SKILL.md",
+              "src/contracts/doc_ontologymodeling_12.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/ontology-modeling/SKILL.md",
+              "src/contracts/doc_ontologymodeling_12.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.PSTACKPARALLELREVIEW.13": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/pstack-parallel-review/SKILL.md",
+              "src/contracts/doc_pstackparallelreview_13.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/pstack-parallel-review/SKILL.md",
+              "src/contracts/doc_pstackparallelreview_13.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.PSTACKPLAYBOOKS.14": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/pstack-playbooks/SKILL.md",
+              "src/contracts/doc_pstackplaybooks_14.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/pstack-playbooks/SKILL.md",
+              "src/contracts/doc_pstackplaybooks_14.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.PSTACKPRINCIPLES.15": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/pstack-principles/SKILL.md",
+              "src/contracts/doc_pstackprinciples_15.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/pstack-principles/SKILL.md",
+              "src/contracts/doc_pstackprinciples_15.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.PSTACKVERIFICATION.16": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/pstack-verification/SKILL.md",
+              "src/contracts/doc_pstackverification_16.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/pstack-verification/SKILL.md",
+              "src/contracts/doc_pstackverification_16.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.SELFEVOLUTION.17": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/self-evolution/SKILL.md",
+              "src/contracts/doc_selfevolution_17.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/self-evolution/SKILL.md",
+              "src/contracts/doc_selfevolution_17.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.STRUCTUREDORCHESTRATION.18": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/structured-orchestration/SKILL.md",
+              "src/contracts/doc_structuredorchestration_18.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/structured-orchestration/SKILL.md",
+              "src/contracts/doc_structuredorchestration_18.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.SKILL.VISUALMODEL.19": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "skills/visual-model/SKILL.md",
+              "src/contracts/doc_visualmodel_19.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "skills/visual-model/SKILL.md",
+              "src/contracts/doc_visualmodel_19.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": []
+          },
+          "JULIA.INFRA.DIST.01": {
+            "l": 3,
+            "c": 0.6,
+            "t": "verified",
+            "e": [
+              "scripts/build_dist.py",
+              "src/contracts/doc_dist.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "d": [
+              "scripts/build_dist.py",
+              "src/contracts/doc_dist.py",
+              "tests/test_doc_contracts.py"
+            ],
+            "dec": [
+              "D-002"
+            ]
+          }
+        },
+        "trigger": "derive",
+        "note": "证据 / 等级 / 文档索引变化，由生成器自动侦测。"
       }
     ]
   },
@@ -2971,17 +3768,510 @@
     "items": [],
     "candidates": [
       {
+        "id": "LC-C41EBA",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.TEAM.GOV.01 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.TEAM.GOV.01"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-0C470B",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.TEAM.GOV.02 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.TEAM.GOV.02"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-9D56CC",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.TEAM.GOV.03 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.TEAM.GOV.03"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-F613EB",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.TEAM.REQ.04 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.TEAM.REQ.04"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-30E260",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.TEAM.ARCH.05 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.TEAM.ARCH.05"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-726537",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.TEAM.ENG.06 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.TEAM.ENG.06"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-6E7D9C",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.TEAM.QA.07 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.TEAM.QA.07"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-ED22D9",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.TEAM.REV.08 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.TEAM.REV.08"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-1DF62C",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.TEAM.DSG.09 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.TEAM.DSG.09"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-E0EAF7",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.TEAM.KMS.10 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.TEAM.KMS.10"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-DE62D5",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.TEAM.REL.11 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.TEAM.REL.11"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-72DB60",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.AGENTFRIENDLYCLI.01 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.AGENTFRIENDLYCLI.01"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-0DF6EB",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.CODEBASEREVERSE.02 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.CODEBASEREVERSE.02"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-AB3F99",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.CONSULTINGHTMLPPT.03 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.CONSULTINGHTMLPPT.03"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-A04810",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.DECISIONGATES.04 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.DECISIONGATES.04"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-B2478D",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.DEEPDIFFREVIEW.05 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.DEEPDIFFREVIEW.05"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
         "id": "LC-956F37",
         "kind": "stagnation",
         "reason": "能力 JULIA.SKILL.LEDGERBRIDGE.06 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
         "source_events": [
-          3,
           4,
-          5
+          5,
+          6
         ],
         "suggested_scope": {
           "capabilities": [
             "JULIA.SKILL.LEDGERBRIDGE.06"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-70FB37",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.LLMKNOWLEDGEBASE.07 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.LLMKNOWLEDGEBASE.07"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-D966F0",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.OKFCONSUME.08 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.OKFCONSUME.08"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-C8A114",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.OKFFORMAT.09 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.OKFFORMAT.09"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-1F9F35",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.OKFGENERATE.10 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.OKFGENERATE.10"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-08936D",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.ONTOLOGYDRIVENDEV.11 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.ONTOLOGYDRIVENDEV.11"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-F85A26",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.ONTOLOGYMODELING.12 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.ONTOLOGYMODELING.12"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-2E7B7D",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.PSTACKPARALLELREVIEW.13 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.PSTACKPARALLELREVIEW.13"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-E1C725",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.PSTACKPLAYBOOKS.14 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.PSTACKPLAYBOOKS.14"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-5CC819",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.PSTACKPRINCIPLES.15 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.PSTACKPRINCIPLES.15"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-C04175",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.PSTACKVERIFICATION.16 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.PSTACKVERIFICATION.16"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-FCD03F",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.SELFEVOLUTION.17 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.SELFEVOLUTION.17"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-74728B",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.STRUCTUREDORCHESTRATION.18 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.STRUCTUREDORCHESTRATION.18"
+          ]
+        },
+        "status": "open",
+        "origin": "derive"
+      },
+      {
+        "id": "LC-8AA8FE",
+        "kind": "stagnation",
+        "reason": "能力 JULIA.SKILL.VISUALMODEL.19 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+        "source_events": [
+          4,
+          5,
+          6
+        ],
+        "suggested_scope": {
+          "capabilities": [
+            "JULIA.SKILL.VISUALMODEL.19"
           ]
         },
         "status": "open",
@@ -3007,7 +4297,7 @@
   },
   "capability_model": {
     "version": "1.0",
-    "generated_at": "2026-11-25 20:06 HKT",
+    "generated_at": "2026-11-25 20:08 HKT",
     "generator": "templates/build_capability_model.py",
     "purpose": "统一能力编码 + 可复算完成度 + 嵌套组件树 + 文档索引，供规划与编码代理消费。",
     "coding_spec": {
@@ -3113,10 +4403,10 @@
                 "evidence": {
                   "impl": [
                     "agents/julia-dev-team-lead.md",
-                    "src/contracts/doc_gov.py"
+                    "src/contracts/doc_gov_01.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_gov.py"
+                    "src/contracts/doc_gov_01.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -3131,7 +4421,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -3144,8 +4434,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_gov.py",
-                      "title": "doc_gov.py",
+                      "path": "src/contracts/doc_gov_01.py",
+                      "title": "doc_gov_01.py",
                       "kind": "contract"
                     }
                   ],
@@ -3156,8 +4446,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_gov.py",
-                      "title": "doc_gov.py",
+                      "path": "src/contracts/doc_gov_01.py",
+                      "title": "doc_gov_01.py",
                       "kind": "impl"
                     }
                   ],
@@ -3197,10 +4487,10 @@
                 "evidence": {
                   "impl": [
                     "agents/decision-advisor.md",
-                    "src/contracts/doc_gov.py"
+                    "src/contracts/doc_gov_02.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_gov.py"
+                    "src/contracts/doc_gov_02.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -3215,7 +4505,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -3228,8 +4518,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_gov.py",
-                      "title": "doc_gov.py",
+                      "path": "src/contracts/doc_gov_02.py",
+                      "title": "doc_gov_02.py",
                       "kind": "contract"
                     }
                   ],
@@ -3240,8 +4530,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_gov.py",
-                      "title": "doc_gov.py",
+                      "path": "src/contracts/doc_gov_02.py",
+                      "title": "doc_gov_02.py",
                       "kind": "impl"
                     }
                   ],
@@ -3281,10 +4571,10 @@
                 "evidence": {
                   "impl": [
                     "agents/ledger-liaison.md",
-                    "src/contracts/doc_gov.py"
+                    "src/contracts/doc_gov_03.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_gov.py"
+                    "src/contracts/doc_gov_03.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -3299,7 +4589,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -3312,8 +4602,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_gov.py",
-                      "title": "doc_gov.py",
+                      "path": "src/contracts/doc_gov_03.py",
+                      "title": "doc_gov_03.py",
                       "kind": "contract"
                     }
                   ],
@@ -3324,8 +4614,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_gov.py",
-                      "title": "doc_gov.py",
+                      "path": "src/contracts/doc_gov_03.py",
+                      "title": "doc_gov_03.py",
                       "kind": "impl"
                     }
                   ],
@@ -3365,10 +4655,10 @@
                 "evidence": {
                   "impl": [
                     "agents/product-manager.md",
-                    "src/contracts/doc_req.py"
+                    "src/contracts/doc_req_04.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_req.py"
+                    "src/contracts/doc_req_04.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -3383,7 +4673,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -3396,8 +4686,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_req.py",
-                      "title": "doc_req.py",
+                      "path": "src/contracts/doc_req_04.py",
+                      "title": "doc_req_04.py",
                       "kind": "contract"
                     }
                   ],
@@ -3408,8 +4698,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_req.py",
-                      "title": "doc_req.py",
+                      "path": "src/contracts/doc_req_04.py",
+                      "title": "doc_req_04.py",
                       "kind": "impl"
                     }
                   ],
@@ -3438,10 +4728,10 @@
                 "evidence": {
                   "impl": [
                     "agents/architect.md",
-                    "src/contracts/doc_arch.py"
+                    "src/contracts/doc_arch_05.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_arch.py"
+                    "src/contracts/doc_arch_05.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -3456,7 +4746,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -3469,8 +4759,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_arch.py",
-                      "title": "doc_arch.py",
+                      "path": "src/contracts/doc_arch_05.py",
+                      "title": "doc_arch_05.py",
                       "kind": "contract"
                     }
                   ],
@@ -3481,8 +4771,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_arch.py",
-                      "title": "doc_arch.py",
+                      "path": "src/contracts/doc_arch_05.py",
+                      "title": "doc_arch_05.py",
                       "kind": "impl"
                     }
                   ],
@@ -3511,10 +4801,10 @@
                 "evidence": {
                   "impl": [
                     "agents/engineer.md",
-                    "src/contracts/doc_eng.py"
+                    "src/contracts/doc_eng_06.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_eng.py"
+                    "src/contracts/doc_eng_06.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -3529,7 +4819,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -3542,8 +4832,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_eng.py",
-                      "title": "doc_eng.py",
+                      "path": "src/contracts/doc_eng_06.py",
+                      "title": "doc_eng_06.py",
                       "kind": "contract"
                     }
                   ],
@@ -3554,8 +4844,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_eng.py",
-                      "title": "doc_eng.py",
+                      "path": "src/contracts/doc_eng_06.py",
+                      "title": "doc_eng_06.py",
                       "kind": "impl"
                     }
                   ],
@@ -3584,10 +4874,10 @@
                 "evidence": {
                   "impl": [
                     "agents/qa-engineer.md",
-                    "src/contracts/doc_qa.py"
+                    "src/contracts/doc_qa_07.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_qa.py"
+                    "src/contracts/doc_qa_07.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -3602,7 +4892,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -3615,8 +4905,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_qa.py",
-                      "title": "doc_qa.py",
+                      "path": "src/contracts/doc_qa_07.py",
+                      "title": "doc_qa_07.py",
                       "kind": "contract"
                     }
                   ],
@@ -3627,8 +4917,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_qa.py",
-                      "title": "doc_qa.py",
+                      "path": "src/contracts/doc_qa_07.py",
+                      "title": "doc_qa_07.py",
                       "kind": "impl"
                     }
                   ],
@@ -3657,10 +4947,10 @@
                 "evidence": {
                   "impl": [
                     "agents/reverse-engineer.md",
-                    "src/contracts/doc_rev.py"
+                    "src/contracts/doc_rev_08.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_rev.py"
+                    "src/contracts/doc_rev_08.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -3675,7 +4965,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -3688,8 +4978,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_rev.py",
-                      "title": "doc_rev.py",
+                      "path": "src/contracts/doc_rev_08.py",
+                      "title": "doc_rev_08.py",
                       "kind": "contract"
                     }
                   ],
@@ -3700,8 +4990,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_rev.py",
-                      "title": "doc_rev.py",
+                      "path": "src/contracts/doc_rev_08.py",
+                      "title": "doc_rev_08.py",
                       "kind": "impl"
                     }
                   ],
@@ -3730,10 +5020,10 @@
                 "evidence": {
                   "impl": [
                     "agents/delivery-designer.md",
-                    "src/contracts/doc_dsg.py"
+                    "src/contracts/doc_dsg_09.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_dsg.py"
+                    "src/contracts/doc_dsg_09.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -3748,7 +5038,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -3761,8 +5051,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_dsg.py",
-                      "title": "doc_dsg.py",
+                      "path": "src/contracts/doc_dsg_09.py",
+                      "title": "doc_dsg_09.py",
                       "kind": "contract"
                     }
                   ],
@@ -3773,8 +5063,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_dsg.py",
-                      "title": "doc_dsg.py",
+                      "path": "src/contracts/doc_dsg_09.py",
+                      "title": "doc_dsg_09.py",
                       "kind": "impl"
                     }
                   ],
@@ -3803,10 +5093,10 @@
                 "evidence": {
                   "impl": [
                     "agents/knowledge-curator.md",
-                    "src/contracts/doc_kms.py"
+                    "src/contracts/doc_kms_10.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_kms.py"
+                    "src/contracts/doc_kms_10.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -3821,7 +5111,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -3834,8 +5124,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_kms.py",
-                      "title": "doc_kms.py",
+                      "path": "src/contracts/doc_kms_10.py",
+                      "title": "doc_kms_10.py",
                       "kind": "contract"
                     }
                   ],
@@ -3846,8 +5136,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_kms.py",
-                      "title": "doc_kms.py",
+                      "path": "src/contracts/doc_kms_10.py",
+                      "title": "doc_kms_10.py",
                       "kind": "impl"
                     }
                   ],
@@ -3876,10 +5166,10 @@
                 "evidence": {
                   "impl": [
                     "agents/release-engineer.md",
-                    "src/contracts/doc_rel.py"
+                    "src/contracts/doc_rel_11.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_rel.py"
+                    "src/contracts/doc_rel_11.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -3894,7 +5184,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -3907,8 +5197,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_rel.py",
-                      "title": "doc_rel.py",
+                      "path": "src/contracts/doc_rel_11.py",
+                      "title": "doc_rel_11.py",
                       "kind": "contract"
                     }
                   ],
@@ -3919,8 +5209,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_rel.py",
-                      "title": "doc_rel.py",
+                      "path": "src/contracts/doc_rel_11.py",
+                      "title": "doc_rel_11.py",
                       "kind": "impl"
                     }
                   ],
@@ -4027,10 +5317,10 @@
                 "evidence": {
                   "impl": [
                     "skills/agent-friendly-cli/SKILL.md",
-                    "src/contracts/doc_agentfriendlycli.py"
+                    "src/contracts/doc_agentfriendlycli_01.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_agentfriendlycli.py"
+                    "src/contracts/doc_agentfriendlycli_01.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4045,7 +5335,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4058,8 +5348,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_agentfriendlycli.py",
-                      "title": "doc_agentfriendlycli.py",
+                      "path": "src/contracts/doc_agentfriendlycli_01.py",
+                      "title": "doc_agentfriendlycli_01.py",
                       "kind": "contract"
                     }
                   ],
@@ -4070,8 +5360,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_agentfriendlycli.py",
-                      "title": "doc_agentfriendlycli.py",
+                      "path": "src/contracts/doc_agentfriendlycli_01.py",
+                      "title": "doc_agentfriendlycli_01.py",
                       "kind": "impl"
                     }
                   ],
@@ -4100,10 +5390,10 @@
                 "evidence": {
                   "impl": [
                     "skills/codebase-reverse/SKILL.md",
-                    "src/contracts/doc_codebasereverse.py"
+                    "src/contracts/doc_codebasereverse_02.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_codebasereverse.py"
+                    "src/contracts/doc_codebasereverse_02.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4118,7 +5408,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4131,8 +5421,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_codebasereverse.py",
-                      "title": "doc_codebasereverse.py",
+                      "path": "src/contracts/doc_codebasereverse_02.py",
+                      "title": "doc_codebasereverse_02.py",
                       "kind": "contract"
                     }
                   ],
@@ -4143,8 +5433,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_codebasereverse.py",
-                      "title": "doc_codebasereverse.py",
+                      "path": "src/contracts/doc_codebasereverse_02.py",
+                      "title": "doc_codebasereverse_02.py",
                       "kind": "impl"
                     }
                   ],
@@ -4173,10 +5463,10 @@
                 "evidence": {
                   "impl": [
                     "skills/consulting-html-ppt/SKILL.md",
-                    "src/contracts/doc_consultinghtmlppt.py"
+                    "src/contracts/doc_consultinghtmlppt_03.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_consultinghtmlppt.py"
+                    "src/contracts/doc_consultinghtmlppt_03.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4191,7 +5481,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4204,8 +5494,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_consultinghtmlppt.py",
-                      "title": "doc_consultinghtmlppt.py",
+                      "path": "src/contracts/doc_consultinghtmlppt_03.py",
+                      "title": "doc_consultinghtmlppt_03.py",
                       "kind": "contract"
                     }
                   ],
@@ -4216,8 +5506,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_consultinghtmlppt.py",
-                      "title": "doc_consultinghtmlppt.py",
+                      "path": "src/contracts/doc_consultinghtmlppt_03.py",
+                      "title": "doc_consultinghtmlppt_03.py",
                       "kind": "impl"
                     }
                   ],
@@ -4246,10 +5536,10 @@
                 "evidence": {
                   "impl": [
                     "skills/decision-gates/SKILL.md",
-                    "src/contracts/doc_decisiongates.py"
+                    "src/contracts/doc_decisiongates_04.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_decisiongates.py"
+                    "src/contracts/doc_decisiongates_04.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4264,7 +5554,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4277,8 +5567,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_decisiongates.py",
-                      "title": "doc_decisiongates.py",
+                      "path": "src/contracts/doc_decisiongates_04.py",
+                      "title": "doc_decisiongates_04.py",
                       "kind": "contract"
                     }
                   ],
@@ -4289,8 +5579,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_decisiongates.py",
-                      "title": "doc_decisiongates.py",
+                      "path": "src/contracts/doc_decisiongates_04.py",
+                      "title": "doc_decisiongates_04.py",
                       "kind": "impl"
                     }
                   ],
@@ -4319,10 +5609,10 @@
                 "evidence": {
                   "impl": [
                     "skills/deep-diff-review/SKILL.md",
-                    "src/contracts/doc_deepdiffreview.py"
+                    "src/contracts/doc_deepdiffreview_05.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_deepdiffreview.py"
+                    "src/contracts/doc_deepdiffreview_05.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4337,7 +5627,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4350,8 +5640,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_deepdiffreview.py",
-                      "title": "doc_deepdiffreview.py",
+                      "path": "src/contracts/doc_deepdiffreview_05.py",
+                      "title": "doc_deepdiffreview_05.py",
                       "kind": "contract"
                     }
                   ],
@@ -4362,8 +5652,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_deepdiffreview.py",
-                      "title": "doc_deepdiffreview.py",
+                      "path": "src/contracts/doc_deepdiffreview_05.py",
+                      "title": "doc_deepdiffreview_05.py",
                       "kind": "impl"
                     }
                   ],
@@ -4392,12 +5682,10 @@
                 "evidence": {
                   "impl": [
                     "skills/ledger-bridge/SKILL.md",
-                    "src/contracts/doc_ledgerbridge.py",
-                    "src/contracts/skill_ledger_bridge.py"
+                    "src/contracts/doc_ledgerbridge_06.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_ledgerbridge.py",
-                    "src/contracts/skill_ledger_bridge.py"
+                    "src/contracts/doc_ledgerbridge_06.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4412,7 +5700,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4425,13 +5713,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_ledgerbridge.py",
-                      "title": "doc_ledgerbridge.py",
-                      "kind": "contract"
-                    },
-                    {
-                      "path": "src/contracts/skill_ledger_bridge.py",
-                      "title": "skill_ledger_bridge.py",
+                      "path": "src/contracts/doc_ledgerbridge_06.py",
+                      "title": "doc_ledgerbridge_06.py",
                       "kind": "contract"
                     }
                   ],
@@ -4442,13 +5725,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_ledgerbridge.py",
-                      "title": "doc_ledgerbridge.py",
-                      "kind": "impl"
-                    },
-                    {
-                      "path": "src/contracts/skill_ledger_bridge.py",
-                      "title": "skill_ledger_bridge.py",
+                      "path": "src/contracts/doc_ledgerbridge_06.py",
+                      "title": "doc_ledgerbridge_06.py",
                       "kind": "impl"
                     }
                   ],
@@ -4477,10 +5755,10 @@
                 "evidence": {
                   "impl": [
                     "skills/llm-knowledge-base/SKILL.md",
-                    "src/contracts/doc_llmknowledgebase.py"
+                    "src/contracts/doc_llmknowledgebase_07.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_llmknowledgebase.py"
+                    "src/contracts/doc_llmknowledgebase_07.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4495,7 +5773,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4508,8 +5786,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_llmknowledgebase.py",
-                      "title": "doc_llmknowledgebase.py",
+                      "path": "src/contracts/doc_llmknowledgebase_07.py",
+                      "title": "doc_llmknowledgebase_07.py",
                       "kind": "contract"
                     }
                   ],
@@ -4520,8 +5798,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_llmknowledgebase.py",
-                      "title": "doc_llmknowledgebase.py",
+                      "path": "src/contracts/doc_llmknowledgebase_07.py",
+                      "title": "doc_llmknowledgebase_07.py",
                       "kind": "impl"
                     }
                   ],
@@ -4550,10 +5828,10 @@
                 "evidence": {
                   "impl": [
                     "skills/okf-consume/SKILL.md",
-                    "src/contracts/doc_okfconsume.py"
+                    "src/contracts/doc_okfconsume_08.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_okfconsume.py"
+                    "src/contracts/doc_okfconsume_08.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4568,7 +5846,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4581,8 +5859,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_okfconsume.py",
-                      "title": "doc_okfconsume.py",
+                      "path": "src/contracts/doc_okfconsume_08.py",
+                      "title": "doc_okfconsume_08.py",
                       "kind": "contract"
                     }
                   ],
@@ -4593,8 +5871,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_okfconsume.py",
-                      "title": "doc_okfconsume.py",
+                      "path": "src/contracts/doc_okfconsume_08.py",
+                      "title": "doc_okfconsume_08.py",
                       "kind": "impl"
                     }
                   ],
@@ -4623,10 +5901,10 @@
                 "evidence": {
                   "impl": [
                     "skills/okf-format/SKILL.md",
-                    "src/contracts/doc_okfformat.py"
+                    "src/contracts/doc_okfformat_09.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_okfformat.py"
+                    "src/contracts/doc_okfformat_09.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4641,7 +5919,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4654,8 +5932,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_okfformat.py",
-                      "title": "doc_okfformat.py",
+                      "path": "src/contracts/doc_okfformat_09.py",
+                      "title": "doc_okfformat_09.py",
                       "kind": "contract"
                     }
                   ],
@@ -4666,8 +5944,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_okfformat.py",
-                      "title": "doc_okfformat.py",
+                      "path": "src/contracts/doc_okfformat_09.py",
+                      "title": "doc_okfformat_09.py",
                       "kind": "impl"
                     }
                   ],
@@ -4696,10 +5974,10 @@
                 "evidence": {
                   "impl": [
                     "skills/okf-generate/SKILL.md",
-                    "src/contracts/doc_okfgenerate.py"
+                    "src/contracts/doc_okfgenerate_10.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_okfgenerate.py"
+                    "src/contracts/doc_okfgenerate_10.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4714,7 +5992,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4727,8 +6005,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_okfgenerate.py",
-                      "title": "doc_okfgenerate.py",
+                      "path": "src/contracts/doc_okfgenerate_10.py",
+                      "title": "doc_okfgenerate_10.py",
                       "kind": "contract"
                     }
                   ],
@@ -4739,8 +6017,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_okfgenerate.py",
-                      "title": "doc_okfgenerate.py",
+                      "path": "src/contracts/doc_okfgenerate_10.py",
+                      "title": "doc_okfgenerate_10.py",
                       "kind": "impl"
                     }
                   ],
@@ -4769,10 +6047,10 @@
                 "evidence": {
                   "impl": [
                     "skills/ontology-driven-dev/SKILL.md",
-                    "src/contracts/doc_ontologydrivendev.py"
+                    "src/contracts/doc_ontologydrivendev_11.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_ontologydrivendev.py"
+                    "src/contracts/doc_ontologydrivendev_11.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4787,7 +6065,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4800,8 +6078,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_ontologydrivendev.py",
-                      "title": "doc_ontologydrivendev.py",
+                      "path": "src/contracts/doc_ontologydrivendev_11.py",
+                      "title": "doc_ontologydrivendev_11.py",
                       "kind": "contract"
                     }
                   ],
@@ -4812,8 +6090,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_ontologydrivendev.py",
-                      "title": "doc_ontologydrivendev.py",
+                      "path": "src/contracts/doc_ontologydrivendev_11.py",
+                      "title": "doc_ontologydrivendev_11.py",
                       "kind": "impl"
                     }
                   ],
@@ -4842,10 +6120,10 @@
                 "evidence": {
                   "impl": [
                     "skills/ontology-modeling/SKILL.md",
-                    "src/contracts/doc_ontologymodeling.py"
+                    "src/contracts/doc_ontologymodeling_12.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_ontologymodeling.py"
+                    "src/contracts/doc_ontologymodeling_12.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4860,7 +6138,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4873,8 +6151,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_ontologymodeling.py",
-                      "title": "doc_ontologymodeling.py",
+                      "path": "src/contracts/doc_ontologymodeling_12.py",
+                      "title": "doc_ontologymodeling_12.py",
                       "kind": "contract"
                     }
                   ],
@@ -4885,8 +6163,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_ontologymodeling.py",
-                      "title": "doc_ontologymodeling.py",
+                      "path": "src/contracts/doc_ontologymodeling_12.py",
+                      "title": "doc_ontologymodeling_12.py",
                       "kind": "impl"
                     }
                   ],
@@ -4915,10 +6193,10 @@
                 "evidence": {
                   "impl": [
                     "skills/pstack-parallel-review/SKILL.md",
-                    "src/contracts/doc_pstackparallelreview.py"
+                    "src/contracts/doc_pstackparallelreview_13.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_pstackparallelreview.py"
+                    "src/contracts/doc_pstackparallelreview_13.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -4933,7 +6211,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4946,8 +6224,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_pstackparallelreview.py",
-                      "title": "doc_pstackparallelreview.py",
+                      "path": "src/contracts/doc_pstackparallelreview_13.py",
+                      "title": "doc_pstackparallelreview_13.py",
                       "kind": "contract"
                     }
                   ],
@@ -4958,8 +6236,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_pstackparallelreview.py",
-                      "title": "doc_pstackparallelreview.py",
+                      "path": "src/contracts/doc_pstackparallelreview_13.py",
+                      "title": "doc_pstackparallelreview_13.py",
                       "kind": "impl"
                     }
                   ],
@@ -4988,10 +6266,10 @@
                 "evidence": {
                   "impl": [
                     "skills/pstack-playbooks/SKILL.md",
-                    "src/contracts/doc_pstackplaybooks.py"
+                    "src/contracts/doc_pstackplaybooks_14.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_pstackplaybooks.py"
+                    "src/contracts/doc_pstackplaybooks_14.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -5006,7 +6284,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5019,8 +6297,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_pstackplaybooks.py",
-                      "title": "doc_pstackplaybooks.py",
+                      "path": "src/contracts/doc_pstackplaybooks_14.py",
+                      "title": "doc_pstackplaybooks_14.py",
                       "kind": "contract"
                     }
                   ],
@@ -5031,8 +6309,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_pstackplaybooks.py",
-                      "title": "doc_pstackplaybooks.py",
+                      "path": "src/contracts/doc_pstackplaybooks_14.py",
+                      "title": "doc_pstackplaybooks_14.py",
                       "kind": "impl"
                     }
                   ],
@@ -5061,10 +6339,10 @@
                 "evidence": {
                   "impl": [
                     "skills/pstack-principles/SKILL.md",
-                    "src/contracts/doc_pstackprinciples.py"
+                    "src/contracts/doc_pstackprinciples_15.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_pstackprinciples.py"
+                    "src/contracts/doc_pstackprinciples_15.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -5079,7 +6357,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5092,8 +6370,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_pstackprinciples.py",
-                      "title": "doc_pstackprinciples.py",
+                      "path": "src/contracts/doc_pstackprinciples_15.py",
+                      "title": "doc_pstackprinciples_15.py",
                       "kind": "contract"
                     }
                   ],
@@ -5104,8 +6382,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_pstackprinciples.py",
-                      "title": "doc_pstackprinciples.py",
+                      "path": "src/contracts/doc_pstackprinciples_15.py",
+                      "title": "doc_pstackprinciples_15.py",
                       "kind": "impl"
                     }
                   ],
@@ -5134,10 +6412,10 @@
                 "evidence": {
                   "impl": [
                     "skills/pstack-verification/SKILL.md",
-                    "src/contracts/doc_pstackverification.py"
+                    "src/contracts/doc_pstackverification_16.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_pstackverification.py"
+                    "src/contracts/doc_pstackverification_16.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -5152,7 +6430,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5165,8 +6443,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_pstackverification.py",
-                      "title": "doc_pstackverification.py",
+                      "path": "src/contracts/doc_pstackverification_16.py",
+                      "title": "doc_pstackverification_16.py",
                       "kind": "contract"
                     }
                   ],
@@ -5177,8 +6455,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_pstackverification.py",
-                      "title": "doc_pstackverification.py",
+                      "path": "src/contracts/doc_pstackverification_16.py",
+                      "title": "doc_pstackverification_16.py",
                       "kind": "impl"
                     }
                   ],
@@ -5207,10 +6485,10 @@
                 "evidence": {
                   "impl": [
                     "skills/self-evolution/SKILL.md",
-                    "src/contracts/doc_selfevolution.py"
+                    "src/contracts/doc_selfevolution_17.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_selfevolution.py"
+                    "src/contracts/doc_selfevolution_17.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -5225,7 +6503,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5238,8 +6516,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_selfevolution.py",
-                      "title": "doc_selfevolution.py",
+                      "path": "src/contracts/doc_selfevolution_17.py",
+                      "title": "doc_selfevolution_17.py",
                       "kind": "contract"
                     }
                   ],
@@ -5250,8 +6528,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_selfevolution.py",
-                      "title": "doc_selfevolution.py",
+                      "path": "src/contracts/doc_selfevolution_17.py",
+                      "title": "doc_selfevolution_17.py",
                       "kind": "impl"
                     }
                   ],
@@ -5280,10 +6558,10 @@
                 "evidence": {
                   "impl": [
                     "skills/structured-orchestration/SKILL.md",
-                    "src/contracts/doc_structuredorchestration.py"
+                    "src/contracts/doc_structuredorchestration_18.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_structuredorchestration.py"
+                    "src/contracts/doc_structuredorchestration_18.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -5298,7 +6576,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5311,8 +6589,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_structuredorchestration.py",
-                      "title": "doc_structuredorchestration.py",
+                      "path": "src/contracts/doc_structuredorchestration_18.py",
+                      "title": "doc_structuredorchestration_18.py",
                       "kind": "contract"
                     }
                   ],
@@ -5323,8 +6601,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_structuredorchestration.py",
-                      "title": "doc_structuredorchestration.py",
+                      "path": "src/contracts/doc_structuredorchestration_18.py",
+                      "title": "doc_structuredorchestration_18.py",
                       "kind": "impl"
                     }
                   ],
@@ -5353,10 +6631,10 @@
                 "evidence": {
                   "impl": [
                     "skills/visual-model/SKILL.md",
-                    "src/contracts/doc_visualmodel.py"
+                    "src/contracts/doc_visualmodel_19.py"
                   ],
                   "contract": [
-                    "src/contracts/doc_visualmodel.py"
+                    "src/contracts/doc_visualmodel_19.py"
                   ],
                   "unit_test": [
                     "tests/test_doc_contracts.py"
@@ -5371,7 +6649,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5384,8 +6662,8 @@
                   "module_docs": [],
                   "contracts": [
                     {
-                      "path": "src/contracts/doc_visualmodel.py",
-                      "title": "doc_visualmodel.py",
+                      "path": "src/contracts/doc_visualmodel_19.py",
+                      "title": "doc_visualmodel_19.py",
                       "kind": "contract"
                     }
                   ],
@@ -5396,8 +6674,8 @@
                       "kind": "impl"
                     },
                     {
-                      "path": "src/contracts/doc_visualmodel.py",
-                      "title": "doc_visualmodel.py",
+                      "path": "src/contracts/doc_visualmodel_19.py",
+                      "title": "doc_visualmodel_19.py",
                       "kind": "impl"
                     }
                   ],
@@ -5804,7 +7082,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:06 HKT",
+                  "report_at": "2026-11-25 20:08 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -6648,36 +7926,287 @@
         }
       },
       "change_summary": {
-        "level_transitions": [
-          {
-            "code": "JULIA.INFRA.DIST.01",
-            "from": "L2",
-            "to": "L3"
-          }
-        ],
+        "level_transitions": [],
         "added": [],
         "removed": [],
-        "completion_delta": [
-          {
-            "code": "JULIA.INFRA.DIST.01",
-            "from": 0.4,
-            "to": 0.6
-          }
-        ],
+        "completion_delta": [],
         "evidence_changes": [
           {
-            "code": "JULIA.INFRA.DIST.01",
+            "code": "JULIA.SKILL.AGENTFRIENDLYCLI.01",
             "added": [
-              "src/contracts/doc_dist.py",
-              "tests/test_doc_contracts.py"
+              "src/contracts/doc_agentfriendlycli_01.py"
             ],
-            "removed": []
+            "removed": [
+              "src/contracts/doc_agentfriendlycli.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.CODEBASEREVERSE.02",
+            "added": [
+              "src/contracts/doc_codebasereverse_02.py"
+            ],
+            "removed": [
+              "src/contracts/doc_codebasereverse.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.CONSULTINGHTMLPPT.03",
+            "added": [
+              "src/contracts/doc_consultinghtmlppt_03.py"
+            ],
+            "removed": [
+              "src/contracts/doc_consultinghtmlppt.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.DECISIONGATES.04",
+            "added": [
+              "src/contracts/doc_decisiongates_04.py"
+            ],
+            "removed": [
+              "src/contracts/doc_decisiongates.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.DEEPDIFFREVIEW.05",
+            "added": [
+              "src/contracts/doc_deepdiffreview_05.py"
+            ],
+            "removed": [
+              "src/contracts/doc_deepdiffreview.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.LEDGERBRIDGE.06",
+            "added": [
+              "src/contracts/doc_ledgerbridge_06.py"
+            ],
+            "removed": [
+              "src/contracts/doc_ledgerbridge.py",
+              "src/contracts/skill_ledger_bridge.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.LLMKNOWLEDGEBASE.07",
+            "added": [
+              "src/contracts/doc_llmknowledgebase_07.py"
+            ],
+            "removed": [
+              "src/contracts/doc_llmknowledgebase.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.OKFCONSUME.08",
+            "added": [
+              "src/contracts/doc_okfconsume_08.py"
+            ],
+            "removed": [
+              "src/contracts/doc_okfconsume.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.OKFFORMAT.09",
+            "added": [
+              "src/contracts/doc_okfformat_09.py"
+            ],
+            "removed": [
+              "src/contracts/doc_okfformat.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.OKFGENERATE.10",
+            "added": [
+              "src/contracts/doc_okfgenerate_10.py"
+            ],
+            "removed": [
+              "src/contracts/doc_okfgenerate.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.ONTOLOGYDRIVENDEV.11",
+            "added": [
+              "src/contracts/doc_ontologydrivendev_11.py"
+            ],
+            "removed": [
+              "src/contracts/doc_ontologydrivendev.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.ONTOLOGYMODELING.12",
+            "added": [
+              "src/contracts/doc_ontologymodeling_12.py"
+            ],
+            "removed": [
+              "src/contracts/doc_ontologymodeling.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.PSTACKPARALLELREVIEW.13",
+            "added": [
+              "src/contracts/doc_pstackparallelreview_13.py"
+            ],
+            "removed": [
+              "src/contracts/doc_pstackparallelreview.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.PSTACKPLAYBOOKS.14",
+            "added": [
+              "src/contracts/doc_pstackplaybooks_14.py"
+            ],
+            "removed": [
+              "src/contracts/doc_pstackplaybooks.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.PSTACKPRINCIPLES.15",
+            "added": [
+              "src/contracts/doc_pstackprinciples_15.py"
+            ],
+            "removed": [
+              "src/contracts/doc_pstackprinciples.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.PSTACKVERIFICATION.16",
+            "added": [
+              "src/contracts/doc_pstackverification_16.py"
+            ],
+            "removed": [
+              "src/contracts/doc_pstackverification.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.SELFEVOLUTION.17",
+            "added": [
+              "src/contracts/doc_selfevolution_17.py"
+            ],
+            "removed": [
+              "src/contracts/doc_selfevolution.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.STRUCTUREDORCHESTRATION.18",
+            "added": [
+              "src/contracts/doc_structuredorchestration_18.py"
+            ],
+            "removed": [
+              "src/contracts/doc_structuredorchestration.py"
+            ]
+          },
+          {
+            "code": "JULIA.SKILL.VISUALMODEL.19",
+            "added": [
+              "src/contracts/doc_visualmodel_19.py"
+            ],
+            "removed": [
+              "src/contracts/doc_visualmodel.py"
+            ]
+          },
+          {
+            "code": "JULIA.TEAM.ARCH.05",
+            "added": [
+              "src/contracts/doc_arch_05.py"
+            ],
+            "removed": [
+              "src/contracts/doc_arch.py"
+            ]
+          },
+          {
+            "code": "JULIA.TEAM.DSG.09",
+            "added": [
+              "src/contracts/doc_dsg_09.py"
+            ],
+            "removed": [
+              "src/contracts/doc_dsg.py"
+            ]
+          },
+          {
+            "code": "JULIA.TEAM.ENG.06",
+            "added": [
+              "src/contracts/doc_eng_06.py"
+            ],
+            "removed": [
+              "src/contracts/doc_eng.py"
+            ]
+          },
+          {
+            "code": "JULIA.TEAM.GOV.01",
+            "added": [
+              "src/contracts/doc_gov_01.py"
+            ],
+            "removed": [
+              "src/contracts/doc_gov.py"
+            ]
+          },
+          {
+            "code": "JULIA.TEAM.GOV.02",
+            "added": [
+              "src/contracts/doc_gov_02.py"
+            ],
+            "removed": [
+              "src/contracts/doc_gov.py"
+            ]
+          },
+          {
+            "code": "JULIA.TEAM.GOV.03",
+            "added": [
+              "src/contracts/doc_gov_03.py"
+            ],
+            "removed": [
+              "src/contracts/doc_gov.py"
+            ]
+          },
+          {
+            "code": "JULIA.TEAM.KMS.10",
+            "added": [
+              "src/contracts/doc_kms_10.py"
+            ],
+            "removed": [
+              "src/contracts/doc_kms.py"
+            ]
+          },
+          {
+            "code": "JULIA.TEAM.QA.07",
+            "added": [
+              "src/contracts/doc_qa_07.py"
+            ],
+            "removed": [
+              "src/contracts/doc_qa.py"
+            ]
+          },
+          {
+            "code": "JULIA.TEAM.REL.11",
+            "added": [
+              "src/contracts/doc_rel_11.py"
+            ],
+            "removed": [
+              "src/contracts/doc_rel.py"
+            ]
+          },
+          {
+            "code": "JULIA.TEAM.REQ.04",
+            "added": [
+              "src/contracts/doc_req_04.py"
+            ],
+            "removed": [
+              "src/contracts/doc_req.py"
+            ]
+          },
+          {
+            "code": "JULIA.TEAM.REV.08",
+            "added": [
+              "src/contracts/doc_rev_08.py"
+            ],
+            "removed": [
+              "src/contracts/doc_rev.py"
+            ]
           }
         ],
-        "event_seq": 5,
-        "ts": "2026-11-25 20:06 HKT",
-        "from_fingerprint": "35e0dd734636861d",
-        "to_fingerprint": "ebaed60fa30ea861"
+        "event_seq": 6,
+        "ts": "2026-11-25 20:08 HKT",
+        "from_fingerprint": "ebaed60fa30ea861",
+        "to_fingerprint": "13c4f58ec50c89b5"
       },
       "health": {
         "dimensions": {
@@ -6774,6 +8303,22 @@
           "codes": [
             "JULIA.INFRA.DIST.01"
           ]
+        },
+        {
+          "seq": 6,
+          "ts": "2026-11-25 20:08 HKT",
+          "type": "change",
+          "note": "证据 / 等级 / 文档索引变化，由生成器自动侦测。",
+          "fingerprint": "13c4f58ec50c89b5",
+          "change_count": 30,
+          "codes": [
+            "JULIA.SKILL.AGENTFRIENDLYCLI.01",
+            "JULIA.SKILL.CODEBASEREVERSE.02",
+            "JULIA.SKILL.CONSULTINGHTMLPPT.03",
+            "JULIA.SKILL.DECISIONGATES.04",
+            "JULIA.SKILL.DEEPDIFFREVIEW.05",
+            "JULIA.SKILL.LEDGERBRIDGE.06"
+          ]
         }
       ],
       "lineage": {
@@ -6857,11 +8402,11 @@
                 ]
               },
               {
-                "id": "cap:JULIA.TEAM.GOV.01/ev:contracts:src/contracts/doc_gov.py",
+                "id": "cap:JULIA.TEAM.GOV.01/ev:contracts:src/contracts/doc_gov_01.py",
                 "kind": "evidence",
-                "label": "doc_gov.py",
+                "label": "doc_gov_01.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_gov.py",
+                "path": "src/contracts/doc_gov_01.py",
                 "children": []
               },
               {
@@ -6873,11 +8418,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.TEAM.GOV.01/ev:impl:src/contracts/doc_gov.py",
+                "id": "cap:JULIA.TEAM.GOV.01/ev:impl:src/contracts/doc_gov_01.py",
                 "kind": "evidence",
-                "label": "doc_gov.py",
+                "label": "doc_gov_01.py",
                 "category": "impl",
-                "path": "src/contracts/doc_gov.py",
+                "path": "src/contracts/doc_gov_01.py",
                 "children": []
               },
               {
@@ -6969,11 +8514,11 @@
                 ]
               },
               {
-                "id": "cap:JULIA.TEAM.GOV.02/ev:contracts:src/contracts/doc_gov.py",
+                "id": "cap:JULIA.TEAM.GOV.02/ev:contracts:src/contracts/doc_gov_02.py",
                 "kind": "evidence",
-                "label": "doc_gov.py",
+                "label": "doc_gov_02.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_gov.py",
+                "path": "src/contracts/doc_gov_02.py",
                 "children": []
               },
               {
@@ -6985,11 +8530,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.TEAM.GOV.02/ev:impl:src/contracts/doc_gov.py",
+                "id": "cap:JULIA.TEAM.GOV.02/ev:impl:src/contracts/doc_gov_02.py",
                 "kind": "evidence",
-                "label": "doc_gov.py",
+                "label": "doc_gov_02.py",
                 "category": "impl",
-                "path": "src/contracts/doc_gov.py",
+                "path": "src/contracts/doc_gov_02.py",
                 "children": []
               },
               {
@@ -7081,11 +8626,11 @@
                 ]
               },
               {
-                "id": "cap:JULIA.TEAM.GOV.03/ev:contracts:src/contracts/doc_gov.py",
+                "id": "cap:JULIA.TEAM.GOV.03/ev:contracts:src/contracts/doc_gov_03.py",
                 "kind": "evidence",
-                "label": "doc_gov.py",
+                "label": "doc_gov_03.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_gov.py",
+                "path": "src/contracts/doc_gov_03.py",
                 "children": []
               },
               {
@@ -7097,11 +8642,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.TEAM.GOV.03/ev:impl:src/contracts/doc_gov.py",
+                "id": "cap:JULIA.TEAM.GOV.03/ev:impl:src/contracts/doc_gov_03.py",
                 "kind": "evidence",
-                "label": "doc_gov.py",
+                "label": "doc_gov_03.py",
                 "category": "impl",
-                "path": "src/contracts/doc_gov.py",
+                "path": "src/contracts/doc_gov_03.py",
                 "children": []
               },
               {
@@ -7135,11 +8680,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.TEAM.REQ.04/ev:contracts:src/contracts/doc_req.py",
+                "id": "cap:JULIA.TEAM.REQ.04/ev:contracts:src/contracts/doc_req_04.py",
                 "kind": "evidence",
-                "label": "doc_req.py",
+                "label": "doc_req_04.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_req.py",
+                "path": "src/contracts/doc_req_04.py",
                 "children": []
               },
               {
@@ -7151,11 +8696,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.TEAM.REQ.04/ev:impl:src/contracts/doc_req.py",
+                "id": "cap:JULIA.TEAM.REQ.04/ev:impl:src/contracts/doc_req_04.py",
                 "kind": "evidence",
-                "label": "doc_req.py",
+                "label": "doc_req_04.py",
                 "category": "impl",
-                "path": "src/contracts/doc_req.py",
+                "path": "src/contracts/doc_req_04.py",
                 "children": []
               },
               {
@@ -7189,11 +8734,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.TEAM.ARCH.05/ev:contracts:src/contracts/doc_arch.py",
+                "id": "cap:JULIA.TEAM.ARCH.05/ev:contracts:src/contracts/doc_arch_05.py",
                 "kind": "evidence",
-                "label": "doc_arch.py",
+                "label": "doc_arch_05.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_arch.py",
+                "path": "src/contracts/doc_arch_05.py",
                 "children": []
               },
               {
@@ -7205,11 +8750,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.TEAM.ARCH.05/ev:impl:src/contracts/doc_arch.py",
+                "id": "cap:JULIA.TEAM.ARCH.05/ev:impl:src/contracts/doc_arch_05.py",
                 "kind": "evidence",
-                "label": "doc_arch.py",
+                "label": "doc_arch_05.py",
                 "category": "impl",
-                "path": "src/contracts/doc_arch.py",
+                "path": "src/contracts/doc_arch_05.py",
                 "children": []
               },
               {
@@ -7243,11 +8788,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.TEAM.ENG.06/ev:contracts:src/contracts/doc_eng.py",
+                "id": "cap:JULIA.TEAM.ENG.06/ev:contracts:src/contracts/doc_eng_06.py",
                 "kind": "evidence",
-                "label": "doc_eng.py",
+                "label": "doc_eng_06.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_eng.py",
+                "path": "src/contracts/doc_eng_06.py",
                 "children": []
               },
               {
@@ -7259,11 +8804,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.TEAM.ENG.06/ev:impl:src/contracts/doc_eng.py",
+                "id": "cap:JULIA.TEAM.ENG.06/ev:impl:src/contracts/doc_eng_06.py",
                 "kind": "evidence",
-                "label": "doc_eng.py",
+                "label": "doc_eng_06.py",
                 "category": "impl",
-                "path": "src/contracts/doc_eng.py",
+                "path": "src/contracts/doc_eng_06.py",
                 "children": []
               },
               {
@@ -7297,11 +8842,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.TEAM.QA.07/ev:contracts:src/contracts/doc_qa.py",
+                "id": "cap:JULIA.TEAM.QA.07/ev:contracts:src/contracts/doc_qa_07.py",
                 "kind": "evidence",
-                "label": "doc_qa.py",
+                "label": "doc_qa_07.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_qa.py",
+                "path": "src/contracts/doc_qa_07.py",
                 "children": []
               },
               {
@@ -7313,11 +8858,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.TEAM.QA.07/ev:impl:src/contracts/doc_qa.py",
+                "id": "cap:JULIA.TEAM.QA.07/ev:impl:src/contracts/doc_qa_07.py",
                 "kind": "evidence",
-                "label": "doc_qa.py",
+                "label": "doc_qa_07.py",
                 "category": "impl",
-                "path": "src/contracts/doc_qa.py",
+                "path": "src/contracts/doc_qa_07.py",
                 "children": []
               },
               {
@@ -7351,11 +8896,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.TEAM.REV.08/ev:contracts:src/contracts/doc_rev.py",
+                "id": "cap:JULIA.TEAM.REV.08/ev:contracts:src/contracts/doc_rev_08.py",
                 "kind": "evidence",
-                "label": "doc_rev.py",
+                "label": "doc_rev_08.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_rev.py",
+                "path": "src/contracts/doc_rev_08.py",
                 "children": []
               },
               {
@@ -7367,11 +8912,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.TEAM.REV.08/ev:impl:src/contracts/doc_rev.py",
+                "id": "cap:JULIA.TEAM.REV.08/ev:impl:src/contracts/doc_rev_08.py",
                 "kind": "evidence",
-                "label": "doc_rev.py",
+                "label": "doc_rev_08.py",
                 "category": "impl",
-                "path": "src/contracts/doc_rev.py",
+                "path": "src/contracts/doc_rev_08.py",
                 "children": []
               },
               {
@@ -7405,11 +8950,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.TEAM.DSG.09/ev:contracts:src/contracts/doc_dsg.py",
+                "id": "cap:JULIA.TEAM.DSG.09/ev:contracts:src/contracts/doc_dsg_09.py",
                 "kind": "evidence",
-                "label": "doc_dsg.py",
+                "label": "doc_dsg_09.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_dsg.py",
+                "path": "src/contracts/doc_dsg_09.py",
                 "children": []
               },
               {
@@ -7421,11 +8966,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.TEAM.DSG.09/ev:impl:src/contracts/doc_dsg.py",
+                "id": "cap:JULIA.TEAM.DSG.09/ev:impl:src/contracts/doc_dsg_09.py",
                 "kind": "evidence",
-                "label": "doc_dsg.py",
+                "label": "doc_dsg_09.py",
                 "category": "impl",
-                "path": "src/contracts/doc_dsg.py",
+                "path": "src/contracts/doc_dsg_09.py",
                 "children": []
               },
               {
@@ -7459,11 +9004,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.TEAM.KMS.10/ev:contracts:src/contracts/doc_kms.py",
+                "id": "cap:JULIA.TEAM.KMS.10/ev:contracts:src/contracts/doc_kms_10.py",
                 "kind": "evidence",
-                "label": "doc_kms.py",
+                "label": "doc_kms_10.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_kms.py",
+                "path": "src/contracts/doc_kms_10.py",
                 "children": []
               },
               {
@@ -7475,11 +9020,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.TEAM.KMS.10/ev:impl:src/contracts/doc_kms.py",
+                "id": "cap:JULIA.TEAM.KMS.10/ev:impl:src/contracts/doc_kms_10.py",
                 "kind": "evidence",
-                "label": "doc_kms.py",
+                "label": "doc_kms_10.py",
                 "category": "impl",
-                "path": "src/contracts/doc_kms.py",
+                "path": "src/contracts/doc_kms_10.py",
                 "children": []
               },
               {
@@ -7513,11 +9058,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.TEAM.REL.11/ev:contracts:src/contracts/doc_rel.py",
+                "id": "cap:JULIA.TEAM.REL.11/ev:contracts:src/contracts/doc_rel_11.py",
                 "kind": "evidence",
-                "label": "doc_rel.py",
+                "label": "doc_rel_11.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_rel.py",
+                "path": "src/contracts/doc_rel_11.py",
                 "children": []
               },
               {
@@ -7529,11 +9074,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.TEAM.REL.11/ev:impl:src/contracts/doc_rel.py",
+                "id": "cap:JULIA.TEAM.REL.11/ev:impl:src/contracts/doc_rel_11.py",
                 "kind": "evidence",
-                "label": "doc_rel.py",
+                "label": "doc_rel_11.py",
                 "category": "impl",
-                "path": "src/contracts/doc_rel.py",
+                "path": "src/contracts/doc_rel_11.py",
                 "children": []
               },
               {
@@ -7567,11 +9112,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.AGENTFRIENDLYCLI.01/ev:contracts:src/contracts/doc_agentfriendlycli.py",
+                "id": "cap:JULIA.SKILL.AGENTFRIENDLYCLI.01/ev:contracts:src/contracts/doc_agentfriendlycli_01.py",
                 "kind": "evidence",
-                "label": "doc_agentfriendlycli.py",
+                "label": "doc_agentfriendlycli_01.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_agentfriendlycli.py",
+                "path": "src/contracts/doc_agentfriendlycli_01.py",
                 "children": []
               },
               {
@@ -7583,11 +9128,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.AGENTFRIENDLYCLI.01/ev:impl:src/contracts/doc_agentfriendlycli.py",
+                "id": "cap:JULIA.SKILL.AGENTFRIENDLYCLI.01/ev:impl:src/contracts/doc_agentfriendlycli_01.py",
                 "kind": "evidence",
-                "label": "doc_agentfriendlycli.py",
+                "label": "doc_agentfriendlycli_01.py",
                 "category": "impl",
-                "path": "src/contracts/doc_agentfriendlycli.py",
+                "path": "src/contracts/doc_agentfriendlycli_01.py",
                 "children": []
               },
               {
@@ -7621,11 +9166,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.CODEBASEREVERSE.02/ev:contracts:src/contracts/doc_codebasereverse.py",
+                "id": "cap:JULIA.SKILL.CODEBASEREVERSE.02/ev:contracts:src/contracts/doc_codebasereverse_02.py",
                 "kind": "evidence",
-                "label": "doc_codebasereverse.py",
+                "label": "doc_codebasereverse_02.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_codebasereverse.py",
+                "path": "src/contracts/doc_codebasereverse_02.py",
                 "children": []
               },
               {
@@ -7637,11 +9182,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.CODEBASEREVERSE.02/ev:impl:src/contracts/doc_codebasereverse.py",
+                "id": "cap:JULIA.SKILL.CODEBASEREVERSE.02/ev:impl:src/contracts/doc_codebasereverse_02.py",
                 "kind": "evidence",
-                "label": "doc_codebasereverse.py",
+                "label": "doc_codebasereverse_02.py",
                 "category": "impl",
-                "path": "src/contracts/doc_codebasereverse.py",
+                "path": "src/contracts/doc_codebasereverse_02.py",
                 "children": []
               },
               {
@@ -7675,11 +9220,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.CONSULTINGHTMLPPT.03/ev:contracts:src/contracts/doc_consultinghtmlppt.py",
+                "id": "cap:JULIA.SKILL.CONSULTINGHTMLPPT.03/ev:contracts:src/contracts/doc_consultinghtmlppt_03.py",
                 "kind": "evidence",
-                "label": "doc_consultinghtmlppt.py",
+                "label": "doc_consultinghtmlppt_03.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_consultinghtmlppt.py",
+                "path": "src/contracts/doc_consultinghtmlppt_03.py",
                 "children": []
               },
               {
@@ -7691,11 +9236,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.CONSULTINGHTMLPPT.03/ev:impl:src/contracts/doc_consultinghtmlppt.py",
+                "id": "cap:JULIA.SKILL.CONSULTINGHTMLPPT.03/ev:impl:src/contracts/doc_consultinghtmlppt_03.py",
                 "kind": "evidence",
-                "label": "doc_consultinghtmlppt.py",
+                "label": "doc_consultinghtmlppt_03.py",
                 "category": "impl",
-                "path": "src/contracts/doc_consultinghtmlppt.py",
+                "path": "src/contracts/doc_consultinghtmlppt_03.py",
                 "children": []
               },
               {
@@ -7729,11 +9274,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.DECISIONGATES.04/ev:contracts:src/contracts/doc_decisiongates.py",
+                "id": "cap:JULIA.SKILL.DECISIONGATES.04/ev:contracts:src/contracts/doc_decisiongates_04.py",
                 "kind": "evidence",
-                "label": "doc_decisiongates.py",
+                "label": "doc_decisiongates_04.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_decisiongates.py",
+                "path": "src/contracts/doc_decisiongates_04.py",
                 "children": []
               },
               {
@@ -7745,11 +9290,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.DECISIONGATES.04/ev:impl:src/contracts/doc_decisiongates.py",
+                "id": "cap:JULIA.SKILL.DECISIONGATES.04/ev:impl:src/contracts/doc_decisiongates_04.py",
                 "kind": "evidence",
-                "label": "doc_decisiongates.py",
+                "label": "doc_decisiongates_04.py",
                 "category": "impl",
-                "path": "src/contracts/doc_decisiongates.py",
+                "path": "src/contracts/doc_decisiongates_04.py",
                 "children": []
               },
               {
@@ -7783,11 +9328,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.DEEPDIFFREVIEW.05/ev:contracts:src/contracts/doc_deepdiffreview.py",
+                "id": "cap:JULIA.SKILL.DEEPDIFFREVIEW.05/ev:contracts:src/contracts/doc_deepdiffreview_05.py",
                 "kind": "evidence",
-                "label": "doc_deepdiffreview.py",
+                "label": "doc_deepdiffreview_05.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_deepdiffreview.py",
+                "path": "src/contracts/doc_deepdiffreview_05.py",
                 "children": []
               },
               {
@@ -7799,11 +9344,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.DEEPDIFFREVIEW.05/ev:impl:src/contracts/doc_deepdiffreview.py",
+                "id": "cap:JULIA.SKILL.DEEPDIFFREVIEW.05/ev:impl:src/contracts/doc_deepdiffreview_05.py",
                 "kind": "evidence",
-                "label": "doc_deepdiffreview.py",
+                "label": "doc_deepdiffreview_05.py",
                 "category": "impl",
-                "path": "src/contracts/doc_deepdiffreview.py",
+                "path": "src/contracts/doc_deepdiffreview_05.py",
                 "children": []
               },
               {
@@ -7837,19 +9382,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.LEDGERBRIDGE.06/ev:contracts:src/contracts/doc_ledgerbridge.py",
+                "id": "cap:JULIA.SKILL.LEDGERBRIDGE.06/ev:contracts:src/contracts/doc_ledgerbridge_06.py",
                 "kind": "evidence",
-                "label": "doc_ledgerbridge.py",
+                "label": "doc_ledgerbridge_06.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_ledgerbridge.py",
-                "children": []
-              },
-              {
-                "id": "cap:JULIA.SKILL.LEDGERBRIDGE.06/ev:contracts:src/contracts/skill_ledger_bridge.py",
-                "kind": "evidence",
-                "label": "skill_ledger_bridge.py",
-                "category": "contracts",
-                "path": "src/contracts/skill_ledger_bridge.py",
+                "path": "src/contracts/doc_ledgerbridge_06.py",
                 "children": []
               },
               {
@@ -7861,19 +9398,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.LEDGERBRIDGE.06/ev:impl:src/contracts/doc_ledgerbridge.py",
+                "id": "cap:JULIA.SKILL.LEDGERBRIDGE.06/ev:impl:src/contracts/doc_ledgerbridge_06.py",
                 "kind": "evidence",
-                "label": "doc_ledgerbridge.py",
+                "label": "doc_ledgerbridge_06.py",
                 "category": "impl",
-                "path": "src/contracts/doc_ledgerbridge.py",
-                "children": []
-              },
-              {
-                "id": "cap:JULIA.SKILL.LEDGERBRIDGE.06/ev:impl:src/contracts/skill_ledger_bridge.py",
-                "kind": "evidence",
-                "label": "skill_ledger_bridge.py",
-                "category": "impl",
-                "path": "src/contracts/skill_ledger_bridge.py",
+                "path": "src/contracts/doc_ledgerbridge_06.py",
                 "children": []
               },
               {
@@ -7907,11 +9436,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.LLMKNOWLEDGEBASE.07/ev:contracts:src/contracts/doc_llmknowledgebase.py",
+                "id": "cap:JULIA.SKILL.LLMKNOWLEDGEBASE.07/ev:contracts:src/contracts/doc_llmknowledgebase_07.py",
                 "kind": "evidence",
-                "label": "doc_llmknowledgebase.py",
+                "label": "doc_llmknowledgebase_07.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_llmknowledgebase.py",
+                "path": "src/contracts/doc_llmknowledgebase_07.py",
                 "children": []
               },
               {
@@ -7923,11 +9452,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.LLMKNOWLEDGEBASE.07/ev:impl:src/contracts/doc_llmknowledgebase.py",
+                "id": "cap:JULIA.SKILL.LLMKNOWLEDGEBASE.07/ev:impl:src/contracts/doc_llmknowledgebase_07.py",
                 "kind": "evidence",
-                "label": "doc_llmknowledgebase.py",
+                "label": "doc_llmknowledgebase_07.py",
                 "category": "impl",
-                "path": "src/contracts/doc_llmknowledgebase.py",
+                "path": "src/contracts/doc_llmknowledgebase_07.py",
                 "children": []
               },
               {
@@ -7961,11 +9490,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.OKFCONSUME.08/ev:contracts:src/contracts/doc_okfconsume.py",
+                "id": "cap:JULIA.SKILL.OKFCONSUME.08/ev:contracts:src/contracts/doc_okfconsume_08.py",
                 "kind": "evidence",
-                "label": "doc_okfconsume.py",
+                "label": "doc_okfconsume_08.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_okfconsume.py",
+                "path": "src/contracts/doc_okfconsume_08.py",
                 "children": []
               },
               {
@@ -7977,11 +9506,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.OKFCONSUME.08/ev:impl:src/contracts/doc_okfconsume.py",
+                "id": "cap:JULIA.SKILL.OKFCONSUME.08/ev:impl:src/contracts/doc_okfconsume_08.py",
                 "kind": "evidence",
-                "label": "doc_okfconsume.py",
+                "label": "doc_okfconsume_08.py",
                 "category": "impl",
-                "path": "src/contracts/doc_okfconsume.py",
+                "path": "src/contracts/doc_okfconsume_08.py",
                 "children": []
               },
               {
@@ -8015,11 +9544,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.OKFFORMAT.09/ev:contracts:src/contracts/doc_okfformat.py",
+                "id": "cap:JULIA.SKILL.OKFFORMAT.09/ev:contracts:src/contracts/doc_okfformat_09.py",
                 "kind": "evidence",
-                "label": "doc_okfformat.py",
+                "label": "doc_okfformat_09.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_okfformat.py",
+                "path": "src/contracts/doc_okfformat_09.py",
                 "children": []
               },
               {
@@ -8031,11 +9560,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.OKFFORMAT.09/ev:impl:src/contracts/doc_okfformat.py",
+                "id": "cap:JULIA.SKILL.OKFFORMAT.09/ev:impl:src/contracts/doc_okfformat_09.py",
                 "kind": "evidence",
-                "label": "doc_okfformat.py",
+                "label": "doc_okfformat_09.py",
                 "category": "impl",
-                "path": "src/contracts/doc_okfformat.py",
+                "path": "src/contracts/doc_okfformat_09.py",
                 "children": []
               },
               {
@@ -8069,11 +9598,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.OKFGENERATE.10/ev:contracts:src/contracts/doc_okfgenerate.py",
+                "id": "cap:JULIA.SKILL.OKFGENERATE.10/ev:contracts:src/contracts/doc_okfgenerate_10.py",
                 "kind": "evidence",
-                "label": "doc_okfgenerate.py",
+                "label": "doc_okfgenerate_10.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_okfgenerate.py",
+                "path": "src/contracts/doc_okfgenerate_10.py",
                 "children": []
               },
               {
@@ -8085,11 +9614,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.OKFGENERATE.10/ev:impl:src/contracts/doc_okfgenerate.py",
+                "id": "cap:JULIA.SKILL.OKFGENERATE.10/ev:impl:src/contracts/doc_okfgenerate_10.py",
                 "kind": "evidence",
-                "label": "doc_okfgenerate.py",
+                "label": "doc_okfgenerate_10.py",
                 "category": "impl",
-                "path": "src/contracts/doc_okfgenerate.py",
+                "path": "src/contracts/doc_okfgenerate_10.py",
                 "children": []
               },
               {
@@ -8123,11 +9652,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.ONTOLOGYDRIVENDEV.11/ev:contracts:src/contracts/doc_ontologydrivendev.py",
+                "id": "cap:JULIA.SKILL.ONTOLOGYDRIVENDEV.11/ev:contracts:src/contracts/doc_ontologydrivendev_11.py",
                 "kind": "evidence",
-                "label": "doc_ontologydrivendev.py",
+                "label": "doc_ontologydrivendev_11.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_ontologydrivendev.py",
+                "path": "src/contracts/doc_ontologydrivendev_11.py",
                 "children": []
               },
               {
@@ -8139,11 +9668,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.ONTOLOGYDRIVENDEV.11/ev:impl:src/contracts/doc_ontologydrivendev.py",
+                "id": "cap:JULIA.SKILL.ONTOLOGYDRIVENDEV.11/ev:impl:src/contracts/doc_ontologydrivendev_11.py",
                 "kind": "evidence",
-                "label": "doc_ontologydrivendev.py",
+                "label": "doc_ontologydrivendev_11.py",
                 "category": "impl",
-                "path": "src/contracts/doc_ontologydrivendev.py",
+                "path": "src/contracts/doc_ontologydrivendev_11.py",
                 "children": []
               },
               {
@@ -8177,11 +9706,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.ONTOLOGYMODELING.12/ev:contracts:src/contracts/doc_ontologymodeling.py",
+                "id": "cap:JULIA.SKILL.ONTOLOGYMODELING.12/ev:contracts:src/contracts/doc_ontologymodeling_12.py",
                 "kind": "evidence",
-                "label": "doc_ontologymodeling.py",
+                "label": "doc_ontologymodeling_12.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_ontologymodeling.py",
+                "path": "src/contracts/doc_ontologymodeling_12.py",
                 "children": []
               },
               {
@@ -8193,11 +9722,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.ONTOLOGYMODELING.12/ev:impl:src/contracts/doc_ontologymodeling.py",
+                "id": "cap:JULIA.SKILL.ONTOLOGYMODELING.12/ev:impl:src/contracts/doc_ontologymodeling_12.py",
                 "kind": "evidence",
-                "label": "doc_ontologymodeling.py",
+                "label": "doc_ontologymodeling_12.py",
                 "category": "impl",
-                "path": "src/contracts/doc_ontologymodeling.py",
+                "path": "src/contracts/doc_ontologymodeling_12.py",
                 "children": []
               },
               {
@@ -8231,11 +9760,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.PSTACKPARALLELREVIEW.13/ev:contracts:src/contracts/doc_pstackparallelreview.py",
+                "id": "cap:JULIA.SKILL.PSTACKPARALLELREVIEW.13/ev:contracts:src/contracts/doc_pstackparallelreview_13.py",
                 "kind": "evidence",
-                "label": "doc_pstackparallelreview.py",
+                "label": "doc_pstackparallelreview_13.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_pstackparallelreview.py",
+                "path": "src/contracts/doc_pstackparallelreview_13.py",
                 "children": []
               },
               {
@@ -8247,11 +9776,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.PSTACKPARALLELREVIEW.13/ev:impl:src/contracts/doc_pstackparallelreview.py",
+                "id": "cap:JULIA.SKILL.PSTACKPARALLELREVIEW.13/ev:impl:src/contracts/doc_pstackparallelreview_13.py",
                 "kind": "evidence",
-                "label": "doc_pstackparallelreview.py",
+                "label": "doc_pstackparallelreview_13.py",
                 "category": "impl",
-                "path": "src/contracts/doc_pstackparallelreview.py",
+                "path": "src/contracts/doc_pstackparallelreview_13.py",
                 "children": []
               },
               {
@@ -8285,11 +9814,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.PSTACKPLAYBOOKS.14/ev:contracts:src/contracts/doc_pstackplaybooks.py",
+                "id": "cap:JULIA.SKILL.PSTACKPLAYBOOKS.14/ev:contracts:src/contracts/doc_pstackplaybooks_14.py",
                 "kind": "evidence",
-                "label": "doc_pstackplaybooks.py",
+                "label": "doc_pstackplaybooks_14.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_pstackplaybooks.py",
+                "path": "src/contracts/doc_pstackplaybooks_14.py",
                 "children": []
               },
               {
@@ -8301,11 +9830,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.PSTACKPLAYBOOKS.14/ev:impl:src/contracts/doc_pstackplaybooks.py",
+                "id": "cap:JULIA.SKILL.PSTACKPLAYBOOKS.14/ev:impl:src/contracts/doc_pstackplaybooks_14.py",
                 "kind": "evidence",
-                "label": "doc_pstackplaybooks.py",
+                "label": "doc_pstackplaybooks_14.py",
                 "category": "impl",
-                "path": "src/contracts/doc_pstackplaybooks.py",
+                "path": "src/contracts/doc_pstackplaybooks_14.py",
                 "children": []
               },
               {
@@ -8339,11 +9868,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.PSTACKPRINCIPLES.15/ev:contracts:src/contracts/doc_pstackprinciples.py",
+                "id": "cap:JULIA.SKILL.PSTACKPRINCIPLES.15/ev:contracts:src/contracts/doc_pstackprinciples_15.py",
                 "kind": "evidence",
-                "label": "doc_pstackprinciples.py",
+                "label": "doc_pstackprinciples_15.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_pstackprinciples.py",
+                "path": "src/contracts/doc_pstackprinciples_15.py",
                 "children": []
               },
               {
@@ -8355,11 +9884,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.PSTACKPRINCIPLES.15/ev:impl:src/contracts/doc_pstackprinciples.py",
+                "id": "cap:JULIA.SKILL.PSTACKPRINCIPLES.15/ev:impl:src/contracts/doc_pstackprinciples_15.py",
                 "kind": "evidence",
-                "label": "doc_pstackprinciples.py",
+                "label": "doc_pstackprinciples_15.py",
                 "category": "impl",
-                "path": "src/contracts/doc_pstackprinciples.py",
+                "path": "src/contracts/doc_pstackprinciples_15.py",
                 "children": []
               },
               {
@@ -8393,11 +9922,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.PSTACKVERIFICATION.16/ev:contracts:src/contracts/doc_pstackverification.py",
+                "id": "cap:JULIA.SKILL.PSTACKVERIFICATION.16/ev:contracts:src/contracts/doc_pstackverification_16.py",
                 "kind": "evidence",
-                "label": "doc_pstackverification.py",
+                "label": "doc_pstackverification_16.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_pstackverification.py",
+                "path": "src/contracts/doc_pstackverification_16.py",
                 "children": []
               },
               {
@@ -8409,11 +9938,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.PSTACKVERIFICATION.16/ev:impl:src/contracts/doc_pstackverification.py",
+                "id": "cap:JULIA.SKILL.PSTACKVERIFICATION.16/ev:impl:src/contracts/doc_pstackverification_16.py",
                 "kind": "evidence",
-                "label": "doc_pstackverification.py",
+                "label": "doc_pstackverification_16.py",
                 "category": "impl",
-                "path": "src/contracts/doc_pstackverification.py",
+                "path": "src/contracts/doc_pstackverification_16.py",
                 "children": []
               },
               {
@@ -8447,11 +9976,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.SELFEVOLUTION.17/ev:contracts:src/contracts/doc_selfevolution.py",
+                "id": "cap:JULIA.SKILL.SELFEVOLUTION.17/ev:contracts:src/contracts/doc_selfevolution_17.py",
                 "kind": "evidence",
-                "label": "doc_selfevolution.py",
+                "label": "doc_selfevolution_17.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_selfevolution.py",
+                "path": "src/contracts/doc_selfevolution_17.py",
                 "children": []
               },
               {
@@ -8463,11 +9992,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.SELFEVOLUTION.17/ev:impl:src/contracts/doc_selfevolution.py",
+                "id": "cap:JULIA.SKILL.SELFEVOLUTION.17/ev:impl:src/contracts/doc_selfevolution_17.py",
                 "kind": "evidence",
-                "label": "doc_selfevolution.py",
+                "label": "doc_selfevolution_17.py",
                 "category": "impl",
-                "path": "src/contracts/doc_selfevolution.py",
+                "path": "src/contracts/doc_selfevolution_17.py",
                 "children": []
               },
               {
@@ -8501,11 +10030,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.STRUCTUREDORCHESTRATION.18/ev:contracts:src/contracts/doc_structuredorchestration.py",
+                "id": "cap:JULIA.SKILL.STRUCTUREDORCHESTRATION.18/ev:contracts:src/contracts/doc_structuredorchestration_18.py",
                 "kind": "evidence",
-                "label": "doc_structuredorchestration.py",
+                "label": "doc_structuredorchestration_18.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_structuredorchestration.py",
+                "path": "src/contracts/doc_structuredorchestration_18.py",
                 "children": []
               },
               {
@@ -8517,11 +10046,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.STRUCTUREDORCHESTRATION.18/ev:impl:src/contracts/doc_structuredorchestration.py",
+                "id": "cap:JULIA.SKILL.STRUCTUREDORCHESTRATION.18/ev:impl:src/contracts/doc_structuredorchestration_18.py",
                 "kind": "evidence",
-                "label": "doc_structuredorchestration.py",
+                "label": "doc_structuredorchestration_18.py",
                 "category": "impl",
-                "path": "src/contracts/doc_structuredorchestration.py",
+                "path": "src/contracts/doc_structuredorchestration_18.py",
                 "children": []
               },
               {
@@ -8555,11 +10084,11 @@
             },
             "children": [
               {
-                "id": "cap:JULIA.SKILL.VISUALMODEL.19/ev:contracts:src/contracts/doc_visualmodel.py",
+                "id": "cap:JULIA.SKILL.VISUALMODEL.19/ev:contracts:src/contracts/doc_visualmodel_19.py",
                 "kind": "evidence",
-                "label": "doc_visualmodel.py",
+                "label": "doc_visualmodel_19.py",
                 "category": "contracts",
-                "path": "src/contracts/doc_visualmodel.py",
+                "path": "src/contracts/doc_visualmodel_19.py",
                 "children": []
               },
               {
@@ -8571,11 +10100,11 @@
                 "children": []
               },
               {
-                "id": "cap:JULIA.SKILL.VISUALMODEL.19/ev:impl:src/contracts/doc_visualmodel.py",
+                "id": "cap:JULIA.SKILL.VISUALMODEL.19/ev:impl:src/contracts/doc_visualmodel_19.py",
                 "kind": "evidence",
-                "label": "doc_visualmodel.py",
+                "label": "doc_visualmodel_19.py",
                 "category": "impl",
-                "path": "src/contracts/doc_visualmodel.py",
+                "path": "src/contracts/doc_visualmodel_19.py",
                 "children": []
               },
               {
@@ -8752,11 +10281,11 @@
           "plans": [],
           "module_docs": [],
           "contracts": [
-            "src/contracts/doc_agentfriendlycli.py"
+            "src/contracts/doc_agentfriendlycli_01.py"
           ],
           "impl": [
             "skills/agent-friendly-cli/SKILL.md",
-            "src/contracts/doc_agentfriendlycli.py"
+            "src/contracts/doc_agentfriendlycli_01.py"
           ],
           "unit_tests": [
             "tests/test_doc_contracts.py"
@@ -8787,11 +10316,11 @@
           "plans": [],
           "module_docs": [],
           "contracts": [
-            "src/contracts/doc_codebasereverse.py"
+            "src/contracts/doc_codebasereverse_02.py"
           ],
           "impl": [
             "skills/codebase-reverse/SKILL.md",
-            "src/contracts/doc_codebasereverse.py"
+            "src/contracts/doc_codebasereverse_02.py"
           ],
           "unit_tests": [
             "tests/test_doc_contracts.py"
@@ -8822,11 +10351,11 @@
           "plans": [],
           "module_docs": [],
           "contracts": [
-            "src/contracts/doc_consultinghtmlppt.py"
+            "src/contracts/doc_consultinghtmlppt_03.py"
           ],
           "impl": [
             "skills/consulting-html-ppt/SKILL.md",
-            "src/contracts/doc_consultinghtmlppt.py"
+            "src/contracts/doc_consultinghtmlppt_03.py"
           ],
           "unit_tests": [
             "tests/test_doc_contracts.py"
@@ -8857,11 +10386,11 @@
           "plans": [],
           "module_docs": [],
           "contracts": [
-            "src/contracts/doc_decisiongates.py"
+            "src/contracts/doc_decisiongates_04.py"
           ],
           "impl": [
             "skills/decision-gates/SKILL.md",
-            "src/contracts/doc_decisiongates.py"
+            "src/contracts/doc_decisiongates_04.py"
           ],
           "unit_tests": [
             "tests/test_doc_contracts.py"
@@ -8892,11 +10421,11 @@
           "plans": [],
           "module_docs": [],
           "contracts": [
-            "src/contracts/doc_deepdiffreview.py"
+            "src/contracts/doc_deepdiffreview_05.py"
           ],
           "impl": [
             "skills/deep-diff-review/SKILL.md",
-            "src/contracts/doc_deepdiffreview.py"
+            "src/contracts/doc_deepdiffreview_05.py"
           ],
           "unit_tests": [
             "tests/test_doc_contracts.py"
@@ -8927,13 +10456,11 @@
           "plans": [],
           "module_docs": [],
           "contracts": [
-            "src/contracts/doc_ledgerbridge.py",
-            "src/contracts/skill_ledger_bridge.py"
+            "src/contracts/doc_ledgerbridge_06.py"
           ],
           "impl": [
             "skills/ledger-bridge/SKILL.md",
-            "src/contracts/doc_ledgerbridge.py",
-            "src/contracts/skill_ledger_bridge.py"
+            "src/contracts/doc_ledgerbridge_06.py"
           ],
           "unit_tests": [
             "tests/test_doc_contracts.py"
@@ -8964,11 +10491,11 @@
           "plans": [],
           "module_docs": [],
           "contracts": [
-            "src/contracts/doc_llmknowledgebase.py"
+            "src/contracts/doc_llmknowledgebase_07.py"
           ],
           "impl": [
             "skills/llm-knowledge-base/SKILL.md",
-            "src/contracts/doc_llmknowledgebase.py"
+            "src/contracts/doc_llmknowledgebase_07.py"
           ],
           "unit_tests": [
             "tests/test_doc_contracts.py"
@@ -8999,11 +10526,11 @@
           "plans": [],
           "module_docs": [],
           "contracts": [
-            "src/contracts/doc_okfconsume.py"
+            "src/contracts/doc_okfconsume_08.py"
           ],
           "impl": [
             "skills/okf-consume/SKILL.md",
-            "src/contracts/doc_okfconsume.py"
+            "src/contracts/doc_okfconsume_08.py"
           ],
           "unit_tests": [
             "tests/test_doc_contracts.py"
@@ -9034,11 +10561,11 @@
           "plans": [],
           "module_docs": [],
           "contracts": [
-            "src/contracts/doc_okfformat.py"
+            "src/contracts/doc_okfformat_09.py"
           ],
           "impl": [
             "skills/okf-format/SKILL.md",
-            "src/contracts/doc_okfformat.py"
+            "src/contracts/doc_okfformat_09.py"
           ],
           "unit_tests": [
             "tests/test_doc_contracts.py"
@@ -9064,38 +10591,289 @@
         ],
         "invariant": "events[i].fingerprint_before == events[i-1].fingerprint_after；seq 从 1 连续递增。"
       },
-      "event_count": 5,
+      "event_count": 6,
       "latest": {
-        "seq": 5,
-        "ts": "2026-11-25 20:06 HKT",
+        "seq": 6,
+        "ts": "2026-11-25 20:08 HKT",
         "type": "change",
-        "fingerprint_before": "35e0dd734636861d",
-        "fingerprint_after": "ebaed60fa30ea861",
+        "fingerprint_before": "ebaed60fa30ea861",
+        "fingerprint_after": "13c4f58ec50c89b5",
         "changes": {
-          "level_transitions": [
-            {
-              "code": "JULIA.INFRA.DIST.01",
-              "from": "L2",
-              "to": "L3"
-            }
-          ],
+          "level_transitions": [],
           "added": [],
           "removed": [],
-          "completion_delta": [
-            {
-              "code": "JULIA.INFRA.DIST.01",
-              "from": 0.4,
-              "to": 0.6
-            }
-          ],
+          "completion_delta": [],
           "evidence_changes": [
             {
-              "code": "JULIA.INFRA.DIST.01",
+              "code": "JULIA.SKILL.AGENTFRIENDLYCLI.01",
               "added": [
-                "src/contracts/doc_dist.py",
-                "tests/test_doc_contracts.py"
+                "src/contracts/doc_agentfriendlycli_01.py"
               ],
-              "removed": []
+              "removed": [
+                "src/contracts/doc_agentfriendlycli.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.CODEBASEREVERSE.02",
+              "added": [
+                "src/contracts/doc_codebasereverse_02.py"
+              ],
+              "removed": [
+                "src/contracts/doc_codebasereverse.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.CONSULTINGHTMLPPT.03",
+              "added": [
+                "src/contracts/doc_consultinghtmlppt_03.py"
+              ],
+              "removed": [
+                "src/contracts/doc_consultinghtmlppt.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.DECISIONGATES.04",
+              "added": [
+                "src/contracts/doc_decisiongates_04.py"
+              ],
+              "removed": [
+                "src/contracts/doc_decisiongates.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.DEEPDIFFREVIEW.05",
+              "added": [
+                "src/contracts/doc_deepdiffreview_05.py"
+              ],
+              "removed": [
+                "src/contracts/doc_deepdiffreview.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.LEDGERBRIDGE.06",
+              "added": [
+                "src/contracts/doc_ledgerbridge_06.py"
+              ],
+              "removed": [
+                "src/contracts/doc_ledgerbridge.py",
+                "src/contracts/skill_ledger_bridge.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.LLMKNOWLEDGEBASE.07",
+              "added": [
+                "src/contracts/doc_llmknowledgebase_07.py"
+              ],
+              "removed": [
+                "src/contracts/doc_llmknowledgebase.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.OKFCONSUME.08",
+              "added": [
+                "src/contracts/doc_okfconsume_08.py"
+              ],
+              "removed": [
+                "src/contracts/doc_okfconsume.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.OKFFORMAT.09",
+              "added": [
+                "src/contracts/doc_okfformat_09.py"
+              ],
+              "removed": [
+                "src/contracts/doc_okfformat.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.OKFGENERATE.10",
+              "added": [
+                "src/contracts/doc_okfgenerate_10.py"
+              ],
+              "removed": [
+                "src/contracts/doc_okfgenerate.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.ONTOLOGYDRIVENDEV.11",
+              "added": [
+                "src/contracts/doc_ontologydrivendev_11.py"
+              ],
+              "removed": [
+                "src/contracts/doc_ontologydrivendev.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.ONTOLOGYMODELING.12",
+              "added": [
+                "src/contracts/doc_ontologymodeling_12.py"
+              ],
+              "removed": [
+                "src/contracts/doc_ontologymodeling.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.PSTACKPARALLELREVIEW.13",
+              "added": [
+                "src/contracts/doc_pstackparallelreview_13.py"
+              ],
+              "removed": [
+                "src/contracts/doc_pstackparallelreview.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.PSTACKPLAYBOOKS.14",
+              "added": [
+                "src/contracts/doc_pstackplaybooks_14.py"
+              ],
+              "removed": [
+                "src/contracts/doc_pstackplaybooks.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.PSTACKPRINCIPLES.15",
+              "added": [
+                "src/contracts/doc_pstackprinciples_15.py"
+              ],
+              "removed": [
+                "src/contracts/doc_pstackprinciples.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.PSTACKVERIFICATION.16",
+              "added": [
+                "src/contracts/doc_pstackverification_16.py"
+              ],
+              "removed": [
+                "src/contracts/doc_pstackverification.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.SELFEVOLUTION.17",
+              "added": [
+                "src/contracts/doc_selfevolution_17.py"
+              ],
+              "removed": [
+                "src/contracts/doc_selfevolution.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.STRUCTUREDORCHESTRATION.18",
+              "added": [
+                "src/contracts/doc_structuredorchestration_18.py"
+              ],
+              "removed": [
+                "src/contracts/doc_structuredorchestration.py"
+              ]
+            },
+            {
+              "code": "JULIA.SKILL.VISUALMODEL.19",
+              "added": [
+                "src/contracts/doc_visualmodel_19.py"
+              ],
+              "removed": [
+                "src/contracts/doc_visualmodel.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.ARCH.05",
+              "added": [
+                "src/contracts/doc_arch_05.py"
+              ],
+              "removed": [
+                "src/contracts/doc_arch.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.DSG.09",
+              "added": [
+                "src/contracts/doc_dsg_09.py"
+              ],
+              "removed": [
+                "src/contracts/doc_dsg.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.ENG.06",
+              "added": [
+                "src/contracts/doc_eng_06.py"
+              ],
+              "removed": [
+                "src/contracts/doc_eng.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.GOV.01",
+              "added": [
+                "src/contracts/doc_gov_01.py"
+              ],
+              "removed": [
+                "src/contracts/doc_gov.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.GOV.02",
+              "added": [
+                "src/contracts/doc_gov_02.py"
+              ],
+              "removed": [
+                "src/contracts/doc_gov.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.GOV.03",
+              "added": [
+                "src/contracts/doc_gov_03.py"
+              ],
+              "removed": [
+                "src/contracts/doc_gov.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.KMS.10",
+              "added": [
+                "src/contracts/doc_kms_10.py"
+              ],
+              "removed": [
+                "src/contracts/doc_kms.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.QA.07",
+              "added": [
+                "src/contracts/doc_qa_07.py"
+              ],
+              "removed": [
+                "src/contracts/doc_qa.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.REL.11",
+              "added": [
+                "src/contracts/doc_rel_11.py"
+              ],
+              "removed": [
+                "src/contracts/doc_rel.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.REQ.04",
+              "added": [
+                "src/contracts/doc_req_04.py"
+              ],
+              "removed": [
+                "src/contracts/doc_req.py"
+              ]
+            },
+            {
+              "code": "JULIA.TEAM.REV.08",
+              "added": [
+                "src/contracts/doc_rev_08.py"
+              ],
+              "removed": [
+                "src/contracts/doc_rev.py"
+              ]
             }
           ]
         },
@@ -9106,12 +10884,12 @@
             "t": "verified",
             "e": [
               "agents/julia-dev-team-lead.md",
-              "src/contracts/doc_gov.py",
+              "src/contracts/doc_gov_01.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "agents/julia-dev-team-lead.md",
-              "src/contracts/doc_gov.py",
+              "src/contracts/doc_gov_01.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": [
@@ -9125,12 +10903,12 @@
             "t": "verified",
             "e": [
               "agents/decision-advisor.md",
-              "src/contracts/doc_gov.py",
+              "src/contracts/doc_gov_02.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "agents/decision-advisor.md",
-              "src/contracts/doc_gov.py",
+              "src/contracts/doc_gov_02.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": [
@@ -9144,12 +10922,12 @@
             "t": "verified",
             "e": [
               "agents/ledger-liaison.md",
-              "src/contracts/doc_gov.py",
+              "src/contracts/doc_gov_03.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "agents/ledger-liaison.md",
-              "src/contracts/doc_gov.py",
+              "src/contracts/doc_gov_03.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": [
@@ -9163,12 +10941,12 @@
             "t": "verified",
             "e": [
               "agents/product-manager.md",
-              "src/contracts/doc_req.py",
+              "src/contracts/doc_req_04.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "agents/product-manager.md",
-              "src/contracts/doc_req.py",
+              "src/contracts/doc_req_04.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9179,12 +10957,12 @@
             "t": "verified",
             "e": [
               "agents/architect.md",
-              "src/contracts/doc_arch.py",
+              "src/contracts/doc_arch_05.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "agents/architect.md",
-              "src/contracts/doc_arch.py",
+              "src/contracts/doc_arch_05.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9195,12 +10973,12 @@
             "t": "verified",
             "e": [
               "agents/engineer.md",
-              "src/contracts/doc_eng.py",
+              "src/contracts/doc_eng_06.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "agents/engineer.md",
-              "src/contracts/doc_eng.py",
+              "src/contracts/doc_eng_06.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9211,12 +10989,12 @@
             "t": "verified",
             "e": [
               "agents/qa-engineer.md",
-              "src/contracts/doc_qa.py",
+              "src/contracts/doc_qa_07.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "agents/qa-engineer.md",
-              "src/contracts/doc_qa.py",
+              "src/contracts/doc_qa_07.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9227,12 +11005,12 @@
             "t": "verified",
             "e": [
               "agents/reverse-engineer.md",
-              "src/contracts/doc_rev.py",
+              "src/contracts/doc_rev_08.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "agents/reverse-engineer.md",
-              "src/contracts/doc_rev.py",
+              "src/contracts/doc_rev_08.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9243,12 +11021,12 @@
             "t": "verified",
             "e": [
               "agents/delivery-designer.md",
-              "src/contracts/doc_dsg.py",
+              "src/contracts/doc_dsg_09.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "agents/delivery-designer.md",
-              "src/contracts/doc_dsg.py",
+              "src/contracts/doc_dsg_09.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9259,12 +11037,12 @@
             "t": "verified",
             "e": [
               "agents/knowledge-curator.md",
-              "src/contracts/doc_kms.py",
+              "src/contracts/doc_kms_10.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "agents/knowledge-curator.md",
-              "src/contracts/doc_kms.py",
+              "src/contracts/doc_kms_10.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9275,12 +11053,12 @@
             "t": "verified",
             "e": [
               "agents/release-engineer.md",
-              "src/contracts/doc_rel.py",
+              "src/contracts/doc_rel_11.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "agents/release-engineer.md",
-              "src/contracts/doc_rel.py",
+              "src/contracts/doc_rel_11.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9291,12 +11069,12 @@
             "t": "verified",
             "e": [
               "skills/agent-friendly-cli/SKILL.md",
-              "src/contracts/doc_agentfriendlycli.py",
+              "src/contracts/doc_agentfriendlycli_01.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/agent-friendly-cli/SKILL.md",
-              "src/contracts/doc_agentfriendlycli.py",
+              "src/contracts/doc_agentfriendlycli_01.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9307,12 +11085,12 @@
             "t": "verified",
             "e": [
               "skills/codebase-reverse/SKILL.md",
-              "src/contracts/doc_codebasereverse.py",
+              "src/contracts/doc_codebasereverse_02.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/codebase-reverse/SKILL.md",
-              "src/contracts/doc_codebasereverse.py",
+              "src/contracts/doc_codebasereverse_02.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9323,12 +11101,12 @@
             "t": "verified",
             "e": [
               "skills/consulting-html-ppt/SKILL.md",
-              "src/contracts/doc_consultinghtmlppt.py",
+              "src/contracts/doc_consultinghtmlppt_03.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/consulting-html-ppt/SKILL.md",
-              "src/contracts/doc_consultinghtmlppt.py",
+              "src/contracts/doc_consultinghtmlppt_03.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9339,12 +11117,12 @@
             "t": "verified",
             "e": [
               "skills/decision-gates/SKILL.md",
-              "src/contracts/doc_decisiongates.py",
+              "src/contracts/doc_decisiongates_04.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/decision-gates/SKILL.md",
-              "src/contracts/doc_decisiongates.py",
+              "src/contracts/doc_decisiongates_04.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9355,12 +11133,12 @@
             "t": "verified",
             "e": [
               "skills/deep-diff-review/SKILL.md",
-              "src/contracts/doc_deepdiffreview.py",
+              "src/contracts/doc_deepdiffreview_05.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/deep-diff-review/SKILL.md",
-              "src/contracts/doc_deepdiffreview.py",
+              "src/contracts/doc_deepdiffreview_05.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9371,14 +11149,12 @@
             "t": "verified",
             "e": [
               "skills/ledger-bridge/SKILL.md",
-              "src/contracts/doc_ledgerbridge.py",
-              "src/contracts/skill_ledger_bridge.py",
+              "src/contracts/doc_ledgerbridge_06.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/ledger-bridge/SKILL.md",
-              "src/contracts/doc_ledgerbridge.py",
-              "src/contracts/skill_ledger_bridge.py",
+              "src/contracts/doc_ledgerbridge_06.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9389,12 +11165,12 @@
             "t": "verified",
             "e": [
               "skills/llm-knowledge-base/SKILL.md",
-              "src/contracts/doc_llmknowledgebase.py",
+              "src/contracts/doc_llmknowledgebase_07.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/llm-knowledge-base/SKILL.md",
-              "src/contracts/doc_llmknowledgebase.py",
+              "src/contracts/doc_llmknowledgebase_07.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9405,12 +11181,12 @@
             "t": "verified",
             "e": [
               "skills/okf-consume/SKILL.md",
-              "src/contracts/doc_okfconsume.py",
+              "src/contracts/doc_okfconsume_08.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/okf-consume/SKILL.md",
-              "src/contracts/doc_okfconsume.py",
+              "src/contracts/doc_okfconsume_08.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9421,12 +11197,12 @@
             "t": "verified",
             "e": [
               "skills/okf-format/SKILL.md",
-              "src/contracts/doc_okfformat.py",
+              "src/contracts/doc_okfformat_09.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/okf-format/SKILL.md",
-              "src/contracts/doc_okfformat.py",
+              "src/contracts/doc_okfformat_09.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9437,12 +11213,12 @@
             "t": "verified",
             "e": [
               "skills/okf-generate/SKILL.md",
-              "src/contracts/doc_okfgenerate.py",
+              "src/contracts/doc_okfgenerate_10.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/okf-generate/SKILL.md",
-              "src/contracts/doc_okfgenerate.py",
+              "src/contracts/doc_okfgenerate_10.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9453,12 +11229,12 @@
             "t": "verified",
             "e": [
               "skills/ontology-driven-dev/SKILL.md",
-              "src/contracts/doc_ontologydrivendev.py",
+              "src/contracts/doc_ontologydrivendev_11.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/ontology-driven-dev/SKILL.md",
-              "src/contracts/doc_ontologydrivendev.py",
+              "src/contracts/doc_ontologydrivendev_11.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9469,12 +11245,12 @@
             "t": "verified",
             "e": [
               "skills/ontology-modeling/SKILL.md",
-              "src/contracts/doc_ontologymodeling.py",
+              "src/contracts/doc_ontologymodeling_12.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/ontology-modeling/SKILL.md",
-              "src/contracts/doc_ontologymodeling.py",
+              "src/contracts/doc_ontologymodeling_12.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9485,12 +11261,12 @@
             "t": "verified",
             "e": [
               "skills/pstack-parallel-review/SKILL.md",
-              "src/contracts/doc_pstackparallelreview.py",
+              "src/contracts/doc_pstackparallelreview_13.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/pstack-parallel-review/SKILL.md",
-              "src/contracts/doc_pstackparallelreview.py",
+              "src/contracts/doc_pstackparallelreview_13.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9501,12 +11277,12 @@
             "t": "verified",
             "e": [
               "skills/pstack-playbooks/SKILL.md",
-              "src/contracts/doc_pstackplaybooks.py",
+              "src/contracts/doc_pstackplaybooks_14.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/pstack-playbooks/SKILL.md",
-              "src/contracts/doc_pstackplaybooks.py",
+              "src/contracts/doc_pstackplaybooks_14.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9517,12 +11293,12 @@
             "t": "verified",
             "e": [
               "skills/pstack-principles/SKILL.md",
-              "src/contracts/doc_pstackprinciples.py",
+              "src/contracts/doc_pstackprinciples_15.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/pstack-principles/SKILL.md",
-              "src/contracts/doc_pstackprinciples.py",
+              "src/contracts/doc_pstackprinciples_15.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9533,12 +11309,12 @@
             "t": "verified",
             "e": [
               "skills/pstack-verification/SKILL.md",
-              "src/contracts/doc_pstackverification.py",
+              "src/contracts/doc_pstackverification_16.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/pstack-verification/SKILL.md",
-              "src/contracts/doc_pstackverification.py",
+              "src/contracts/doc_pstackverification_16.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9549,12 +11325,12 @@
             "t": "verified",
             "e": [
               "skills/self-evolution/SKILL.md",
-              "src/contracts/doc_selfevolution.py",
+              "src/contracts/doc_selfevolution_17.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/self-evolution/SKILL.md",
-              "src/contracts/doc_selfevolution.py",
+              "src/contracts/doc_selfevolution_17.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9565,12 +11341,12 @@
             "t": "verified",
             "e": [
               "skills/structured-orchestration/SKILL.md",
-              "src/contracts/doc_structuredorchestration.py",
+              "src/contracts/doc_structuredorchestration_18.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/structured-orchestration/SKILL.md",
-              "src/contracts/doc_structuredorchestration.py",
+              "src/contracts/doc_structuredorchestration_18.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9581,12 +11357,12 @@
             "t": "verified",
             "e": [
               "skills/visual-model/SKILL.md",
-              "src/contracts/doc_visualmodel.py",
+              "src/contracts/doc_visualmodel_19.py",
               "tests/test_doc_contracts.py"
             ],
             "d": [
               "skills/visual-model/SKILL.md",
-              "src/contracts/doc_visualmodel.py",
+              "src/contracts/doc_visualmodel_19.py",
               "tests/test_doc_contracts.py"
             ],
             "dec": []
@@ -9613,7 +11389,7 @@
         "trigger": "derive",
         "note": "证据 / 等级 / 文档索引变化，由生成器自动侦测。"
       },
-      "current_fingerprint": "ebaed60fa30ea861"
+      "current_fingerprint": "13c4f58ec50c89b5"
     },
     "lessons": {
       "spec": {
@@ -9637,17 +11413,510 @@
       "items": [],
       "candidates": [
         {
+          "id": "LC-C41EBA",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.TEAM.GOV.01 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.TEAM.GOV.01"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-0C470B",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.TEAM.GOV.02 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.TEAM.GOV.02"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-9D56CC",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.TEAM.GOV.03 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.TEAM.GOV.03"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-F613EB",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.TEAM.REQ.04 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.TEAM.REQ.04"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-30E260",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.TEAM.ARCH.05 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.TEAM.ARCH.05"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-726537",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.TEAM.ENG.06 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.TEAM.ENG.06"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-6E7D9C",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.TEAM.QA.07 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.TEAM.QA.07"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-ED22D9",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.TEAM.REV.08 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.TEAM.REV.08"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-1DF62C",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.TEAM.DSG.09 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.TEAM.DSG.09"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-E0EAF7",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.TEAM.KMS.10 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.TEAM.KMS.10"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-DE62D5",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.TEAM.REL.11 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.TEAM.REL.11"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-72DB60",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.AGENTFRIENDLYCLI.01 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.AGENTFRIENDLYCLI.01"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-0DF6EB",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.CODEBASEREVERSE.02 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.CODEBASEREVERSE.02"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-AB3F99",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.CONSULTINGHTMLPPT.03 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.CONSULTINGHTMLPPT.03"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-A04810",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.DECISIONGATES.04 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.DECISIONGATES.04"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-B2478D",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.DEEPDIFFREVIEW.05 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.DEEPDIFFREVIEW.05"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
           "id": "LC-956F37",
           "kind": "stagnation",
           "reason": "能力 JULIA.SKILL.LEDGERBRIDGE.06 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
           "source_events": [
-            3,
             4,
-            5
+            5,
+            6
           ],
           "suggested_scope": {
             "capabilities": [
               "JULIA.SKILL.LEDGERBRIDGE.06"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-70FB37",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.LLMKNOWLEDGEBASE.07 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.LLMKNOWLEDGEBASE.07"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-D966F0",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.OKFCONSUME.08 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.OKFCONSUME.08"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-C8A114",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.OKFFORMAT.09 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.OKFFORMAT.09"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-1F9F35",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.OKFGENERATE.10 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.OKFGENERATE.10"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-08936D",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.ONTOLOGYDRIVENDEV.11 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.ONTOLOGYDRIVENDEV.11"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-F85A26",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.ONTOLOGYMODELING.12 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.ONTOLOGYMODELING.12"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-2E7B7D",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.PSTACKPARALLELREVIEW.13 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.PSTACKPARALLELREVIEW.13"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-E1C725",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.PSTACKPLAYBOOKS.14 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.PSTACKPLAYBOOKS.14"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-5CC819",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.PSTACKPRINCIPLES.15 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.PSTACKPRINCIPLES.15"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-C04175",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.PSTACKVERIFICATION.16 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.PSTACKVERIFICATION.16"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-FCD03F",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.SELFEVOLUTION.17 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.SELFEVOLUTION.17"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-74728B",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.STRUCTUREDORCHESTRATION.18 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.STRUCTUREDORCHESTRATION.18"
+            ]
+          },
+          "status": "open",
+          "origin": "derive"
+        },
+        {
+          "id": "LC-8AA8FE",
+          "kind": "stagnation",
+          "reason": "能力 JULIA.SKILL.VISUALMODEL.19 连续 3 个事件停在 60%（L3），未补齐下一级证据；宜判断是优先级问题还是阻塞。",
+          "source_events": [
+            4,
+            5,
+            6
+          ],
+          "suggested_scope": {
+            "capabilities": [
+              "JULIA.SKILL.VISUALMODEL.19"
             ]
           },
           "status": "open",

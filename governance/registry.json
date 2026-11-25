@@ -41,7 +41,7 @@
           "domain": "GOV",
           "impl": [
             "agents/julia-dev-team-lead.md",
-            "src/contracts/doc_gov.py"
+            "src/contracts/doc_gov_01.py"
           ],
           "contract": [
             "onto/actors.json#actor.julia"
@@ -58,7 +58,7 @@
           "domain": "GOV",
           "impl": [
             "agents/decision-advisor.md",
-            "src/contracts/doc_gov.py"
+            "src/contracts/doc_gov_02.py"
           ],
           "contract": [
             "onto/actors.json#actor.ed"
@@ -75,7 +75,7 @@
           "domain": "GOV",
           "impl": [
             "agents/ledger-liaison.md",
-            "src/contracts/doc_gov.py"
+            "src/contracts/doc_gov_03.py"
           ],
           "contract": [
             "onto/actors.json#actor.luca"
@@ -92,7 +92,7 @@
           "domain": "REQ",
           "impl": [
             "agents/product-manager.md",
-            "src/contracts/doc_req.py"
+            "src/contracts/doc_req_04.py"
           ],
           "contract": [
             "onto/actors.json#actor.remy"
@@ -109,7 +109,7 @@
           "domain": "ARCH",
           "impl": [
             "agents/architect.md",
-            "src/contracts/doc_arch.py"
+            "src/contracts/doc_arch_05.py"
           ],
           "contract": [
             "onto/actors.json#actor.archie"
@@ -126,7 +126,7 @@
           "domain": "ENG",
           "impl": [
             "agents/engineer.md",
-            "src/contracts/doc_eng.py"
+            "src/contracts/doc_eng_06.py"
           ],
           "contract": [
             "onto/actors.json#actor.mark"
@@ -143,7 +143,7 @@
           "domain": "QA",
           "impl": [
             "agents/qa-engineer.md",
-            "src/contracts/doc_qa.py"
+            "src/contracts/doc_qa_07.py"
           ],
           "contract": [
             "onto/actors.json#actor.vera"
@@ -160,7 +160,7 @@
           "domain": "REV",
           "impl": [
             "agents/reverse-engineer.md",
-            "src/contracts/doc_rev.py"
+            "src/contracts/doc_rev_08.py"
           ],
           "contract": [
             "onto/actors.json#actor.tracey"
@@ -177,7 +177,7 @@
           "domain": "DSG",
           "impl": [
             "agents/delivery-designer.md",
-            "src/contracts/doc_dsg.py"
+            "src/contracts/doc_dsg_09.py"
           ],
           "contract": [
             "onto/actors.json#actor.della"
@@ -194,7 +194,7 @@
           "domain": "KMS",
           "impl": [
             "agents/knowledge-curator.md",
-            "src/contracts/doc_kms.py"
+            "src/contracts/doc_kms_10.py"
           ],
           "contract": [
             "onto/actors.json#actor.knox"
@@ -211,7 +211,7 @@
           "domain": "REL",
           "impl": [
             "agents/release-engineer.md",
-            "src/contracts/doc_rel.py"
+            "src/contracts/doc_rel_11.py"
           ],
           "contract": [
             "onto/actors.json#actor.ship"
@@ -237,7 +237,7 @@
           "domain": "AGENTFRIENDLYCLI",
           "impl": [
             "skills/agent-friendly-cli/SKILL.md",
-            "src/contracts/doc_agentfriendlycli.py"
+            "src/contracts/doc_agentfriendlycli_01.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -254,7 +254,7 @@
           "domain": "CODEBASEREVERSE",
           "impl": [
             "skills/codebase-reverse/SKILL.md",
-            "src/contracts/doc_codebasereverse.py"
+            "src/contracts/doc_codebasereverse_02.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -271,7 +271,7 @@
           "domain": "CONSULTINGHTMLPPT",
           "impl": [
             "skills/consulting-html-ppt/SKILL.md",
-            "src/contracts/doc_consultinghtmlppt.py"
+            "src/contracts/doc_consultinghtmlppt_03.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -288,7 +288,7 @@
           "domain": "DECISIONGATES",
           "impl": [
             "skills/decision-gates/SKILL.md",
-            "src/contracts/doc_decisiongates.py"
+            "src/contracts/doc_decisiongates_04.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -305,7 +305,7 @@
           "domain": "DEEPDIFFREVIEW",
           "impl": [
             "skills/deep-diff-review/SKILL.md",
-            "src/contracts/doc_deepdiffreview.py"
+            "src/contracts/doc_deepdiffreview_05.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -322,8 +322,7 @@
           "domain": "LEDGERBRIDGE",
           "impl": [
             "skills/ledger-bridge/SKILL.md",
-            "src/contracts/skill_ledger_bridge.py",
-            "src/contracts/doc_ledgerbridge.py"
+            "src/contracts/doc_ledgerbridge_06.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -340,7 +339,7 @@
           "domain": "LLMKNOWLEDGEBASE",
           "impl": [
             "skills/llm-knowledge-base/SKILL.md",
-            "src/contracts/doc_llmknowledgebase.py"
+            "src/contracts/doc_llmknowledgebase_07.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -357,7 +356,7 @@
           "domain": "OKFCONSUME",
           "impl": [
             "skills/okf-consume/SKILL.md",
-            "src/contracts/doc_okfconsume.py"
+            "src/contracts/doc_okfconsume_08.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -374,7 +373,7 @@
           "domain": "OKFFORMAT",
           "impl": [
             "skills/okf-format/SKILL.md",
-            "src/contracts/doc_okfformat.py"
+            "src/contracts/doc_okfformat_09.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -391,7 +390,7 @@
           "domain": "OKFGENERATE",
           "impl": [
             "skills/okf-generate/SKILL.md",
-            "src/contracts/doc_okfgenerate.py"
+            "src/contracts/doc_okfgenerate_10.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -408,7 +407,7 @@
           "domain": "ONTOLOGYDRIVENDEV",
           "impl": [
             "skills/ontology-driven-dev/SKILL.md",
-            "src/contracts/doc_ontologydrivendev.py"
+            "src/contracts/doc_ontologydrivendev_11.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -425,7 +424,7 @@
           "domain": "ONTOLOGYMODELING",
           "impl": [
             "skills/ontology-modeling/SKILL.md",
-            "src/contracts/doc_ontologymodeling.py"
+            "src/contracts/doc_ontologymodeling_12.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -442,7 +441,7 @@
           "domain": "PSTACKPARALLELREVIEW",
           "impl": [
             "skills/pstack-parallel-review/SKILL.md",
-            "src/contracts/doc_pstackparallelreview.py"
+            "src/contracts/doc_pstackparallelreview_13.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -459,7 +458,7 @@
           "domain": "PSTACKPLAYBOOKS",
           "impl": [
             "skills/pstack-playbooks/SKILL.md",
-            "src/contracts/doc_pstackplaybooks.py"
+            "src/contracts/doc_pstackplaybooks_14.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -476,7 +475,7 @@
           "domain": "PSTACKPRINCIPLES",
           "impl": [
             "skills/pstack-principles/SKILL.md",
-            "src/contracts/doc_pstackprinciples.py"
+            "src/contracts/doc_pstackprinciples_15.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -493,7 +492,7 @@
           "domain": "PSTACKVERIFICATION",
           "impl": [
             "skills/pstack-verification/SKILL.md",
-            "src/contracts/doc_pstackverification.py"
+            "src/contracts/doc_pstackverification_16.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -510,7 +509,7 @@
           "domain": "SELFEVOLUTION",
           "impl": [
             "skills/self-evolution/SKILL.md",
-            "src/contracts/doc_selfevolution.py"
+            "src/contracts/doc_selfevolution_17.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -527,7 +526,7 @@
           "domain": "STRUCTUREDORCHESTRATION",
           "impl": [
             "skills/structured-orchestration/SKILL.md",
-            "src/contracts/doc_structuredorchestration.py"
+            "src/contracts/doc_structuredorchestration_18.py"
           ],
           "contract": [
             "onto/actors.json"
@@ -544,7 +543,7 @@
           "domain": "VISUALMODEL",
           "impl": [
             "skills/visual-model/SKILL.md",
-            "src/contracts/doc_visualmodel.py"
+            "src/contracts/doc_visualmodel_19.py"
           ],
           "contract": [
             "onto/actors.json"

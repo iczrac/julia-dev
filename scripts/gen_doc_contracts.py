@@ -52,8 +52,9 @@ def anchors_for(doc: Path, count: int = 3) -> list[str]:
     return heads[:count]
 
 
-def module_name(cap: dict) -> str:
-    return "doc_" + re.sub(r"[^a-z0-9]+", "_", cap["domain"].lower()).strip("_")
+def module_name(cap: dict, index: int = 0) -> str:
+    base = re.sub(r"[^a-z0-9]+", "_", cap["domain"].lower()).strip("_")
+    return f"doc_{base}_{index:02d}"
 
 
 def build() -> tuple[list[str], list[str]]:
@@ -66,12 +67,14 @@ def build() -> tuple[list[str], list[str]]:
             doc_rel = (cap.get("impl") or [""])[0]
             doc = ROOT / doc_rel
             # 代码资产：已存在手写契约模块（如 DIST）则保留，不覆盖
-            name = module_name(cap)
+            name = module_name(cap, i)
             if doc.suffix == ".py":
-                if (CONTRACTS / f"{name}.py").is_file():
-                    generated.append(f"src/contracts/{name}.py")
+                # 代码资产的契约模块按无序号名保留（如 doc_dist.py），人工维护
+                manual = CONTRACTS / f"doc_{re.sub(r'[^a-z0-9]+', '_', cap['domain'].lower()).strip('_')}.py"
+                if manual.is_file():
+                    generated.append(f"src/contracts/{manual.stem}.py")
                     test_lines.append(
-                        f"from src.contracts.{name} import contract_check as check_{name}")
+                        f"from src.contracts.{manual.stem} import contract_check as check_{manual.stem}")
                 continue
             if not doc.is_file():
                 print(f"[WARN] {cap['domain']}: impl 文档不存在，跳过 {doc_rel}")
@@ -93,7 +96,9 @@ def build() -> tuple[list[str], list[str]]:
             "from pathlib import Path", "", *test_lines, "",
             "ROOT = Path(__file__).resolve().parent.parent", "",
             "class DocContractTest(unittest.TestCase):"]
-    for cap, name in [(c, module_name(c)) for m in reg["modules"] for c in m["caps"]]:
+    for cap, name in [
+        (c, module_name(c, i)) for m in reg["modules"] for i, c in enumerate(m["caps"], 1)
+    ]:
         if f"src/contracts/{name}.py" in generated:
             body += [f"    def test_{name}(self):", f"        check_{name}(ROOT)", ""]
     body += ["", 'if __name__ == "__main__":', "    unittest.main()", ""]
@@ -106,8 +111,8 @@ def wire_registry(generated: list[str]) -> None:
     """把契约模块 + 测试路径写回 registry 的 impl / tests 字段。"""
     reg = json.loads(REG.read_text(encoding="utf-8"))
     for mod in reg["modules"]:
-        for cap in mod["caps"]:
-            name = module_name(cap)
+        for i, cap in enumerate(mod["caps"], 1):
+            name = module_name(cap, i)
             rel = f"src/contracts/{name}.py"
             if rel in generated:
                 impl = [x for x in cap.get("impl", []) if x != rel]
