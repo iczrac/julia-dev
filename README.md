@@ -328,4 +328,6 @@ python3 scripts/register_expert.py <expert-dir>
 zip -r julia-dev.zip julia-dev/
 ```
 
-**版本发布纪律（2026-11-25 起生效）**：每个 minor/major 版本随版本号四处声明位更新，同步完成三件事——①打 tag（`v<版本>`）并推送；②创建 GitHub Release（变更摘要 + 对照 ledger 协同版本）；③附安装包 zip（排除 `.git`）。v1.1.0→v1.10.13 期间未执行此纪律（只有 commit 无发布），自 v1.10.14 起补齐并固化。
+**开发仓与部署副本（2026-11-25 起）**：开发仓位于 `AIWorkingRoom/CapabilityForge/julia-dev`（source of truth，一切编辑只在此进行）；`~/.workbuddy/plugins/marketplaces/my-experts/plugins/julia-dev` 降级为**部署副本**——平台从这里加载专家。副本纪律：**只 pull，不手改**（`git pull --ff-only`；意外手改会以 git status 脏档形式暴露，即视为缺陷走查）。平台注册流程对副本的副作用（如删 settings.json、改 plugin.json）由 spec_check required 判据机械兜底。
+
+**版本发布纪律（2026-11-25 起生效，四件套）**：每个 minor/major 版本随版本号四处声明位更新，同步完成四件事——①打 tag（`v<版本>`）并推送；②创建 GitHub Release（变更摘要 + 对照 ledger 协同版本）；③附安装包 zip（排除 `.git`）；④同步部署副本（marketplace 目录 `git pull --ff-only`，平台加载立即生效）。v1.1.0→v1.10.13 期间未执行此纪律（只有 commit 无发布），自 v1.10.14 起补齐并固化。
