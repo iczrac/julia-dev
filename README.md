@@ -327,3 +327,5 @@ python3 scripts/register_expert.py <expert-dir>
 ```bash
 zip -r julia-dev.zip julia-dev/
 ```
+
+**版本发布纪律（2026-11-25 起生效）**：每个 minor/major 版本随版本号四处声明位更新，同步完成三件事——①打 tag（`v<版本>`）并推送；②创建 GitHub Release（变更摘要 + 对照 ledger 协同版本）；③附安装包 zip（排除 `.git`）。v1.1.0→v1.10.13 期间未执行此纪律（只有 commit 无发布），自 v1.10.14 起补齐并固化。
