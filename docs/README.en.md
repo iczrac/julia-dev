@@ -1,6 +1,6 @@
 # Julia Dev Squad (主理呀開發團)
 
-> **Language / 語言**：[繁體中文](../../README.md) · English (this file) · [简体中文](README.zh-Hans.md)
+> **Language / 語言**：[繁體中文](../README.md) · English (this file) · [简体中文](README.zh-Hans.md)
 
 The team name comes from Julia the lead's Chinese pun 「主理呀」 (*zhǔlǐya*) — analyze the task first, then orchestrate the workflow, then deliver. "Julia" is kept as the lead's call sign; "Squad" emphasizes that this is a team, and avoids being misread as development for the Julia programming language.
 
@@ -8,7 +8,7 @@ A full-spectrum software development expert squad orchestrated by Julia. Whether
 
 ## Type
 
-Team type (multi-role collaboration) · Version 1.10.10 · 11 members
+Team type (multi-role collaboration) · Version 1.10.12 · 11 members
 
 ## Members & Naming Wordplay
 

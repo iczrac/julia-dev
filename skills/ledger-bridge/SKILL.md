@@ -153,6 +153,14 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 | `upgrade verify` 未過（需重新批准升級） | 記入解阻清單請人批准 `upgrade apply --approved-by <人>`；批准前不得沿用既有 `verified` |
 | 工具指紋漂移後既有證據 | 依硬規則 13 重跑產證，不得拿舊章當新章 |
 
+## 規範型倉庫自查（spec_check）
+
+julia-dev 本身是規範型倉庫（主體為 Markdown 規範、無代碼符號可綁定）。五類可判定自查——術語殘留／版本一致／派生漂移／必備檔案／連結解析——**不在本倉庫重複實現**，統一使用 ledger 側 `scripts/spec_check.py`（配置：倉庫根 `spec_check.json`，schema `spec-check/1`）：
+
+- **進化落地後必跑**：每次版本變更提交前，對本倉庫執行 `python3 <ledger根>/scripts/spec_check.py --target .`；退出碼 1 的命中必須清零或經使用者拍板豁免
+- **歷史記錄豁免唯一**：`docs/evolution-log.md` 是舊名／歷史映射的唯一合法記錄地（scan.exclude），其餘文檔一律不允許出現禁用舊名
+- **邊界紀律**：自查判據屬「真相與規則」，隨 ledger 版本升級；本倉庫只維護配置，不得 fork 工具或內嵌第二份檢查器
+
 ## 解阻（Andon）
 
 停不是終點。每次 fail-closed 停下，必須向主理人回傳**解阻清單**：阻塞原因、誰能解（人／Remy補 `open_questions`／Luca重路由）、所需動作、已嘗試步驟。按情況處理：

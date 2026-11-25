@@ -1,6 +1,6 @@
 {
   "name": "julia-dev",
-  "version": "1.10.11",
+  "version": "1.10.12",
   "description": "A full-spectrum software development team with rigorous engineering playbooks, structured orchestration, deep diff review, decision gates, source reverse engineering, delivery decks, trustable OKF knowledge bundles, a ledger bridge with preflight, footprint discipline and verified releases.",
   "author": {
     "name": "WorkBuddy User",
@@ -100,7 +100,7 @@
     {
       "id": "product-manager",
       "displayName": {
-        "en": "Rick",
+        "en": "Remy",
         "zh": "瑞克"
       },
       "profession": {
@@ -126,7 +126,7 @@
     {
       "id": "engineer",
       "displayName": {
-        "en": "Mike",
+        "en": "Mark",
         "zh": "麥克"
       },
       "profession": {
@@ -178,7 +178,7 @@
     {
       "id": "knowledge-curator",
       "displayName": {
-        "en": "Kona",
+        "en": "Knox",
         "zh": "寇娜"
       },
       "profession": {

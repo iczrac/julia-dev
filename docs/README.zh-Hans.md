@@ -1,6 +1,6 @@
 # 主理呀开发团 (Julia Dev Squad)
 
-> **语言 / Language**：繁体中文（本档）· [English](docs/README.en.md) · [简体中文](docs/README.zh-Hans.md)
+> **语言 / Language**：[繁體中文](../README.md) · [English](README.en.md) · 简体中文（本档）
 
 团队名取自主理人Julia的谐音「主理呀」——先辨析任务、再编排流程、最后交付。英文保留 Julia 作为花名，改用 Squad 强调这是一支团队，也避免被误读为 Julia 程式语言开发。
 
@@ -8,7 +8,7 @@
 
 ## 类型
 
-Team 型（多角色协作团队）· 版本 1.10.10 · 11 位成员
+Team 型（多角色协作团队）· 版本 1.10.12 · 11 位成员
 
 ## 成员与命名巧思
 

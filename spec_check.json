@@ -1,0 +1,38 @@
+{
+  "schema": "spec-check/1",
+  "scan": {
+    "include": ["**/*.md", "**/*.py", "**/*.json"],
+    "exclude": ["dist/**", "docs/evolution-log.md"]
+  },
+  "forbidden_terms": ["Rick", "Mike", "Kona"],
+  "version": {
+    "canonical_from": {
+      "file": ".codebuddy-plugin/plugin.json",
+      "json_key": "version"
+    },
+    "declarations": [
+      {"file": "README.md", "regex": "版本\\s+([0-9][\\w.]*)"},
+      {"file": "docs/README.en.md", "regex": "Version\\s+([0-9][\\w.]*)"},
+      {"file": "docs/README.zh-Hans.md", "regex": "版本\\s+([0-9][\\w.]*)"}
+    ]
+  },
+  "generated": {
+    "rebuild_cmd": ["python3", "scripts/build_dist.py"],
+    "paths": ["dist"]
+  },
+  "required": [
+    "README.md",
+    "LICENSE",
+    ".codebuddy-plugin/plugin.json",
+    "docs/evolution-log.md",
+    "docs/iteration-history.md"
+  ],
+  "links": {
+    "docs": [
+      "README.md",
+      "docs/README.en.md",
+      "docs/README.zh-Hans.md",
+      "docs/iteration-history.md"
+    ]
+  }
+}
