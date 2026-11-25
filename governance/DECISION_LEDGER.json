@@ -2,7 +2,7 @@
   "ledger_version": "1.0",
   "title": "Julia Dev Squad（执行层专家团） 决策与能力账本",
   "purpose": "单一事实源：决策、裁决、待办及能力索引的唯一写入点。",
-  "last_updated": "2026-11-25 20:08 HKT",
+  "last_updated": "2026-11-25 23:05 HKT",
   "owner": "待定",
   "provenance": {
     "mode": "adopt",
@@ -60,7 +60,7 @@
       "id": "D-002",
       "date": "2026-11-25",
       "title": "接入 ledger 账本化 + 组合锚声明",
-      "category": "治理协同",
+      "category": "组合锚",
       "scope": "JULIA",
       "status": "done",
       "supersedes": null,
@@ -72,7 +72,17 @@
         "tests/test_spec_compliance.py",
         "governance/registry.json"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "compat_evidence": {
+        "anchor": "spec_check.compat.anchors -> ledger-driven-dev >= 2.29.0",
+        "provider": "ledger-driven-dev",
+        "provider_version": "2.29.0",
+        "consumer": "julia-dev-squad",
+        "consumer_version": "1.10.15",
+        "validated_at": "2026-11-25",
+        "note": "接入跑通版本；julia v1.10.17 沿用同一组合锚",
+        "approved_by": "使用者（2026-11-25 拍板：修正 category 与字段）"
+      }
     }
   ],
   "history": {

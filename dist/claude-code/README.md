@@ -1,6 +1,6 @@
 # julia-dev · Claude Code 發行版（完整團隊形態）
 
-由 Julia 統籌的 11 位成員軟體開發專家團，版本 1.10.16。本目錄由 canonical 自動生成（`python3 scripts/build_dist.py`），**請勿手改**。
+由 Julia 統籌的 11 位成員軟體開發專家團，版本 1.10.17。本目錄由 canonical 自動生成（`python3 scripts/build_dist.py`），**請勿手改**。
 
 ## 安裝
 
