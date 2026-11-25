@@ -1,6 +1,6 @@
 # julia-dev · VS Code Copilot 發行版（自定義 agents）
 
-版本 1.10.14。本目錄由 canonical 自動生成，**請勿手改**。
+版本 1.10.15。本目錄由 canonical 自動生成，**請勿手改**。
 
 ## 安裝
 

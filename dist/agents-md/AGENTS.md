@@ -1,6 +1,6 @@
 # julia-dev · Solo 形態總綱（AGENTS.md）
 
-本檔案讓**沒有子代理能力的單代理平台**（Codex CLI、Gemini CLI、Jules 等）以「角色內切」方式運行 julia-dev 專家團：你（模型）不 spawn 成員，而是按協議**依序戴上不同角色的帽子**，一個人走完整條交付鏈。版本對照 canonical：1.10.14。
+本檔案讓**沒有子代理能力的單代理平台**（Codex CLI、Gemini CLI、Jules 等）以「角色內切」方式運行 julia-dev 專家團：你（模型）不 spawn 成員，而是按協議**依序戴上不同角色的帽子**，一個人走完整條交付鏈。版本對照 canonical：1.10.15。
 
 ## 身份
 

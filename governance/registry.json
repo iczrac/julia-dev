@@ -1,0 +1,461 @@
+{
+  "_comment": "能力注册表 —— 每个项目唯一需要手工维护的清单。生成器据此扫描真实文件系统证据，自动判定完成度并生成组件树/文档索引。复制本文件到 <项目根>/governance/registry.json 后按实际情况修改。",
+  "project": {
+    "code": "JULIA",
+    "name": "Julia Dev Squad（执行层专家团）",
+    "root": ".",
+    "governance_gate": false,
+    "contracts_dir": "src/contracts",
+    "unit_test_dir": "tests",
+    "test_record_dir": "docs/test_records",
+    "docs_dir": "docs",
+    "governance_dir": "governance"
+  },
+  "_field_guide": {
+    "project.code": "项目短代码，用于能力编码前缀（如 DEMO.DATA.READY.01）。一经分配不复用。",
+    "project.name": "项目展示名。",
+    "project.root": "相对仓库根的项目路径。所有 impl/hints 以此为基准。",
+    "governance_gate": "是否授予 L5。需有 governance/ 目录且此项为 true。",
+    "contracts_dir": "L1 契约所在目录，相对项目根。",
+    "unit_test_dir": "L3 单测目录，相对项目根。",
+    "test_record_dir": "L4 测试记录目录，相对项目根。",
+    "docs_dir": "文档根目录，用于文档索引匹配，相对项目根。",
+    "modules[].code": "模块代码，用于编码第二段（DATA/CORE/...）。",
+    "modules[].src": "组件树的扫描入口目录，相对项目根；可多个。",
+    "modules[].caps[].domain": "能力域代码，用于编码第三段（READY/CORE/...）。",
+    "modules[].caps[].impl": "实现证据 glob，相对项目根；命中即算有代码/契约。",
+    "modules[].caps[].hints": "关键词回退（可选）：未声明 tests/test_records 时匹配文件名；扫描限定在本项目子树内。",
+    "modules[].caps[].tests": "精确测试文件路径列表（相对项目根）。声明后即为 L3 证据的权威来源，缺失即降级，不再按 hints 猜测。",
+    "modules[].caps[].test_records": "精确测试记录路径列表。L4 证据的权威来源，缺失即降级。"
+  },
+  "modules": [
+    {
+      "code": "TEAM",
+      "name": "专家团队",
+      "src": [
+        "agents/"
+      ],
+      "caps": [
+        {
+          "name": "Julia（团队主理人/总编排）",
+          "domain": "GOV",
+          "impl": [
+            "agents/julia-dev-team-lead.md"
+          ],
+          "contract": [
+            "onto/actors.json#actor.julia"
+          ],
+          "hints": [
+            "julia"
+          ]
+        },
+        {
+          "name": "Ed（决策顾问/裁决）",
+          "domain": "GOV",
+          "impl": [
+            "agents/decision-advisor.md"
+          ],
+          "contract": [
+            "onto/actors.json#actor.ed"
+          ],
+          "hints": [
+            "ed"
+          ]
+        },
+        {
+          "name": "Luca（ledger 联络官）",
+          "domain": "GOV",
+          "impl": [
+            "agents/ledger-liaison.md"
+          ],
+          "contract": [
+            "onto/actors.json#actor.luca"
+          ],
+          "hints": [
+            "luca"
+          ]
+        },
+        {
+          "name": "Remy（产品经理）",
+          "domain": "REQ",
+          "impl": [
+            "agents/product-manager.md"
+          ],
+          "contract": [
+            "onto/actors.json#actor.remy"
+          ],
+          "hints": [
+            "remy"
+          ]
+        },
+        {
+          "name": "Archie（架构师）",
+          "domain": "ARCH",
+          "impl": [
+            "agents/architect.md"
+          ],
+          "contract": [
+            "onto/actors.json#actor.archie"
+          ],
+          "hints": [
+            "archie"
+          ]
+        },
+        {
+          "name": "Mark（工程师）",
+          "domain": "ENG",
+          "impl": [
+            "agents/engineer.md"
+          ],
+          "contract": [
+            "onto/actors.json#actor.mark"
+          ],
+          "hints": [
+            "mark"
+          ]
+        },
+        {
+          "name": "Vera（QA 工程师）",
+          "domain": "QA",
+          "impl": [
+            "agents/qa-engineer.md"
+          ],
+          "contract": [
+            "onto/actors.json#actor.vera"
+          ],
+          "hints": [
+            "vera"
+          ]
+        },
+        {
+          "name": "Tracey（逆向工程师）",
+          "domain": "REV",
+          "impl": [
+            "agents/reverse-engineer.md"
+          ],
+          "contract": [
+            "onto/actors.json#actor.tracey"
+          ],
+          "hints": [
+            "tracey"
+          ]
+        },
+        {
+          "name": "Della（交付设计师）",
+          "domain": "DSG",
+          "impl": [
+            "agents/delivery-designer.md"
+          ],
+          "contract": [
+            "onto/actors.json#actor.della"
+          ],
+          "hints": [
+            "della"
+          ]
+        },
+        {
+          "name": "Knox（知识策展人）",
+          "domain": "KMS",
+          "impl": [
+            "agents/knowledge-curator.md"
+          ],
+          "contract": [
+            "onto/actors.json#actor.knox"
+          ],
+          "hints": [
+            "knox"
+          ]
+        },
+        {
+          "name": "Ship（发布工程师）",
+          "domain": "REL",
+          "impl": [
+            "agents/release-engineer.md"
+          ],
+          "contract": [
+            "onto/actors.json#actor.ship"
+          ],
+          "hints": [
+            "ship"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SKILL",
+      "name": "技能",
+      "src": [
+        "skills/"
+      ],
+      "caps": [
+        {
+          "name": "Agent Friendly Cli",
+          "domain": "AGENTFRIENDLYCLI",
+          "impl": [
+            "skills/agent-friendly-cli/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "agent-friendly-cli"
+          ]
+        },
+        {
+          "name": "Codebase Reverse",
+          "domain": "CODEBASEREVERSE",
+          "impl": [
+            "skills/codebase-reverse/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "codebase-reverse"
+          ]
+        },
+        {
+          "name": "Consulting Html Ppt",
+          "domain": "CONSULTINGHTMLPPT",
+          "impl": [
+            "skills/consulting-html-ppt/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "consulting-html-ppt"
+          ]
+        },
+        {
+          "name": "Decision Gates",
+          "domain": "DECISIONGATES",
+          "impl": [
+            "skills/decision-gates/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "decision-gates"
+          ]
+        },
+        {
+          "name": "Deep Diff Review",
+          "domain": "DEEPDIFFREVIEW",
+          "impl": [
+            "skills/deep-diff-review/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "deep-diff-review"
+          ]
+        },
+        {
+          "name": "Ledger Bridge",
+          "domain": "LEDGERBRIDGE",
+          "impl": [
+            "skills/ledger-bridge/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "ledger-bridge"
+          ]
+        },
+        {
+          "name": "Llm Knowledge Base",
+          "domain": "LLMKNOWLEDGEBASE",
+          "impl": [
+            "skills/llm-knowledge-base/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "llm-knowledge-base"
+          ]
+        },
+        {
+          "name": "Okf Consume",
+          "domain": "OKFCONSUME",
+          "impl": [
+            "skills/okf-consume/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "okf-consume"
+          ]
+        },
+        {
+          "name": "Okf Format",
+          "domain": "OKFFORMAT",
+          "impl": [
+            "skills/okf-format/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "okf-format"
+          ]
+        },
+        {
+          "name": "Okf Generate",
+          "domain": "OKFGENERATE",
+          "impl": [
+            "skills/okf-generate/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "okf-generate"
+          ]
+        },
+        {
+          "name": "Ontology Driven Dev",
+          "domain": "ONTOLOGYDRIVENDEV",
+          "impl": [
+            "skills/ontology-driven-dev/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "ontology-driven-dev"
+          ]
+        },
+        {
+          "name": "Ontology Modeling",
+          "domain": "ONTOLOGYMODELING",
+          "impl": [
+            "skills/ontology-modeling/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "ontology-modeling"
+          ]
+        },
+        {
+          "name": "Pstack Parallel Review",
+          "domain": "PSTACKPARALLELREVIEW",
+          "impl": [
+            "skills/pstack-parallel-review/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "pstack-parallel-review"
+          ]
+        },
+        {
+          "name": "Pstack Playbooks",
+          "domain": "PSTACKPLAYBOOKS",
+          "impl": [
+            "skills/pstack-playbooks/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "pstack-playbooks"
+          ]
+        },
+        {
+          "name": "Pstack Principles",
+          "domain": "PSTACKPRINCIPLES",
+          "impl": [
+            "skills/pstack-principles/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "pstack-principles"
+          ]
+        },
+        {
+          "name": "Pstack Verification",
+          "domain": "PSTACKVERIFICATION",
+          "impl": [
+            "skills/pstack-verification/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "pstack-verification"
+          ]
+        },
+        {
+          "name": "Self Evolution",
+          "domain": "SELFEVOLUTION",
+          "impl": [
+            "skills/self-evolution/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "self-evolution"
+          ]
+        },
+        {
+          "name": "Structured Orchestration",
+          "domain": "STRUCTUREDORCHESTRATION",
+          "impl": [
+            "skills/structured-orchestration/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "structured-orchestration"
+          ]
+        },
+        {
+          "name": "Visual Model",
+          "domain": "VISUALMODEL",
+          "impl": [
+            "skills/visual-model/SKILL.md"
+          ],
+          "contract": [
+            "onto/actors.json"
+          ],
+          "hints": [
+            "visual-model"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "INFRA",
+      "name": "基建",
+      "src": [
+        "scripts/"
+      ],
+      "caps": [
+        {
+          "name": "Build Dist（四平台发行唯一生产者）",
+          "domain": "DIST",
+          "impl": [
+            "scripts/build_dist.py"
+          ],
+          "hints": [
+            "build_dist",
+            "dist"
+          ]
+        }
+      ]
+    }
+  ]
+}

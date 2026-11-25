@@ -1,24 +1,50 @@
 {
   "schema": "spec-check/1",
   "scan": {
-    "include": ["**/*.md", "**/*.py", "**/*.json"],
-    "exclude": ["dist/**", "docs/evolution-log.md", "onto/**"]
+    "include": [
+      "**/*.md",
+      "**/*.py",
+      "**/*.json"
+    ],
+    "exclude": [
+      "dist/**",
+      "docs/evolution-log.md",
+      "onto/**"
+    ]
   },
-  "forbidden_terms": ["Rick", "Mike", "Kona"],
+  "forbidden_terms": [
+    "Rick",
+    "Mike",
+    "Kona"
+  ],
   "version": {
     "canonical_from": {
       "file": ".codebuddy-plugin/plugin.json",
       "json_key": "version"
     },
     "declarations": [
-      {"file": "README.md", "regex": "版本\\s+([0-9][\\w.]*)"},
-      {"file": "docs/README.en.md", "regex": "Version\\s+([0-9][\\w.]*)"},
-      {"file": "docs/README.zh-Hans.md", "regex": "版本\\s+([0-9][\\w.]*)"}
+      {
+        "file": "README.md",
+        "regex": "版本\\s+([0-9][\\w.]*)"
+      },
+      {
+        "file": "docs/README.en.md",
+        "regex": "Version\\s+([0-9][\\w.]*)"
+      },
+      {
+        "file": "docs/README.zh-Hans.md",
+        "regex": "版本\\s+([0-9][\\w.]*)"
+      }
     ]
   },
   "generated": {
-    "rebuild_cmd": ["python3", "scripts/build_dist.py"],
-    "paths": ["dist"]
+    "rebuild_cmd": [
+      "python3",
+      "scripts/build_dist.py"
+    ],
+    "paths": [
+      "dist"
+    ]
   },
   "required": [
     "README.md",
@@ -30,9 +56,18 @@
     "onto/actors.json"
   ],
   "ontology": {
-    "files": ["onto/*.json"],
-    "ref_fields": ["consumes", "members", "gates", "depends"],
-    "path_fields": ["platforms"]
+    "files": [
+      "onto/*.json"
+    ],
+    "ref_fields": [
+      "consumes",
+      "members",
+      "gates",
+      "depends"
+    ],
+    "path_fields": [
+      "platforms"
+    ]
   },
   "release_tag": {
     "prefix": "v"
@@ -43,6 +78,19 @@
       "docs/README.en.md",
       "docs/README.zh-Hans.md",
       "docs/iteration-history.md"
+    ]
+  },
+  "compat": {
+    "anchors": [
+      {
+        "repo": "../ledger-driven-dev",
+        "min_version": "2.29.0",
+        "version_source": {
+          "file": "scripts/upgrade.py",
+          "regex": "METHOD_VERSION\\s*=\\s*\"([0-9][\\w.]*)\""
+        },
+        "note": "julia 消费 ledger spec_check（七判据+compat）；语义随 METHOD_VERSION 演进，低于 2.29.0 不保证 compat 判据存在"
+      }
     ]
   }
 }

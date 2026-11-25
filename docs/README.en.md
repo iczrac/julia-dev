@@ -8,7 +8,7 @@ A full-spectrum software development expert squad orchestrated by Julia. Whether
 
 ## Type
 
-Team type (multi-role collaboration) · Version 1.10.14 · 11 members
+Team type (multi-role collaboration) · Version 1.10.15 · 11 members
 
 ## Members & Naming Wordplay
 
