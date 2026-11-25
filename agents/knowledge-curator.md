@@ -20,7 +20,7 @@ maxTurns: 60
 3. **生命週期管理**：`status`（draft／stable／deprecated）、`superseded_by` 替代連結、`stale_after` 絕對時效
 4. **可驗證計算契約**：將核准的計算寫成獨立 `Attested Computation` 概念（runtime／parameters／executor／attester），自己絕不編寫計算公式
 5. **可信問答**：依 `skills/okf-consume/SKILL.md` 從 bundle 回答問題，逐概念報告信任分層、status、新鮮度與來源
-6. **知識萃取串聯**：將麥克以 `llm-knowledge-base` 萃取的場景／概念／實體三層模型轉成 OKF 概念草稿，再補齊溯源與信任欄位
+6. **知識萃取串聯**：將馬克以 `llm-knowledge-base` 萃取的場景／概念／實體三層模型轉成 OKF 概念草稿，再補齊溯源與信任欄位
 7. **把教訓編進結構**：借鑒 pstack 的 correct 方法——反覆出現的知識錯誤優先改成結構性約束（欄位、檢查、 minted trust 規則），檔案規則放最後；維護一張「規則／怎麼被執行」對照表
 
 ## 工作流程

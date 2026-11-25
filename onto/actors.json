@@ -1,0 +1,160 @@
+{
+  "schema": "julia-ledger-onto/0.1",
+  "note": "概念唯一声明点 v0.1（薄版）：只冻结身份与平台映射；改名史唯一记录在 aliases；流程细节仍以各 agent/skill markdown 为准，此处不得复述内容。新增平台先在此登记映射（null=候选未落地），再产出发行档。",
+  "actors": [
+    {
+      "id": "actor.julia",
+      "name": "Julia",
+      "aliases": [],
+      "kind": "lead",
+      "file": "julia-dev-team-lead",
+      "platforms": {
+        "claude-code": "agents/julia-dev-team-lead.md",
+        "agents-md": "dist/agents-md/AGENTS.md",
+        "cursor": "dist/cursor/.cursor/rules/julia-dev.mdc",
+        "copilot": "dist/copilot/.github/agents/julia-dev-team-lead.md",
+        "hermes": null
+      }
+    },
+    {
+      "id": "actor.remy",
+      "name": "Remy",
+      "aliases": ["Mike"],
+      "kind": "specialist",
+      "file": "product-manager",
+      "platforms": {
+        "claude-code": "agents/product-manager.md",
+        "agents-md": "dist/agents-md/roles/product-manager.md",
+        "cursor": "dist/cursor/.cursor/rules/julia-dev.mdc",
+        "copilot": "dist/copilot/.github/agents/product-manager.md",
+        "hermes": null
+      }
+    },
+    {
+      "id": "actor.archie",
+      "name": "Archie",
+      "aliases": [],
+      "kind": "specialist",
+      "file": "architect",
+      "platforms": {
+        "claude-code": "agents/architect.md",
+        "agents-md": "dist/agents-md/roles/architect.md",
+        "cursor": "dist/cursor/.cursor/rules/julia-dev.mdc",
+        "copilot": "dist/copilot/.github/agents/architect.md",
+        "hermes": null
+      }
+    },
+    {
+      "id": "actor.mark",
+      "name": "Mark",
+      "aliases": ["Rick"],
+      "kind": "specialist",
+      "file": "engineer",
+      "platforms": {
+        "claude-code": "agents/engineer.md",
+        "agents-md": "dist/agents-md/roles/engineer.md",
+        "cursor": "dist/cursor/.cursor/rules/julia-dev.mdc",
+        "copilot": "dist/copilot/.github/agents/engineer.md",
+        "hermes": null
+      }
+    },
+    {
+      "id": "actor.vera",
+      "name": "Vera",
+      "aliases": [],
+      "kind": "specialist",
+      "file": "qa-engineer",
+      "platforms": {
+        "claude-code": "agents/qa-engineer.md",
+        "agents-md": "dist/agents-md/roles/qa-engineer.md",
+        "cursor": "dist/cursor/.cursor/rules/julia-dev.mdc",
+        "copilot": "dist/copilot/.github/agents/qa-engineer.md",
+        "hermes": null
+      }
+    },
+    {
+      "id": "actor.tracey",
+      "name": "Tracey",
+      "aliases": [],
+      "kind": "specialist",
+      "file": "reverse-engineer",
+      "platforms": {
+        "claude-code": "agents/reverse-engineer.md",
+        "agents-md": "dist/agents-md/roles/reverse-engineer.md",
+        "cursor": "dist/cursor/.cursor/rules/julia-dev.mdc",
+        "copilot": "dist/copilot/.github/agents/reverse-engineer.md",
+        "hermes": null
+      }
+    },
+    {
+      "id": "actor.della",
+      "name": "Della",
+      "aliases": [],
+      "kind": "specialist",
+      "file": "delivery-designer",
+      "platforms": {
+        "claude-code": "agents/delivery-designer.md",
+        "agents-md": "dist/agents-md/roles/delivery-designer.md",
+        "cursor": "dist/cursor/.cursor/rules/julia-dev.mdc",
+        "copilot": "dist/copilot/.github/agents/delivery-designer.md",
+        "hermes": null
+      }
+    },
+    {
+      "id": "actor.knox",
+      "name": "Knox",
+      "aliases": ["Kona"],
+      "kind": "specialist",
+      "file": "knowledge-curator",
+      "platforms": {
+        "claude-code": "agents/knowledge-curator.md",
+        "agents-md": "dist/agents-md/roles/knowledge-curator.md",
+        "cursor": "dist/cursor/.cursor/rules/julia-dev.mdc",
+        "copilot": "dist/copilot/.github/agents/knowledge-curator.md",
+        "hermes": null
+      }
+    },
+    {
+      "id": "actor.ship",
+      "name": "Ship",
+      "aliases": [],
+      "kind": "specialist",
+      "file": "release-engineer",
+      "platforms": {
+        "claude-code": "agents/release-engineer.md",
+        "agents-md": "dist/agents-md/roles/release-engineer.md",
+        "cursor": "dist/cursor/.cursor/rules/julia-dev.mdc",
+        "copilot": "dist/copilot/.github/agents/release-engineer.md",
+        "hermes": null
+      }
+    },
+    {
+      "id": "actor.ed",
+      "name": "Ed",
+      "aliases": [],
+      "kind": "specialist",
+      "file": "decision-advisor",
+      "platforms": {
+        "claude-code": "agents/decision-advisor.md",
+        "agents-md": "dist/agents-md/roles/decision-advisor.md",
+        "cursor": "dist/cursor/.cursor/rules/julia-dev.mdc",
+        "copilot": "dist/copilot/.github/agents/decision-advisor.md",
+        "hermes": null
+      }
+    },
+    {
+      "id": "actor.luca",
+      "name": "Luca",
+      "aliases": [],
+      "kind": "specialist",
+      "file": "ledger-liaison",
+      "platforms": {
+        "claude-code": "agents/ledger-liaison.md",
+        "agents-md": "dist/agents-md/roles/ledger-liaison.md",
+        "cursor": "dist/cursor/.cursor/rules/julia-dev.mdc",
+        "copilot": "dist/copilot/.github/agents/ledger-liaison.md",
+        "hermes": null
+      }
+    }
+  ]
+}
