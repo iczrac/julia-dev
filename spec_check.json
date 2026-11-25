@@ -34,6 +34,9 @@
     "ref_fields": ["consumes", "members", "gates", "depends"],
     "path_fields": ["platforms"]
   },
+  "release_tag": {
+    "prefix": "v"
+  },
   "links": {
     "docs": [
       "README.md",
