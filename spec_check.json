@@ -24,6 +24,7 @@
     "README.md",
     "LICENSE",
     ".codebuddy-plugin/plugin.json",
+    "settings.json",
     "docs/evolution-log.md",
     "docs/iteration-history.md",
     "onto/actors.json"
