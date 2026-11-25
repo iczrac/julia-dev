@@ -40,10 +40,12 @@
   "generated": {
     "rebuild_cmd": [
       "python3",
-      "scripts/build_dist.py"
+      "scripts/gen_doc_contracts.py"
     ],
     "paths": [
-      "dist"
+      "dist",
+      "src/contracts",
+      "tests/test_doc_contracts.py"
     ]
   },
   "required": [

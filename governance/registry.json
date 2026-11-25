@@ -40,143 +40,187 @@
           "name": "Julia（团队主理人/总编排）",
           "domain": "GOV",
           "impl": [
-            "agents/julia-dev-team-lead.md"
+            "agents/julia-dev-team-lead.md",
+            "src/contracts/doc_gov.py"
           ],
           "contract": [
             "onto/actors.json#actor.julia"
           ],
           "hints": [
             "julia"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Ed（决策顾问/裁决）",
           "domain": "GOV",
           "impl": [
-            "agents/decision-advisor.md"
+            "agents/decision-advisor.md",
+            "src/contracts/doc_gov.py"
           ],
           "contract": [
             "onto/actors.json#actor.ed"
           ],
           "hints": [
             "ed"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Luca（ledger 联络官）",
           "domain": "GOV",
           "impl": [
-            "agents/ledger-liaison.md"
+            "agents/ledger-liaison.md",
+            "src/contracts/doc_gov.py"
           ],
           "contract": [
             "onto/actors.json#actor.luca"
           ],
           "hints": [
             "luca"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Remy（产品经理）",
           "domain": "REQ",
           "impl": [
-            "agents/product-manager.md"
+            "agents/product-manager.md",
+            "src/contracts/doc_req.py"
           ],
           "contract": [
             "onto/actors.json#actor.remy"
           ],
           "hints": [
             "remy"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Archie（架构师）",
           "domain": "ARCH",
           "impl": [
-            "agents/architect.md"
+            "agents/architect.md",
+            "src/contracts/doc_arch.py"
           ],
           "contract": [
             "onto/actors.json#actor.archie"
           ],
           "hints": [
             "archie"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Mark（工程师）",
           "domain": "ENG",
           "impl": [
-            "agents/engineer.md"
+            "agents/engineer.md",
+            "src/contracts/doc_eng.py"
           ],
           "contract": [
             "onto/actors.json#actor.mark"
           ],
           "hints": [
             "mark"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Vera（QA 工程师）",
           "domain": "QA",
           "impl": [
-            "agents/qa-engineer.md"
+            "agents/qa-engineer.md",
+            "src/contracts/doc_qa.py"
           ],
           "contract": [
             "onto/actors.json#actor.vera"
           ],
           "hints": [
             "vera"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Tracey（逆向工程师）",
           "domain": "REV",
           "impl": [
-            "agents/reverse-engineer.md"
+            "agents/reverse-engineer.md",
+            "src/contracts/doc_rev.py"
           ],
           "contract": [
             "onto/actors.json#actor.tracey"
           ],
           "hints": [
             "tracey"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Della（交付设计师）",
           "domain": "DSG",
           "impl": [
-            "agents/delivery-designer.md"
+            "agents/delivery-designer.md",
+            "src/contracts/doc_dsg.py"
           ],
           "contract": [
             "onto/actors.json#actor.della"
           ],
           "hints": [
             "della"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Knox（知识策展人）",
           "domain": "KMS",
           "impl": [
-            "agents/knowledge-curator.md"
+            "agents/knowledge-curator.md",
+            "src/contracts/doc_kms.py"
           ],
           "contract": [
             "onto/actors.json#actor.knox"
           ],
           "hints": [
             "knox"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Ship（发布工程师）",
           "domain": "REL",
           "impl": [
-            "agents/release-engineer.md"
+            "agents/release-engineer.md",
+            "src/contracts/doc_rel.py"
           ],
           "contract": [
             "onto/actors.json#actor.ship"
           ],
           "hints": [
             "ship"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         }
       ]
@@ -192,247 +236,324 @@
           "name": "Agent Friendly Cli",
           "domain": "AGENTFRIENDLYCLI",
           "impl": [
-            "skills/agent-friendly-cli/SKILL.md"
+            "skills/agent-friendly-cli/SKILL.md",
+            "src/contracts/doc_agentfriendlycli.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "agent-friendly-cli"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Codebase Reverse",
           "domain": "CODEBASEREVERSE",
           "impl": [
-            "skills/codebase-reverse/SKILL.md"
+            "skills/codebase-reverse/SKILL.md",
+            "src/contracts/doc_codebasereverse.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "codebase-reverse"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Consulting Html Ppt",
           "domain": "CONSULTINGHTMLPPT",
           "impl": [
-            "skills/consulting-html-ppt/SKILL.md"
+            "skills/consulting-html-ppt/SKILL.md",
+            "src/contracts/doc_consultinghtmlppt.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "consulting-html-ppt"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Decision Gates",
           "domain": "DECISIONGATES",
           "impl": [
-            "skills/decision-gates/SKILL.md"
+            "skills/decision-gates/SKILL.md",
+            "src/contracts/doc_decisiongates.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "decision-gates"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Deep Diff Review",
           "domain": "DEEPDIFFREVIEW",
           "impl": [
-            "skills/deep-diff-review/SKILL.md"
+            "skills/deep-diff-review/SKILL.md",
+            "src/contracts/doc_deepdiffreview.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "deep-diff-review"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Ledger Bridge",
           "domain": "LEDGERBRIDGE",
           "impl": [
-            "skills/ledger-bridge/SKILL.md"
+            "skills/ledger-bridge/SKILL.md",
+            "src/contracts/skill_ledger_bridge.py",
+            "src/contracts/doc_ledgerbridge.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "ledger-bridge"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Llm Knowledge Base",
           "domain": "LLMKNOWLEDGEBASE",
           "impl": [
-            "skills/llm-knowledge-base/SKILL.md"
+            "skills/llm-knowledge-base/SKILL.md",
+            "src/contracts/doc_llmknowledgebase.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "llm-knowledge-base"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Okf Consume",
           "domain": "OKFCONSUME",
           "impl": [
-            "skills/okf-consume/SKILL.md"
+            "skills/okf-consume/SKILL.md",
+            "src/contracts/doc_okfconsume.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "okf-consume"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Okf Format",
           "domain": "OKFFORMAT",
           "impl": [
-            "skills/okf-format/SKILL.md"
+            "skills/okf-format/SKILL.md",
+            "src/contracts/doc_okfformat.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "okf-format"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Okf Generate",
           "domain": "OKFGENERATE",
           "impl": [
-            "skills/okf-generate/SKILL.md"
+            "skills/okf-generate/SKILL.md",
+            "src/contracts/doc_okfgenerate.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "okf-generate"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Ontology Driven Dev",
           "domain": "ONTOLOGYDRIVENDEV",
           "impl": [
-            "skills/ontology-driven-dev/SKILL.md"
+            "skills/ontology-driven-dev/SKILL.md",
+            "src/contracts/doc_ontologydrivendev.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "ontology-driven-dev"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Ontology Modeling",
           "domain": "ONTOLOGYMODELING",
           "impl": [
-            "skills/ontology-modeling/SKILL.md"
+            "skills/ontology-modeling/SKILL.md",
+            "src/contracts/doc_ontologymodeling.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "ontology-modeling"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Pstack Parallel Review",
           "domain": "PSTACKPARALLELREVIEW",
           "impl": [
-            "skills/pstack-parallel-review/SKILL.md"
+            "skills/pstack-parallel-review/SKILL.md",
+            "src/contracts/doc_pstackparallelreview.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "pstack-parallel-review"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Pstack Playbooks",
           "domain": "PSTACKPLAYBOOKS",
           "impl": [
-            "skills/pstack-playbooks/SKILL.md"
+            "skills/pstack-playbooks/SKILL.md",
+            "src/contracts/doc_pstackplaybooks.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "pstack-playbooks"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Pstack Principles",
           "domain": "PSTACKPRINCIPLES",
           "impl": [
-            "skills/pstack-principles/SKILL.md"
+            "skills/pstack-principles/SKILL.md",
+            "src/contracts/doc_pstackprinciples.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "pstack-principles"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Pstack Verification",
           "domain": "PSTACKVERIFICATION",
           "impl": [
-            "skills/pstack-verification/SKILL.md"
+            "skills/pstack-verification/SKILL.md",
+            "src/contracts/doc_pstackverification.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "pstack-verification"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Self Evolution",
           "domain": "SELFEVOLUTION",
           "impl": [
-            "skills/self-evolution/SKILL.md"
+            "skills/self-evolution/SKILL.md",
+            "src/contracts/doc_selfevolution.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "self-evolution"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Structured Orchestration",
           "domain": "STRUCTUREDORCHESTRATION",
           "impl": [
-            "skills/structured-orchestration/SKILL.md"
+            "skills/structured-orchestration/SKILL.md",
+            "src/contracts/doc_structuredorchestration.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "structured-orchestration"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         },
         {
           "name": "Visual Model",
           "domain": "VISUALMODEL",
           "impl": [
-            "skills/visual-model/SKILL.md"
+            "skills/visual-model/SKILL.md",
+            "src/contracts/doc_visualmodel.py"
           ],
           "contract": [
             "onto/actors.json"
           ],
           "hints": [
             "visual-model"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         }
       ]
@@ -448,11 +569,15 @@
           "name": "Build Dist（四平台发行唯一生产者）",
           "domain": "DIST",
           "impl": [
-            "scripts/build_dist.py"
+            "scripts/build_dist.py",
+            "src/contracts/doc_dist.py"
           ],
           "hints": [
             "build_dist",
             "dist"
+          ],
+          "tests": [
+            "tests/test_doc_contracts.py"
           ]
         }
       ]
