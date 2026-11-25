@@ -155,9 +155,10 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 
 ## 規範型倉庫自查（spec_check）
 
-julia-dev 本身是規範型倉庫（主體為 Markdown 規範、無代碼符號可綁定）。五類可判定自查——術語殘留／版本一致／派生漂移／必備檔案／連結解析——**不在本倉庫重複實現**，統一使用 ledger 側 `scripts/spec_check.py`（配置：倉庫根 `spec_check.json`，schema `spec-check/1`）：
+julia-dev 本身是規範型倉庫（主體為 Markdown 規範、無代碼符號可綁定）。六類可判定自查——術語殘留／版本一致／派生漂移／必備檔案／連結解析／本體完整——**不在本倉庫重複實現**，統一使用 ledger 側 `scripts/spec_check.py`（配置：倉庫根 `spec_check.json`，schema `spec-check/1`）：
 
-- **進化落地後必跑**：每次版本變更提交前，對本倉庫執行 `python3 <ledger根>/scripts/spec_check.py --target .`；退出碼 1 的命中必須清零或經使用者拍板豁免
+- **本地副本（唯一執行處）**：`/Volumes/LQVault/RacAIWorkingRoom/CapabilityForge/ledger-driven-dev`（與遠端 github.com/iczrac/ledger-driven-dev 對齊）；執行 `python3 /Volumes/LQVault/RacAIWorkingRoom/CapabilityForge/ledger-driven-dev/scripts/spec_check.py --target .`
+- **進化落地後必跑**：每次版本變更提交前執行上述自查；退出碼 1 的命中必須清零或經使用者拍板豁免
 - **歷史記錄豁免唯一**：`docs/evolution-log.md` 是舊名／歷史映射的唯一合法記錄地（scan.exclude），其餘文檔一律不允許出現禁用舊名
 - **邊界紀律**：自查判據屬「真相與規則」，隨 ledger 版本升級；本倉庫只維護配置，不得 fork 工具或內嵌第二份檢查器
 
