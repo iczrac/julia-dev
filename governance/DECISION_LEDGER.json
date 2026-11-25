@@ -2,7 +2,7 @@
   "ledger_version": "1.0",
   "title": "Julia Dev Squad（执行层专家团） 决策与能力账本",
   "purpose": "单一事实源：决策、裁决、待办及能力索引的唯一写入点。",
-  "last_updated": "2026-11-25 23:05 HKT",
+  "last_updated": "2026-11-25 23:20 HKT",
   "owner": "待定",
   "provenance": {
     "mode": "adopt",
@@ -44,7 +44,7 @@
     {
       "id": "D-001",
       "date": "2026-11-25",
-      "title": "建立项目治理骨架",
+      "title": "JULIA · 治理初始化 · 建立账本与能力注册表（adopt）",
       "category": "治理初始化",
       "scope": "JULIA",
       "status": "done",
@@ -59,7 +59,7 @@
     {
       "id": "D-002",
       "date": "2026-11-25",
-      "title": "接入 ledger 账本化 + 组合锚声明",
+      "title": "JULIA · 组合锚 · 声明 ledger ≥ 2.29.0 兼容锚（↔ LEDGER D-015）",
       "category": "组合锚",
       "scope": "JULIA",
       "status": "done",
