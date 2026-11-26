@@ -1,3 +1,9 @@
 .DS_Store
 *.zip
 .created-by-session
+
+# 升级运行时产物：备份 / 安装副本 / 清单 / 工具 vendor，均由 upgrade apply 重算
+.ledger-upgrade/
+.workbuddy/
+governance/ASSET_MANIFEST.json
+governance/vendor/

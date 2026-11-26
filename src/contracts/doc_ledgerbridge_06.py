@@ -8,7 +8,7 @@ from pathlib import Path
 
 DOC = Path('skills/ledger-bridge/SKILL.md')
 REQUIRED_ANCHORS = ['# 帳本橋接：julia-dev 對接 ledger-driven-dev（濃縮版）', '## 何時用', '## 三條硬邊界']
-MIN_CHARS = 3071
+MIN_CHARS = 3108
 
 
 def contract_check(root: Path) -> None:
