@@ -8,7 +8,7 @@ from pathlib import Path
 
 DOC = Path('skills/self-evolution/SKILL.md')
 REQUIRED_ANCHORS = ['# 受控自我進化', '## 觸發條件（提案資格門）', '## 提案格式（固定七段）']
-MIN_CHARS = 946
+MIN_CHARS = 944
 
 
 def contract_check(root: Path) -> None:

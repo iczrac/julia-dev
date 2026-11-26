@@ -139,7 +139,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 **與既有能力的分工**：`ontology-modeling` 查需求到程式碼的對應、`pstack-verification` 查實際跑起來的行為、OKF attestation 查計算回執是否被竄改——三者互補。CI 專屬的模型設定與插件依賴沒有內嵌，署名見各 Skill 的 `ATTRIBUTION.md`。
 
-**門禁衝突的處理**：pstack 主張「可逆工作不要問人」，本團隊的優先序是門禁優先序：人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項。
+**門禁衝突的處理**：pstack 主張「可逆工作不要問人」，本團隊的優先序是：人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項。
 
 **設計取捨**：
 
@@ -182,7 +182,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 **ledger-driven-dev 倉庫本身零改動**：不改 schema、不改 31 條不變量、不加新專家、不複製 24 個 Skill。需要在目標專案做的是一次性的治理接入：能力碼、`verify_ledger`、Agent 註冊與測試證據綁定。
 
-門禁優先序：**門禁優先序：人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項**。Luca只讀、只翻譯、只準備；不得帶 `--apply` 執行寫入，也不得把 ledger JSON 複製成 julia-dev 內的第二份事實源。ledger v2.24–v2.25 對接後新增四條紀律：**證據降級條款**（工具指紋漂移使既有 `verified` 回落 `declared`，須重跑產證）、**文檔寫入路由**（治理項目 `docs/**` 必經 intent，成員不得直寫）、**門禁口徑 0≠n/a**（`stale_unknown` 單列，缺鍵 fail-closed）、**Preflight 加查 `upgrade verify` 與資產指紋**（ledger 更新後目標項目需重新批准升級）。方法論濃縮見 `skills/ledger-bridge/SKILL.md`，授權見同目錄 `ATTRIBUTION.md`。
+門禁優先序：**人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項**。Luca只讀、只翻譯、只準備；不得帶 `--apply` 執行寫入，也不得把 ledger JSON 複製成 julia-dev 內的第二份事實源。ledger v2.24–v2.25 對接後新增四條紀律：**證據降級條款**（工具指紋漂移使既有 `verified` 回落 `declared`，須重跑產證）、**文檔寫入路由**（治理項目 `docs/**` 必經 intent，成員不得直寫）、**門禁口徑 0≠n/a**（`stale_unknown` 單列，缺鍵 fail-closed）、**Preflight 加查 `upgrade verify` 與資產指紋**（ledger 更新後目標項目需重新批准升級）。方法論濃縮見 `skills/ledger-bridge/SKILL.md`，授權見同目錄 `ATTRIBUTION.md`。
 
 ## v1.9.0：接縫修補
 

@@ -45,7 +45,7 @@ description: "Controlled self-evolution loop: members propose capability-doc ame
 ## 禁區（成員不可提案，只能由人主動修改）
 
 - 嚴禁行為清單
-- 門禁優先序（門禁優先序：人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項）
+- 門禁優先序（人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項）
 - 成員職責邊界與協作鐵律
 - 四類 ledger 交接對象
 
