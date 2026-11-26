@@ -27,8 +27,11 @@
 2. **腳本可用**：`intent_restate`／`route_expert`／`expert_run`／`run_tests`／`verify_ledger`／`agent_gateway` 都能執行（`--help` 不報缺模組）；腳本不在包內，依賴目標專案安裝的 ledger 版本
 3. **版本與指紋留痕（v2.24.0 起）**：把 `METHOD_VERSION`、`method_assets`／`installed_assets`／`ontology` 摘要一起寫入足跡，後續每次對接先比對；任一漂移即重新路由，不沿用舊裁決。**同時跑 `upgrade.py verify`**：ledger 側每次版本更新都會重綁資產指紋，changelog 明言「目標項目需重新批准升級」——verify 未過（`upgrade_complete=false` 或要求 re-approve）時，記入解阻清單請人批准，批准前不得沿用既有 `verified` 結論
 4. **綁定預檢**：在跑測試前對照三個實測坑檢查測試結構——① 測試檔在 `tests/unit/`（不在 `tests/` 根）；② `src/` 各層有 `__init__.py`；③ 測試內 `sys.path` 深度與目錄層級一致。結構不對先修再跑，不要等 binding 失敗後回頭查
-5. **文檔門禁基線（v2.24.0 起）**：`check.sh` 第 17 節為文檔生命週期 shadow 門（orphan／suspect／stale_unknown／信任告警／uncovered／obligation_missing／派生漂移）。shadow 期告警不阻斷但**必須記入足跡作為基線**，後續對接比對增量；`--strict` 若被目標項目開啟則視為硬門
-6. **失敗降級**：任一項失敗即停，向使用者說明「ledger 不可用」，詢問是否降級為非治理任務（Vera `PASS` 交付）
+5. **文檔門禁基線（v2.24.0 起）**：`check.sh` 的文檔生命週期 shadow 門（`stage_doc_lifecycle`；orphan／suspect／stale_unknown／信任告警／uncovered／obligation_missing／派生漂移）。shadow 期告警不阻斷但**必須記入足跡作為基線**，後續對接比對增量；`--strict` 若被目標項目開啟則視為硬門。**按 stage 引用而非序號**——序號已被實證脆到失效兩次（新增 stage 會整體移位）
+6. **驗證分層（2026-11-26 起）**：目標專案的 `check.sh` 若有分層能力，中途只跑快檢（跳過全量用例那一關），**全量門禁只在代碼凍結後跑一次**。實測口徑：全量 445s vs 快檢 ≈45s，差額 90% 在全量用例那一關。其餘 17 關合計 ≈45s 且涵蓋看板骨架、模板同步、文檔內鏈、場景矩陣等契約類檢查——**中途漏跑這些等於漏掉真正的回歸**（看板改名即是被 `stage_sync` 與文檔內鏈檢查在 0.3 秒內抓到的）
+7. **產證順序依賴（2026-11-26 起）**：重產證與重綁有先後依賴，順序錯會形成閉環——報告 sha256 與帳本綁定互相引用，落後一步就互相判失敗。按目標專案 `upgrade.py` 的 `post_upgrade_required` 權威鏈走，**不要自創順序**。典型閉環：新報告寫入前帳本仍綁舊報告 → 校驗讀到新報告判「摘要不一致」→ 該失敗讓新報告 overall=fail → 再跑仍是 fail
+8. **絕不同步失敗報告（2026-11-26 起）**：`sync-tests` 會把報告的 `overall` 一併寫入帳本的 activation 狀態——同步一份 `overall≠pass` 的報告，會把證據狀態寫成 `unbound`（等於把自己的證據作廢）。**只在 `overall=pass` 的報告上同步**；報告失敗就先修測試，不要靠同步讓帳本看起來通過
+9. **失敗降級**：任一項失敗即停，向使用者說明「ledger 不可用」，詢問是否降級為非治理任務（Vera `PASS` 交付）
 
 ## 四個交接對象
 
@@ -152,6 +155,8 @@ python3 scripts/agent_gateway.py --target <P> request --agent <id> --action <act
 | ledger 版本／摘要漂移 | 重新路由，不沿用舊裁決 |
 | `upgrade verify` 未過（需重新批准升級） | 記入解阻清單請人批准 `upgrade apply --approved-by <人>`；批准前不得沿用既有 `verified` |
 | 工具指紋漂移後既有證據 | 依硬規則 13 重跑產證，不得拿舊章當新章 |
+| 測試報告 `overall≠pass` | 停，先修測試；**不得 `sync-tests`**，否則帳本 activation 被寫成 `unbound` |
+| 產證後校驗報「摘要不一致」 | 依 `upgrade.py` 的 `post_upgrade_required` 權威鏈重跑，**不要自創順序** |
 
 ## 規範型倉庫自查（spec_check）
 

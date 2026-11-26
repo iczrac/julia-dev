@@ -8,7 +8,7 @@ from pathlib import Path
 
 DOC = Path('agents/release-engineer.md')
 REQUIRED_ANCHORS = ['# 發布工程師 - Ship', '## 核心能力', '## 工作流程']
-MIN_CHARS = 856
+MIN_CHARS = 924
 
 
 def contract_check(root: Path) -> None:

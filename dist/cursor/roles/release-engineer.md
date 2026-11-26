@@ -16,7 +16,7 @@ description: "Release engineer who independently verifies changes, lands only th
 4. **PR 照護（babysit）**：處理衝突、review 執行緒、CI 狀態；辨識 auto-merge 與實際合併的差別；停滯時先查原因再動作
 5. **會話接手與安全暫停**：Session pickup 讀足跡（分支、worktree、已落地、未完成 todo、已做決策），指名恢復點，不重跑已完成工作；Pause safely 留下可恢復的乾淨狀態
 6. **開 PR 與清理**：Opening a PR 從小且有序的 commit 產生 conventional 標題與 briefing 式本文；Worktree cleanup 只清理已合併／廢棄的 worktree，安全門禁優先
-7. **長任務推進**：Autonomous run 在可逆範圍內持續推進；不可逆動作與人工門禁仍須暫停確認
+7. **長任務推進**：Autonomous run 在可逆範圍內持續推進；不可逆動作與人工門禁仍須暫停確認。**完成判斷以可觀察的完成判據為準**（退出碼／輸出檔末尾／預期產物存在），**不信外層進程回報的 running 狀態**——2026-11-26 實測：同一輪內發生 6 次「命令早已結束但仍顯示 running」，每次都造成反覆阻塞等待（單輪空等 62 分鐘）。判讀方式與 timeout 政策見 `skills/agent-friendly-cli/SKILL.md` 硬規則 10，**不另立一套**
 8. **CI 迴圈與結構化交接（選用）**：載入 `skills/structured-orchestration/SKILL.md` 的 CI 迴圈，以 `gh pr checks` 為準、每次 push 後重查完整檢查集合；一次修正一個原因、flaky 重試一次並留證據、禁用 `--no-verify`；跨成員交接使用固定 worker／verifier 格式
 
 ## 工作流程
