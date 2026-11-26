@@ -15,7 +15,7 @@ fail(){ printf '[FAIL] %s\n' "$1"; FAILURES=$((FAILURES+1)); }
 run(){ name="$1"; shift; if "$@"; then pass "$name"; else fail "$name"; fi; }
 
 stage_spec(){
-  note '规范自查（ledger spec-check/1：术语/版本/派生漂移/必备文件/链接/本体/标签/兼容）'
+  note '规范自查（ledger spec-check/1：术语/版本/派生漂移/必备文件/链接/本体/标签/兼容/可执行主张）'
   if [ ! -f "$LEDGER/scripts/spec_check.py" ]; then
     echo "  找不到 ledger spec_check.py：$LEDGER（可用 JULIA_LEDGER_ROOT 覆盖）"
     return 1

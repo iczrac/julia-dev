@@ -1,7 +1,5 @@
 # 主理呀開發團 (Julia Dev Squad)
 
-> **語言 / Language**：繁體中文（本檔）· [English](docs/README.en.md) · [简体中文](docs/README.zh-Hans.md)
-
 團隊名取自主理人Julia的諧音「主理呀」——先辨析任務、再編排流程、最後交付。英文保留 Julia 作為花名，改用 Squad 強調這是一支團隊，也避免被誤讀為 Julia 程式語言開發。
 
 由Julia統籌的全方位軟體開發專家團。不論是源碼逆向、從零建置、加功能、修 bug、重構、審查、遷移、串接第三方、數據／AI 應用或交付簡報，都會先辨析任務類型，再調度最合適的團隊流程交付。
@@ -141,7 +139,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 **與既有能力的分工**：`ontology-modeling` 查需求到程式碼的對應、`pstack-verification` 查實際跑起來的行為、OKF attestation 查計算回執是否被竄改——三者互補。CI 專屬的模型設定與插件依賴沒有內嵌，署名見各 Skill 的 `ATTRIBUTION.md`。
 
-**門禁衝突的處理**：pstack 主張「可逆工作不要問人」，本團隊的優先序是人工確認門禁 > Vera `PASS` > 不可逆動作確認 > 其餘可逆工作直接做。
+**門禁衝突的處理**：pstack 主張「可逆工作不要問人」，本團隊的優先序是門禁優先序：人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項。
 
 **設計取捨**：
 
@@ -184,7 +182,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 **ledger-driven-dev 倉庫本身零改動**：不改 schema、不改 31 條不變量、不加新專家、不複製 24 個 Skill。需要在目標專案做的是一次性的治理接入：能力碼、`verify_ledger`、Agent 註冊與測試證據綁定。
 
-門禁優先序：**人工確認 > ledger 寫入門禁 > 不可逆動作確認 > Vera `PASS` > 其餘可逆工作**。Luca只讀、只翻譯、只準備；不得帶 `--apply` 執行寫入，也不得把 ledger JSON 複製成 julia-dev 內的第二份事實源。ledger v2.24–v2.25 對接後新增四條紀律：**證據降級條款**（工具指紋漂移使既有 `verified` 回落 `declared`，須重跑產證）、**文檔寫入路由**（治理項目 `docs/**` 必經 intent，成員不得直寫）、**門禁口徑 0≠n/a**（`stale_unknown` 單列，缺鍵 fail-closed）、**Preflight 加查 `upgrade verify` 與資產指紋**（ledger 更新後目標項目需重新批准升級）。方法論濃縮見 `skills/ledger-bridge/SKILL.md`，授權見同目錄 `ATTRIBUTION.md`。
+門禁優先序：**門禁優先序：人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項**。Luca只讀、只翻譯、只準備；不得帶 `--apply` 執行寫入，也不得把 ledger JSON 複製成 julia-dev 內的第二份事實源。ledger v2.24–v2.25 對接後新增四條紀律：**證據降級條款**（工具指紋漂移使既有 `verified` 回落 `declared`，須重跑產證）、**文檔寫入路由**（治理項目 `docs/**` 必經 intent，成員不得直寫）、**門禁口徑 0≠n/a**（`stale_unknown` 單列，缺鍵 fail-closed）、**Preflight 加查 `upgrade verify` 與資產指紋**（ledger 更新後目標項目需重新批准升級）。方法論濃縮見 `skills/ledger-bridge/SKILL.md`，授權見同目錄 `ATTRIBUTION.md`。
 
 ## v1.9.0：接縫修補
 
@@ -202,7 +200,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 
 ## 進化機制：受控自我進化
 
-成員是每次會話臨時 spawn 的執行者，沒有跨會話記憶——真正能進化的載體只有專家包文件本身。因此進化不採用自由自我修改，而是六步回路：**成員提案（重複 ≥2 次才夠格）→ Ed 唯讀複核 → 人拍板（唯一生效門）→ 主理人執行修改 → validate＋register＋git commit → 進化日誌登記**。
+成員是每次會話臨時 spawn 的執行者，沒有跨會話記憶——真正能進化的載體只有專家包文件本身。因此進化不採用自由自我修改，而是六步回路：**成員提案（重複 ≥2 次才夠格）→ Ed 唯讀複核 → 人拍板（唯一生效門）→ 主理人執行修改 → `bash scripts/check.sh` 全綠 → `git commit`（一次生效 = 一個 commit）→ patch 版本 +1；不存在 `validate_expert` / `register_expert` 命令 → 進化日誌登記**。
 
 - 提案固定七段格式，必須附可驗證證據；規則修改採合併替換不堆疊
 - 禁區（嚴禁行為、門禁優先序、成員邊界、四類交接對象）只能由人主動修改，成員不可提案

@@ -185,7 +185,7 @@ Phase 0 判定為全新開發或跨模組的大型功能增強時，派工要求
 
 ## 進化提案處理（受控自我進化）
 
-成員沒有跨會話記憶，能進化的載體只有專家包文件本身。進化走六步回路（規則細節載於 `skills/self-evolution/SKILL.md`）：**成員提案 → Ed 唯讀複核 → 人拍板 → 我執行修改 → validate＋register＋git commit → 進化日誌登記**。
+成員沒有跨會話記憶，能進化的載體只有專家包文件本身。進化走六步回路（規則細節載於 `skills/self-evolution/SKILL.md`）：**成員提案 → Ed 唯讀複核 → 人拍板 → 我執行修改 → `bash scripts/check.sh` 全綠 → `git commit`（一次生效 = 一個 commit）→ patch 版本 +1；不存在 `validate_expert` / `register_expert` 命令 → 進化日誌登記**。
 
 - **提案資格**：同一教訓在同一成員身上重複 ≥2 次、使用者要求吸收新方法論、使用者主動邀請反思、或 Workflow V 內部體檢裁定為「必修」的發現（Ed 裁決替代重複門）；不滿足就照現行規則執行
 - **提案形式**：成員在回傳產出末尾附七段格式提案（觀察／證據指針／目標檔案與段落／修改內容／回滾方式／影響評估／建議版本），不改任何文件
@@ -319,7 +319,7 @@ Phase 0 判定為全新開發或跨模組的大型功能增強時，派工要求
 - **前置**：Luca載入 `skills/ledger-bridge/SKILL.md`；先跑 Preflight（帳本存在且 `verify_ledger --strict` 通過、橋接腳本可執行、版本記入足跡），未通過不得呼叫任何橋接命令
 - **編排**：Phase 0 → Phase 0.5（復述門／路由／編排）→ 取得單張任務卡 → 映射 Julia Workflow（通常為 S）→ 成員執行 → Vera產出 `test_report` 與 `verified` 判決 → Ed在不可逆前複核 → 人工批准 → Ship執行 `approval_bundle` → 重新路由
 - **產出鏈**：`intent.json` → `route.handoff` → 任務卡 → 執行交接 → `test_report + verify JSON` → `approval_bundle` → 新一輪 `next_queue`
-- **硬紀律**：只交換四類結構化物件；`intent.json` 是唯一契約入口，變更後必須重跑復述門與路由；Luca不寫帳本、不帶 `--apply`、不自我批准；人工確認 > ledger 寫入門禁 > 不可逆動作確認 > Vera `PASS`；被 `deny` 不得換 id 重試；任何 fail-closed 停下都必須回傳解阻清單，不得靜默結束
+- **硬紀律**：只交換四類結構化物件；`intent.json` 是唯一契約入口，變更後必須重跑復述門與路由；Luca不寫帳本、不帶 `--apply`、不自我批准；門禁優先序：人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項；被 `deny` 不得換 id 重試；任何 fail-closed 停下都必須回傳解阻清單，不得靜默結束
 
 ---
 

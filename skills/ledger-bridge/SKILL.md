@@ -181,7 +181,7 @@ julia-dev 本身是規範型倉庫（主體為 Markdown 規範、無代碼符號
 2. 只交換四類物件：`intent.json`、`route/handoff/next_queue`、`test_report + verify JSON`、`approval_bundle/audit`。
 3. 不把完整帳本複製進 julia-dev，只傳當前任務卡、相關決策、相關經驗與證據路徑。
 4. Vera的聊天式 PASS 不等於 ledger 的 `verified`；必須有報告、綁定與不變量通過。
-5. 人工確認門禁 > ledger 寫入門禁 > 不可逆動作確認 > Vera `PASS` > 其餘可逆工作。
+5. 門禁優先序：人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項
 6. 任何 `--apply`、`register`、`unfreeze`、`archive` 都屬批准包，不是橋接角色可自行執行的命令。
 7. 所有交接經Julia中轉，團員不互相直連。
 8. `intent.json` 是唯一契約入口；Julia的任務契約是它的執行投影。intent 變更後必須重跑復述門與路由，禁止兩邊各自修改。

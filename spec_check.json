@@ -26,14 +26,6 @@
       {
         "file": "README.md",
         "regex": "版本\\s+([0-9][\\w.]*)"
-      },
-      {
-        "file": "docs/README.en.md",
-        "regex": "Version\\s+([0-9][\\w.]*)"
-      },
-      {
-        "file": "docs/README.zh-Hans.md",
-        "regex": "版本\\s+([0-9][\\w.]*)"
       }
     ]
   },
@@ -77,8 +69,6 @@
   "links": {
     "docs": [
       "README.md",
-      "docs/README.en.md",
-      "docs/README.zh-Hans.md",
       "docs/iteration-history.md"
     ]
   },

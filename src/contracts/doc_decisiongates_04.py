@@ -8,7 +8,7 @@ from pathlib import Path
 
 DOC = Path('skills/decision-gates/SKILL.md')
 REQUIRED_ANCHORS = ['# 決策關卡與第二雙眼睛（濃縮版）', '## 何時用', '## 一、循環守則']
-MIN_CHARS = 779
+MIN_CHARS = 815
 
 
 def contract_check(root: Path) -> None:

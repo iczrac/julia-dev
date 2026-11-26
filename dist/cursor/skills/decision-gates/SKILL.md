@@ -21,7 +21,7 @@
 2. Ed**唯讀**：核對 briefing 與真實 repository／證據，需要時讀對話紀錄；**不改程式、不開 PR、不合併**
 3. Ed回傳固定格式：`Verdict / Why / Recommendations / Risks / Answers / Confidence`
 4. 主理人決定是否採納；不採納要寫下理由。Ed是顧問，不是決策者
-5. 人工確認門禁 > Vera `PASS` > 不可逆動作確認 > 其餘可逆工作直接做。這條優先序贏過任何「顧問說可以」
+5. 門禁優先序：人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項。這條優先序贏過任何「顧問說可以」
 
 ## 二、Briefing 模板
 

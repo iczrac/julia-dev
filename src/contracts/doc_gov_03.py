@@ -8,7 +8,7 @@ from pathlib import Path
 
 DOC = Path('agents/ledger-liaison.md')
 REQUIRED_ANCHORS = ['# 主理呀開發團 - 帳本對接官', '## 核心職責', '## 四個交接對象']
-MIN_CHARS = 1437
+MIN_CHARS = 1469
 
 
 def contract_check(root: Path) -> None:

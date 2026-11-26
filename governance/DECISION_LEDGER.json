@@ -2,7 +2,7 @@
   "ledger_version": "1.0",
   "title": "Julia Dev Squad（执行层专家团） 决策与能力账本",
   "purpose": "单一事实源：决策、裁决、待办及能力索引的唯一写入点。",
-  "last_updated": "2026-11-26 08:41 HKT",
+  "last_updated": "2026-11-26 12:10 HKT",
   "owner": "待定",
   "provenance": {
     "mode": "adopt",
@@ -4307,7 +4307,7 @@
   },
   "capability_model": {
     "version": "1.0",
-    "generated_at": "2026-11-26 08:41 HKT",
+    "generated_at": "2026-11-26 12:10 HKT",
     "generator": "templates/build_capability_model.py",
     "purpose": "统一能力编码 + 可复算完成度 + 嵌套组件树 + 文档索引，供规划与编码代理消费。",
     "coding_spec": {
@@ -4431,8 +4431,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -4515,8 +4515,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -4599,8 +4599,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -4683,8 +4683,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -4756,8 +4756,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -4829,8 +4829,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -4902,8 +4902,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -4975,8 +4975,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -5048,8 +5048,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -5121,8 +5121,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -5194,8 +5194,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -5345,8 +5345,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -5418,8 +5418,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -5491,8 +5491,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -5564,8 +5564,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -5637,8 +5637,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -5710,8 +5710,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -5783,8 +5783,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -5856,8 +5856,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -5929,8 +5929,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -6002,8 +6002,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -6075,8 +6075,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -6148,8 +6148,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -6221,8 +6221,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -6294,8 +6294,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -6367,8 +6367,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -6440,8 +6440,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -6513,8 +6513,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -6586,8 +6586,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -6659,8 +6659,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,
@@ -7092,8 +7092,8 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-26 08:41 HKT",
-                  "report_label": "unit"
+                  "report_at": "2026-11-26 12:10 HKT",
+                  "report_label": "repo"
                 },
                 "binding_status": "bound",
                 "next_level": 4,

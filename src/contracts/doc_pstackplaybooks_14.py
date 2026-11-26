@@ -8,7 +8,7 @@ from pathlib import Path
 
 DOC = Path('skills/pstack-playbooks/SKILL.md')
 REQUIRED_ANCHORS = ['# pstack 嚴謹工程 Playbook（濃縮版）', '## 何時用', '## 自治與門禁優先序（本團隊改寫）']
-MIN_CHARS = 1064
+MIN_CHARS = 1084
 
 
 def contract_check(root: Path) -> None:

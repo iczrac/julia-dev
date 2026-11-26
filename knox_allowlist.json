@@ -3,8 +3,8 @@
   "purpose": "Knox 扫描的例外登记处：合法重复条款与外部仓路径引用必须附理由与批准人。新增条目前先问能否删掉重复，不能删才登记。",
   "duplicate_clauses": [
     {
-      "sha256": "0e7750870cf7e8001431ae7d7a1af9f564a4d63ef3e8304c9302bb2b884297c1",
-      "reason": "门禁优先序在 ledger-liaison（执行）与 ledger-bridge（桥接）两处分别出现，各自读者不同；删任一处会让该语境漏看硬门。",
+      "sha256": "dd090093fd3ed4b56651140fd5ae47dc337cd561bc8bfc8d2a0510842578d173",
+      "reason": "门禁优先序在 ledger-liaison（执行）与 ledger-bridge（桥接）两处分别出现，各自读者不同；删任一处会让该语境漏看硬门。2026-11-26 统一口径后按新文字重算 hash（使用者拍板 A）。",
       "approved_by": "iczrac"
     },
     {

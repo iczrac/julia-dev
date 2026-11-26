@@ -1,6 +1,6 @@
 ---
 name: self-evolution
-description: "Controlled self-evolution loop: members propose capability-doc amendments with evidence and repeat-failure gate, Ed reviews read-only, the human approves as the only effect gate, the lead executes edits with validate+register+git versioning."
+description: "Controlled self-evolution loop: members propose capability-doc amendments with evidence and repeat-failure gate, Ed reviews read-only, the human approves as the only effect gate, the lead executes edits with one green `bash scripts/check.sh` → `git commit` → patch version bump (no validate/register commands)."
 ---
 
 # 受控自我進化
@@ -45,7 +45,7 @@ description: "Controlled self-evolution loop: members propose capability-doc ame
 ## 禁區（成員不可提案，只能由人主動修改）
 
 - 嚴禁行為清單
-- 門禁優先序（人工確認 > ledger 寫入門禁 > 不可逆動作確認 > Vera `PASS`）
+- 門禁優先序（門禁優先序：人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項）
 - 成員職責邊界與協作鐵律
 - 四類 ledger 交接對象
 
