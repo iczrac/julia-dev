@@ -82,6 +82,22 @@
       "docs/iteration-history.md"
     ]
   },
+  "claims": {
+    "docs": [
+      "skills/**/SKILL.md",
+      "docs/*.md",
+      "agents/*.md",
+      "README.md"
+    ],
+    "external": [
+      {
+        "prefix": "scripts/",
+        "repo": "../ledger-driven-dev",
+        "reason": "ledger 侧工具：julia 只消费不复制，存在性按声明的兄弟仓校验"
+      }
+    ],
+    "exceptions": []
+  },
   "compat": {
     "anchors": [
       {
@@ -91,7 +107,7 @@
           "file": "scripts/upgrade.py",
           "regex": "METHOD_VERSION\\s*=\\s*\"([0-9][\\w.]*)\""
         },
-        "note": "julia 消费 ledger spec_check（七判据+compat）；语义随 METHOD_VERSION 演进，低于 2.29.0 不保证 compat 判据存在"
+        "note": "julia 消费 ledger spec_check（九判据，含 compat 与 executable_claims）；语义随 METHOD_VERSION 演进，低于 2.29.0 不保证 compat 判据存在"
       }
     ]
   }

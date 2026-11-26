@@ -39,7 +39,7 @@ def metric(report: dict, name: str) -> dict:
 
 
 class SpecComplianceTest(unittest.TestCase):
-    """七判据全绿：术语/版本/派生/必备/链接/本体/发版标签。"""
+    """九判据全绿：术语/版本/派生/必备/链接/可执行主张/本体/发版标签/组合锚。"""
 
     def setUp(self):
         self.code, self.report = run_spec_check()
@@ -89,7 +89,7 @@ class SpecComplianceTest(unittest.TestCase):
 
     def test_all_criteria_applicable(self):
         na = [m["metric"] for m in self.report["metrics"] if not m.get("applicable", True)]
-        self.assertEqual(na, [], f"八判据应全部适用（compat 由组合锚启用）：{na}")
+        self.assertEqual(na, [], f"九判据应全部适用（compat 由组合锚启用）：{na}")
 
 
 class OntologyContractTest(unittest.TestCase):

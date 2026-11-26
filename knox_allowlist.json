@@ -1,0 +1,41 @@
+{
+  "schema": "knox-allowlist/1",
+  "purpose": "Knox 扫描的例外登记处：合法重复条款与外部仓路径引用必须附理由与批准人。新增条目前先问能否删掉重复，不能删才登记。",
+  "duplicate_clauses": [
+    {
+      "sha256": "0e7750870cf7e8001431ae7d7a1af9f564a4d63ef3e8304c9302bb2b884297c1",
+      "reason": "门禁优先序在 ledger-liaison（执行）与 ledger-bridge（桥接）两处分别出现，各自读者不同；删任一处会让该语境漏看硬门。",
+      "approved_by": "iczrac"
+    },
+    {
+      "sha256": "55d2509b96f6d1f327ec4732bdae3419b5a74c2188f2d3e9c11eba376c38ffe6",
+      "reason": "四份 pstack 技能共用同一授权来源声明，属法定署名，不能合并进单一份。",
+      "approved_by": "iczrac"
+    },
+    {
+      "sha256": "8d2944d100bf312579a6cdcaf9011ba7c6a6d49e96e7c64b956d053d78a632c1",
+      "reason": "九位成员共用同一进化提案格式，属模板化纪律；改成引用会造成成员文档不可独立阅读。",
+      "approved_by": "iczrac"
+    }
+  ],
+  "stale_refs": [
+    {
+      "file": "skills/ledger-bridge/SKILL.md",
+      "ref": "tests/unit/",
+      "reason": "描述目标治理项目的 L3 目录约定，不是本仓路径。",
+      "approved_by": "iczrac"
+    },
+    {
+      "file": "skills/ledger-bridge/SKILL.md",
+      "ref": "scripts/spec_check.py",
+      "reason": "指向 ledger-driven-dev 方法仓的工具，本仓按边界纪律不复制。",
+      "approved_by": "iczrac"
+    },
+    {
+      "file": "skills/okf-consume/SKILL.md",
+      "ref": "scripts/scan.py",
+      "reason": "引用原始 OKF Skill 自带的扫描脚本，非本仓文件。",
+      "approved_by": "iczrac"
+    }
+  ]
+}

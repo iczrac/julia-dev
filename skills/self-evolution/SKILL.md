@@ -37,7 +37,7 @@ description: "Controlled self-evolution loop: members propose capability-doc ame
 2. **Ed 複核**：唯讀判決——建議採納／拒絕／需修改＋理由；判決不等於批准
 3. **人拍板**：使用者批准／拒絕／要求修改。**這是唯一生效門，任何其他角色都不能代替**
 4. **Julia 執行**：只有主理人修改檔案；修改採「合併替換」不堆疊追加；批准前不動任何文件
-5. **驗證生效**：`validate_expert` 通過 → `register_expert` → `git commit`（一次生效 = 一個 commit，即回滾點）→ patch 版本 +1
+5. **驗證生效**：`bash scripts/check.sh` 全綠（含 ledger `spec_check` 與本倉 Knox／角色可執行性測試）→ `git commit`（一次生效 = 一個 commit，即回滾點）→ patch 版本 +1。不存在 `validate_expert` / `register_expert` 命令，不得以裸名冒充可執行步骤
 6. **日誌登記**：在 `docs/evolution-log.md` 記錄提案摘要、裁決、批准理由一句話
 
 ## 禁區（成員不可提案，只能由人主動修改）
