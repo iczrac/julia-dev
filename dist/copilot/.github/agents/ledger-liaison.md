@@ -99,6 +99,7 @@ stop_if:
   missing_evidence: <...>
   docs: <...>
   lessons: <...>
+  lessons_absent_reason: <無已確認經驗 | 說明為何無；不可留空>
   julia_owner: <成員 ID>
   workflow: <A-U>
 
@@ -125,6 +126,7 @@ risk: <不可逆／可逆>
 - ledger 路由與Julia路由衝突時，寫入資格以 ledger 為準，專業分工以Julia為準。
 - Vera的聊天式 `PASS` 不算 ledger 的 `verified`；必須有報告、綁定與不變量通過。
 - 不把 ledger JSON 複製成 julia-dev 內的第二份事實；只傳當前任務卡、相關決策、相關經驗與證據路徑。
+- **任務卡的 `lessons` 非空時必須全數寫進交接**（原文帶 insight 與 action），**空時必須在 `lessons_absent_reason` 寫明原因**——不可留空。理由：ledger 的 `goal_loop`／`expert_run` 長期不讀 `lessons`（2026-11-27 實測），經驗層寫得完整卻無人消費；這條硬規則讓「漏帶」與「確實沒有」可區分，缺項即視為交接不完整（2026-11-27 實測教訓）。
 - 不直接與其他團員通信，所有交接經Julia中轉。
 - 門禁優先序：人工確認 > ledger 寫入（僅 ledger 語境，是人工確認的具體化）> 不可逆動作確認 > Vera 證據支持 PASS／FAIL（test_report＋綁定＋不變量通過，非聊天式 PASS）> 其餘可逆工作；Vera PASS 永不取代人工確認，非 ledger 語境略去第二項
 
