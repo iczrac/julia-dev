@@ -2,7 +2,7 @@
   "ledger_version": "1.0",
   "title": "Julia Dev Squad（执行层专家团） 决策与能力账本",
   "purpose": "单一事实源：决策、裁决、待办及能力索引的唯一写入点。",
-  "last_updated": "2026-11-26 15:18 HKT",
+  "last_updated": "2026-11-26 19:04 HKT",
   "owner": "待定",
   "provenance": {
     "mode": "adopt",
@@ -4307,7 +4307,7 @@
   },
   "capability_model": {
     "version": "1.0",
-    "generated_at": "2026-11-26 15:18 HKT",
+    "generated_at": "2026-11-26 19:04 HKT",
     "generator": "templates/build_capability_model.py",
     "purpose": "统一能力编码 + 可复算完成度 + 嵌套组件树 + 文档索引，供规划与编码代理消费。",
     "coding_spec": {
@@ -12979,14 +12979,30 @@
         "risk": "low",
         "assets_digest": "cffd5204ca4e3d2b",
         "board_skeleton": "2f4bc89a28264307"
+      },
+      {
+        "seq": 3,
+        "at": "2026-11-26T11:04:20Z",
+        "action": "apply",
+        "from": "2.29.0",
+        "to": "2.29.0",
+        "approved_by": "iczrac",
+        "migrations": [
+          "M3-tool-sync",
+          "M5-method-assets"
+        ],
+        "backup": "20261126T110420Z-05fb0645",
+        "risk": "medium",
+        "assets_digest": "e1faf577b891859f",
+        "board_skeleton": "2f4bc89a28264307"
       }
     ],
     "tools": {
-      "governance/build_capability_model.py": "4b8a5d2afe5407430c474f8b09524c88bc1a3c7b82378328ea4f9d87390ea9f1",
+      "governance/build_capability_model.py": "c969a4b8bbfd12e98d53a77ac6124255c08aac1c1babd623a8a7283fb6775929",
       "governance/binding_advisory.py": "e5368433f594854857fff87002430ee692401ec4b7125168b7699cb00f1dde0b",
       "governance/derived_issues.py": "4ff4097765996071e256302f91439a9464a5203840d2df64fb5d93df6ea13a21",
-      "governance/verify_ledger.py": "66235c73c29682d8bf7bb2089705fd9e3568985996848186196698b38fb8e5ba",
-      "governance/registry_codec.py": "f0d1edafc0c4a54294a49337bbd9995c45555e093878ce8c06174a2e6ab4ae3b",
+      "governance/verify_ledger.py": "5c0e000996061203bffce0617ed2964ceb4b9483fe59b59af1a9eb2394ce9126",
+      "governance/registry_codec.py": "958ecad87b8a4743b1b8e5f4ca439c9a22c2fb818d586c6ef0e79739f293ab7a",
       "governance/run_tests.py": "80b687eab9f62cea607406efc7cb526809a30e1a2467ce88100638613a3669e7",
       "governance/vendor/d3.v7.min.js": "f2094bbf6141b359722c4fe454eb6c4b0f0e42cc10cc7af921fc158fceb86539"
     },
@@ -12998,7 +13014,7 @@
     },
     "method_assets": {
       "algorithm": "sha256-files-v1",
-      "digest": "cffd5204ca4e3d2b099ad66b0ee754c181366a2370abc09a9709966c3ec590d7",
+      "digest": "e1faf577b891859f94ebc86d7d86368a9c7ef8f9fd2004b116a954972e86e42f",
       "file_count": 116,
       "counts": {
         "experts": 9,
@@ -13010,7 +13026,7 @@
       },
       "source": "方法论仓库 tag（权威源，不复制；只读副本由 M7 安装）"
     },
-    "ontology_digest": "d5e21bc916d5857a9ad9a20eda8e977d1682104003432087cf416d26242e36f4",
+    "ontology_digest": "240b5580f180c34b8a81dc891b88374afa6b487989437dc6372124a71e976d9d",
     "board_skeleton": {
       "digest": "2f4bc89a28264307d9f86436450a1c2d29edce68c38f0b89100b45bc19339b6d",
       "source": "templates/index.html.template",
@@ -13027,6 +13043,12 @@
       "install_root": ".workbuddy",
       "manifest": "governance/ASSET_MANIFEST.json",
       "source": "方法论仓库 tag（只读副本，禁止在目标项目内编辑）"
+    },
+    "projection_policy": {
+      "schema": "projection-policy/1",
+      "test_results": "opt-out",
+      "reason": "消费方刻意不投影节点测试结果；证据能力以 declared/activation 明示，健康分 test_pass_rate 保持 n/a。",
+      "approved_by": "iczrac"
     }
   },
   "access": {
