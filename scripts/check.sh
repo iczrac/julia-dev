@@ -8,6 +8,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 LEDGER="${JULIA_LEDGER_ROOT:-$ROOT/../ledger-driven-dev}"
 FAILURES=0
+BOARD_NAME="$(python3 governance/board_path.py --target . --filename)"
 
 note(){ printf '\n== %s ==\n' "$1"; }
 pass(){ printf '[PASS] %s\n' "$1"; }
@@ -41,7 +42,7 @@ stage_ledger(){
   python3 governance/verify_ledger.py --root . \
     --ledger governance/DECISION_LEDGER.json \
     --registry governance/registry.json \
-    --board governance/index.html --strict || return 1
+    --board "governance/$BOARD_NAME" --strict || return 1
 }
 
 stage_model(){
