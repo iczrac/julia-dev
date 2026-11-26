@@ -8,7 +8,7 @@ from pathlib import Path
 
 DOC = Path('agents/julia-dev-team-lead.md')
 REQUIRED_ANCHORS = ['# 主理呀開發團 - 主理人', '## 成員能力清單', '## Phase 0：任務類型辨析（所有任務的第一步）']
-MIN_CHARS = 6695
+MIN_CHARS = 6746
 
 
 def contract_check(root: Path) -> None:

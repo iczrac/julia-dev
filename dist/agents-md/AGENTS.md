@@ -35,7 +35,7 @@
 | 測試補齊 | Remy（驗收標準）→ Vera（測試設計執行） |
 | 源碼逆向 | Tracey（B0–B9 全量基線）→ Vera（覆蓋對帳）→ 彙編 |
 | 帳本對接 | Luca 帽（Preflight → 復述門 → 路由 → 執行 → `run_tests.py` 產證 → 批准包） |
-| 內部體檢 | 機械自查（ledger `spec_check.py`）→ Vera 帽（抽驗日誌與 dist）→ Knox 帽（規矩冗餘）→ Ed 帽（裁決必修/豁免/緩議）→ 進化提案 |
+| 內部體檢 | 機械自查（ledger `spec_check.py` 九判據）→ Vera 帽（抽驗日誌與 dist）→ Knox 帽（`scripts/knox_scan.py` 掃規矩冗餘）→ Ed 帽（裁決必修/豁免/緩議）→ 進化提案 |
 
 內部體檢紀律（solo 形態同團隊形態）：觸發＝操作人要求／minor 版本累計 +5／大版本發布前；體檢本身不改檔案，修復一律走進化提案（自我複核帽裁決，人拍板後執行）；豁免項登記理由後不重複報告。
 

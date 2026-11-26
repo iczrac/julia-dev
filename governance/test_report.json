@@ -1,286 +1,352 @@
 {
   "schema": "ledger-test-report/1",
-  "generated_at": "2026-11-25 20:08 HKT",
+  "generated_at": "2026-11-26 10:59 HKT",
   "test_dir": "tests",
   "command": "unittest load from tests",
   "load_errors": [],
   "summary": {
-    "total": 44,
-    "passed": 44,
+    "total": 55,
+    "passed": 55,
     "failed": 0,
     "errors": 0,
     "skipped": 0
   },
   "cases": [
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_agentfriendlycli_01",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_agentfriendlycli_01",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
-      "seconds": 0.001011
+      "seconds": 0.001505
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_arch_05",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_arch_05",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
-      "seconds": 0.000845
+      "seconds": 0.001117
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_codebasereverse_02",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_codebasereverse_02",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
-      "seconds": 0.000859
+      "seconds": 0.001315
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_consultinghtmlppt_03",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_consultinghtmlppt_03",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
-      "seconds": 0.000827
+      "seconds": 0.001296
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_decisiongates_04",
-      "file": "tests/test_doc_contracts.py",
-      "status": "pass",
-      "seconds": 0.000899
-    },
-    {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_deepdiffreview_05",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_decisiongates_04",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
       "seconds": 0.00095
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_dsg_09",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_deepdiffreview_05",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
-      "seconds": 0.000888
+      "seconds": 0.000923
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_eng_06",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_dsg_09",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
-      "seconds": 0.000846
+      "seconds": 0.000968
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_gov_01",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_eng_06",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
-      "seconds": 0.000904
+      "seconds": 0.000929
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_gov_02",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_gov_01",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000958
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_gov_02",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000936
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_gov_03",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000955
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_kms_10",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.00092
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_ledgerbridge_06",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000917
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_llmknowledgebase_07",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000923
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_okfconsume_08",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000946
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_okfformat_09",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.001
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_okfgenerate_10",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000988
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_ontologydrivendev_11",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000939
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_ontologymodeling_12",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000971
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_pstackparallelreview_13",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000931
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_pstackplaybooks_14",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.00095
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_pstackprinciples_15",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000919
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_pstackverification_16",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.00091
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_qa_07",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000869
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_rel_11",
+      "file": "tests/test_doc_contracts.py",
+      "status": "pass",
+      "seconds": 0.000868
+    },
+    {
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_req_04",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
       "seconds": 0.000853
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_gov_03",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_rev_08",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
-      "seconds": 0.000837
+      "seconds": 0.000886
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_kms_10",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_selfevolution_17",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
-      "seconds": 0.000839
+      "seconds": 0.000941
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_ledgerbridge_06",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_structuredorchestration_18",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
-      "seconds": 0.000848
+      "seconds": 0.000928
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_llmknowledgebase_07",
+      "id": "_lld_test_doc_contracts_63963.DocContractTest.test_doc_visualmodel_19",
       "file": "tests/test_doc_contracts.py",
       "status": "pass",
-      "seconds": 0.000855
+      "seconds": 0.000884
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_okfconsume_08",
-      "file": "tests/test_doc_contracts.py",
+      "id": "_lld_test_knox_scan_34100.KnoxScanTest.test_allowlist_suppresses_both",
+      "file": "tests/test_knox_scan.py",
       "status": "pass",
-      "seconds": 0.000827
+      "seconds": 0.019105
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_okfformat_09",
-      "file": "tests/test_doc_contracts.py",
+      "id": "_lld_test_knox_scan_34100.KnoxScanTest.test_bad_allowlist_fails_closed",
+      "file": "tests/test_knox_scan.py",
       "status": "pass",
-      "seconds": 0.000834
+      "seconds": 0.007784
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_okfgenerate_10",
-      "file": "tests/test_doc_contracts.py",
+      "id": "_lld_test_knox_scan_34100.KnoxScanTest.test_duplicate_clause_hits",
+      "file": "tests/test_knox_scan.py",
       "status": "pass",
-      "seconds": 0.000837
+      "seconds": 0.012744
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_ontologydrivendev_11",
-      "file": "tests/test_doc_contracts.py",
+      "id": "_lld_test_knox_scan_34100.KnoxScanTest.test_real_repo_baseline",
+      "file": "tests/test_knox_scan.py",
       "status": "pass",
-      "seconds": 0.000824
+      "seconds": 0.066977
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_ontologymodeling_12",
-      "file": "tests/test_doc_contracts.py",
+      "id": "_lld_test_knox_scan_34100.KnoxScanTest.test_stale_ref_hits",
+      "file": "tests/test_knox_scan.py",
       "status": "pass",
-      "seconds": 0.000837
+      "seconds": 0.009084
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_pstackparallelreview_13",
-      "file": "tests/test_doc_contracts.py",
+      "id": "_lld_test_knox_scan_34100.KnoxScanTest.test_unified_gate_wires_all_checks",
+      "file": "tests/test_knox_scan.py",
       "status": "pass",
-      "seconds": 0.000836
+      "seconds": 0.000996
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_pstackplaybooks_14",
-      "file": "tests/test_doc_contracts.py",
+      "id": "_lld_test_role_executable_23167.RoleExecutableTest.test_ghost_tool_hits",
+      "file": "tests/test_role_executable.py",
       "status": "pass",
-      "seconds": 0.000838
+      "seconds": 6.2e-05
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_pstackprinciples_15",
-      "file": "tests/test_doc_contracts.py",
+      "id": "_lld_test_role_executable_23167.RoleExecutableTest.test_human_exceptions_have_reasons",
+      "file": "tests/test_role_executable.py",
       "status": "pass",
-      "seconds": 0.000819
+      "seconds": 7e-06
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_pstackverification_16",
-      "file": "tests/test_doc_contracts.py",
+      "id": "_lld_test_role_executable_23167.RoleExecutableTest.test_missing_role_hits",
+      "file": "tests/test_role_executable.py",
       "status": "pass",
-      "seconds": 0.000821
+      "seconds": 3.2e-05
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_qa_07",
-      "file": "tests/test_doc_contracts.py",
+      "id": "_lld_test_role_executable_23167.RoleExecutableTest.test_real_workflow_passes",
+      "file": "tests/test_role_executable.py",
       "status": "pass",
-      "seconds": 0.000801
+      "seconds": 0.00104
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_rel_11",
-      "file": "tests/test_doc_contracts.py",
+      "id": "_lld_test_role_executable_23167.RoleExecutableTest.test_undeclared_human_role_hits",
+      "file": "tests/test_role_executable.py",
       "status": "pass",
-      "seconds": 0.00081
+      "seconds": 3.8e-05
     },
     {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_req_04",
-      "file": "tests/test_doc_contracts.py",
-      "status": "pass",
-      "seconds": 0.000827
-    },
-    {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_rev_08",
-      "file": "tests/test_doc_contracts.py",
-      "status": "pass",
-      "seconds": 0.000772
-    },
-    {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_selfevolution_17",
-      "file": "tests/test_doc_contracts.py",
-      "status": "pass",
-      "seconds": 0.000813
-    },
-    {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_structuredorchestration_18",
-      "file": "tests/test_doc_contracts.py",
-      "status": "pass",
-      "seconds": 0.000851
-    },
-    {
-      "id": "_lld_test_doc_contracts_6655.DocContractTest.test_doc_visualmodel_19",
-      "file": "tests/test_doc_contracts.py",
-      "status": "pass",
-      "seconds": 0.000808
-    },
-    {
-      "id": "_lld_test_spec_compliance_43387.CompatAnchorTest.test_ledger_min_version",
+      "id": "_lld_test_spec_compliance_43275.CompatAnchorTest.test_ledger_min_version",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 0.603926
+      "seconds": 0.682548
     },
     {
-      "id": "_lld_test_spec_compliance_43387.OntologyContractTest.test_eleven_actors_declared",
+      "id": "_lld_test_spec_compliance_43275.OntologyContractTest.test_eleven_actors_declared",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 0.001061
+      "seconds": 0.00113
     },
     {
-      "id": "_lld_test_spec_compliance_43387.OntologyContractTest.test_hermes_is_null_candidate",
+      "id": "_lld_test_spec_compliance_43275.OntologyContractTest.test_hermes_is_null_candidate",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 0.000892
+      "seconds": 0.001149
     },
     {
-      "id": "_lld_test_spec_compliance_43387.OntologyContractTest.test_platform_paths_resolve",
+      "id": "_lld_test_spec_compliance_43275.OntologyContractTest.test_platform_paths_resolve",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 0.001097
+      "seconds": 0.00139
     },
     {
-      "id": "_lld_test_spec_compliance_43387.SpecComplianceTest.test_all_criteria_applicable",
+      "id": "_lld_test_spec_compliance_43275.SpecComplianceTest.test_all_criteria_applicable",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 1.28796
+      "seconds": 1.604861
     },
     {
-      "id": "_lld_test_spec_compliance_43387.SpecComplianceTest.test_exit_code_zero",
+      "id": "_lld_test_spec_compliance_43275.SpecComplianceTest.test_exit_code_zero",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 1.301116
+      "seconds": 1.608973
     },
     {
-      "id": "_lld_test_spec_compliance_43387.SpecComplianceTest.test_forbidden_terms_zero",
+      "id": "_lld_test_spec_compliance_43275.SpecComplianceTest.test_forbidden_terms_zero",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 1.294589
+      "seconds": 1.548799
     },
     {
-      "id": "_lld_test_spec_compliance_43387.SpecComplianceTest.test_generated_no_drift",
+      "id": "_lld_test_spec_compliance_43275.SpecComplianceTest.test_generated_no_drift",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 1.314086
+      "seconds": 1.541172
     },
     {
-      "id": "_lld_test_spec_compliance_43387.SpecComplianceTest.test_links_resolve",
+      "id": "_lld_test_spec_compliance_43275.SpecComplianceTest.test_links_resolve",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 1.299606
+      "seconds": 1.576211
     },
     {
-      "id": "_lld_test_spec_compliance_43387.SpecComplianceTest.test_ontology_integrity",
+      "id": "_lld_test_spec_compliance_43275.SpecComplianceTest.test_ontology_integrity",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 1.298456
+      "seconds": 1.516014
     },
     {
-      "id": "_lld_test_spec_compliance_43387.SpecComplianceTest.test_release_tag_exists",
+      "id": "_lld_test_spec_compliance_43275.SpecComplianceTest.test_release_tag_exists",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 1.363025
+      "seconds": 1.669897
     },
     {
-      "id": "_lld_test_spec_compliance_43387.SpecComplianceTest.test_required_files_present",
+      "id": "_lld_test_spec_compliance_43275.SpecComplianceTest.test_required_files_present",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 1.345463
+      "seconds": 1.63156
     },
     {
-      "id": "_lld_test_spec_compliance_43387.SpecComplianceTest.test_toolchain_available",
+      "id": "_lld_test_spec_compliance_43275.SpecComplianceTest.test_toolchain_available",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 1.380025
+      "seconds": 1.694678
     },
     {
-      "id": "_lld_test_spec_compliance_43387.SpecComplianceTest.test_version_consistent",
+      "id": "_lld_test_spec_compliance_43275.SpecComplianceTest.test_version_consistent",
       "file": "tests/test_spec_compliance.py",
       "status": "pass",
-      "seconds": 1.333827
+      "seconds": 1.714157
     }
   ],
   "overall": "pass",
   "raw_tail": [
     "----------------------------------------------------------------------",
-    "Ran 44 tests in 13.851s",
+    "Ran 55 tests in 16.941s",
     "",
     "OK"
   ],
@@ -292,11 +358,19 @@
         "sha256": "938ccaba70cac53af8c7728788686d610b923906f6039601bb663fc6e74ab1aa"
       },
       {
+        "path": "tests/test_knox_scan.py",
+        "sha256": "67646c9c15c34cd62f31fa29d18844debcf2e663eaa37ad81c46e697eac7338b"
+      },
+      {
+        "path": "tests/test_role_executable.py",
+        "sha256": "786c6997f24315d374b26207660f226115683de78eb619e74df9bc6833473f8c"
+      },
+      {
         "path": "tests/test_spec_compliance.py",
-        "sha256": "050ca9770a9cf50a5aed19b0d8ac9a937e7fed79a3026249e804354af3f5777a"
+        "sha256": "aced9720ec9e63b27cd18be11e605fe179a952290c39e7898ffb3a698afbc9aa"
       }
     ],
-    "source_digest": "e053844ae1880135"
+    "source_digest": "31da9ab1f579d08f"
   },
   "label": "unit"
 }

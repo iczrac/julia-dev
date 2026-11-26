@@ -2,7 +2,7 @@
   "ledger_version": "1.0",
   "title": "Julia Dev Squad（执行层专家团） 决策与能力账本",
   "purpose": "单一事实源：决策、裁决、待办及能力索引的唯一写入点。",
-  "last_updated": "2026-11-25 23:20 HKT",
+  "last_updated": "2026-11-26 08:41 HKT",
   "owner": "待定",
   "provenance": {
     "mode": "adopt",
@@ -4307,7 +4307,7 @@
   },
   "capability_model": {
     "version": "1.0",
-    "generated_at": "2026-11-25 20:08 HKT",
+    "generated_at": "2026-11-26 08:41 HKT",
     "generator": "templates/build_capability_model.py",
     "purpose": "统一能力编码 + 可复算完成度 + 嵌套组件树 + 文档索引，供规划与编码代理消费。",
     "coding_spec": {
@@ -4431,7 +4431,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4472,12 +4472,12 @@
                   "decisions": [
                     {
                       "id": "D-001",
-                      "title": "建立项目治理骨架",
+                      "title": "JULIA · 治理初始化 · 建立账本与能力注册表（adopt）",
                       "status": "done"
                     },
                     {
                       "id": "D-002",
-                      "title": "接入 ledger 账本化 + 组合锚声明",
+                      "title": "JULIA · 组合锚 · 声明 ledger ≥ 2.29.0 兼容锚（↔ LEDGER D-015）",
                       "status": "done"
                     }
                   ],
@@ -4515,7 +4515,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4556,12 +4556,12 @@
                   "decisions": [
                     {
                       "id": "D-001",
-                      "title": "建立项目治理骨架",
+                      "title": "JULIA · 治理初始化 · 建立账本与能力注册表（adopt）",
                       "status": "done"
                     },
                     {
                       "id": "D-002",
-                      "title": "接入 ledger 账本化 + 组合锚声明",
+                      "title": "JULIA · 组合锚 · 声明 ledger ≥ 2.29.0 兼容锚（↔ LEDGER D-015）",
                       "status": "done"
                     }
                   ],
@@ -4599,7 +4599,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4640,12 +4640,12 @@
                   "decisions": [
                     {
                       "id": "D-001",
-                      "title": "建立项目治理骨架",
+                      "title": "JULIA · 治理初始化 · 建立账本与能力注册表（adopt）",
                       "status": "done"
                     },
                     {
                       "id": "D-002",
-                      "title": "接入 ledger 账本化 + 组合锚声明",
+                      "title": "JULIA · 组合锚 · 声明 ledger ≥ 2.29.0 兼容锚（↔ LEDGER D-015）",
                       "status": "done"
                     }
                   ],
@@ -4683,7 +4683,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4756,7 +4756,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4829,7 +4829,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4902,7 +4902,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -4975,7 +4975,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5048,7 +5048,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5121,7 +5121,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5194,7 +5194,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5345,7 +5345,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5418,7 +5418,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5491,7 +5491,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5564,7 +5564,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5637,7 +5637,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5710,7 +5710,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5783,7 +5783,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5856,7 +5856,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -5929,7 +5929,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -6002,7 +6002,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -6075,7 +6075,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -6148,7 +6148,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -6221,7 +6221,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -6294,7 +6294,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -6367,7 +6367,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -6440,7 +6440,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -6513,7 +6513,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -6586,7 +6586,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -6659,7 +6659,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -7092,7 +7092,7 @@
                   "matched_tests": [
                     "test_doc_contracts.py"
                   ],
-                  "report_at": "2026-11-25 20:08 HKT",
+                  "report_at": "2026-11-26 08:41 HKT",
                   "report_label": "unit"
                 },
                 "binding_status": "bound",
@@ -7133,7 +7133,7 @@
                   "decisions": [
                     {
                       "id": "D-002",
-                      "title": "接入 ledger 账本化 + 组合锚声明",
+                      "title": "JULIA · 组合锚 · 声明 ledger ≥ 2.29.0 兼容锚（↔ LEDGER D-015）",
                       "status": "done"
                     }
                   ],
@@ -7149,7 +7149,7 @@
                 "name": "scripts",
                 "path": "scripts",
                 "type": "dir",
-                "count": 2,
+                "count": 3,
                 "children": [
                   {
                     "name": "gen_doc_contracts.py",
@@ -7159,6 +7159,11 @@
                   {
                     "name": "build_dist.py",
                     "path": "scripts/build_dist.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "knox_scan.py",
+                    "path": "scripts/knox_scan.py",
                     "type": "file"
                   }
                 ]
@@ -8356,7 +8361,7 @@
               {
                 "id": "cap:JULIA.TEAM.GOV.01/dec:D-001",
                 "kind": "decision",
-                "label": "建立项目治理骨架",
+                "label": "JULIA · 治理初始化 · 建立账本与能力注册表（adopt）",
                 "decision_id": "D-001",
                 "status": "done",
                 "children": [
@@ -8373,7 +8378,7 @@
               {
                 "id": "cap:JULIA.TEAM.GOV.01/dec:D-002",
                 "kind": "decision",
-                "label": "接入 ledger 账本化 + 组合锚声明",
+                "label": "JULIA · 组合锚 · 声明 ledger ≥ 2.29.0 兼容锚（↔ LEDGER D-015）",
                 "decision_id": "D-002",
                 "status": "done",
                 "children": [
@@ -8468,7 +8473,7 @@
               {
                 "id": "cap:JULIA.TEAM.GOV.02/dec:D-001",
                 "kind": "decision",
-                "label": "建立项目治理骨架",
+                "label": "JULIA · 治理初始化 · 建立账本与能力注册表（adopt）",
                 "decision_id": "D-001",
                 "status": "done",
                 "children": [
@@ -8485,7 +8490,7 @@
               {
                 "id": "cap:JULIA.TEAM.GOV.02/dec:D-002",
                 "kind": "decision",
-                "label": "接入 ledger 账本化 + 组合锚声明",
+                "label": "JULIA · 组合锚 · 声明 ledger ≥ 2.29.0 兼容锚（↔ LEDGER D-015）",
                 "decision_id": "D-002",
                 "status": "done",
                 "children": [
@@ -8580,7 +8585,7 @@
               {
                 "id": "cap:JULIA.TEAM.GOV.03/dec:D-001",
                 "kind": "decision",
-                "label": "建立项目治理骨架",
+                "label": "JULIA · 治理初始化 · 建立账本与能力注册表（adopt）",
                 "decision_id": "D-001",
                 "status": "done",
                 "children": [
@@ -8597,7 +8602,7 @@
               {
                 "id": "cap:JULIA.TEAM.GOV.03/dec:D-002",
                 "kind": "decision",
-                "label": "接入 ledger 账本化 + 组合锚声明",
+                "label": "JULIA · 组合锚 · 声明 ledger ≥ 2.29.0 兼容锚（↔ LEDGER D-015）",
                 "decision_id": "D-002",
                 "status": "done",
                 "children": [
@@ -10150,7 +10155,7 @@
               {
                 "id": "cap:JULIA.INFRA.DIST.01/dec:D-002",
                 "kind": "decision",
-                "label": "接入 ledger 账本化 + 组合锚声明",
+                "label": "JULIA · 组合锚 · 声明 ledger ≥ 2.29.0 兼容锚（↔ LEDGER D-015）",
                 "decision_id": "D-002",
                 "status": "done",
                 "children": [
