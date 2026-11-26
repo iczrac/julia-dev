@@ -13011,13 +13011,30 @@
         "risk": "medium",
         "assets_digest": "36a031c2c3a1c380",
         "board_skeleton": "c2a20142d1c41c18"
+      },
+      {
+        "seq": 5,
+        "at": "2026-11-26T18:02:03Z",
+        "action": "apply",
+        "from": "2.29.0",
+        "to": "2.29.0",
+        "approved_by": "iczrac",
+        "migrations": [
+          "M3-tool-sync",
+          "M5-method-assets",
+          "M7-asset-install"
+        ],
+        "backup": "20261126T180202Z-7dd3e078",
+        "risk": "medium",
+        "assets_digest": "e45067bd15702428",
+        "board_skeleton": "c2a20142d1c41c18"
       }
     ],
     "tools": {
       "governance/build_capability_model.py": "5523959cc6846cd9c58fc7f7cc0c3f769aa19f9003becedd5521a809f75e9155",
       "governance/binding_advisory.py": "e5368433f594854857fff87002430ee692401ec4b7125168b7699cb00f1dde0b",
       "governance/derived_issues.py": "4ff4097765996071e256302f91439a9464a5203840d2df64fb5d93df6ea13a21",
-      "governance/verify_ledger.py": "65904be92e995674dbe60414c25697a2cef5ada96d782e227663dea7337c1d73",
+      "governance/verify_ledger.py": "7155e43b0135fb01f75d93f6e1ee8412355a32f993439d0fbd1d35cea472b369",
       "governance/registry_codec.py": "958ecad87b8a4743b1b8e5f4ca439c9a22c2fb818d586c6ef0e79739f293ab7a",
       "governance/run_tests.py": "80b687eab9f62cea607406efc7cb526809a30e1a2467ce88100638613a3669e7",
       "governance/board_path.py": "90c94e9463f7b1e87d6309fa67a73c82f2ec7aa5f409b65e6b24a668d7069c7a",
@@ -13031,7 +13048,7 @@
     },
     "method_assets": {
       "algorithm": "sha256-files-v1",
-      "digest": "36a031c2c3a1c380de7e626df72942ed7a8500ab6ce1abd956d542b79e5b4697",
+      "digest": "e45067bd157024280cbbdf5a29e26e241f530b23cdada5ee7c482350dfb5094d",
       "file_count": 118,
       "counts": {
         "experts": 9,
@@ -13043,7 +13060,7 @@
       },
       "source": "方法论仓库 tag（权威源，不复制；只读副本由 M7 安装）"
     },
-    "ontology_digest": "5e1863a11f44cec64eefad4892c2a1e58ec6716af9b33b3115370f4b1ff97971",
+    "ontology_digest": "6824fdec8770a92f08bbb8c453f5509c9ab3c0c7dd7aa1ee0cc301a744c6e081",
     "board_skeleton": {
       "digest": "c2a20142d1c41c18bdaa096f1a29740b8ee632d30aef2a4b2a9688190eec89d2",
       "source": "templates/index.html.template",
@@ -13051,7 +13068,7 @@
     },
     "installed_assets": {
       "schema": "installed-assets-binding/1",
-      "digest": "9403fe937c2723888bb71235a62e75631d604ecd5b99681d6682da563548b6da",
+      "digest": "635f9b6413c63decc763b3f8f9233d157ec44f6e087e44f127a6e1fedb244064",
       "file_count": 33,
       "counts": {
         "experts": 9,
