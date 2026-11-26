@@ -228,7 +228,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 - **系統級安全清單**：上線前由Vera跑 secrets／依賴許可證／PII／權限／威脅建模／無障礙六項檢查，🔴 未釋清Ship不得落地；威脅建模摘要是Archie設計文件的必含節
 - **環境腳本有主**：launch／doctor／drive／evidence 等環境與取證腳本由 Mark 長期維護，環境故障先修腳本，不作為驗證藉口
 - **受控自我進化**：成員提案、Ed 複核、人拍板、主理人執行；git commit 即回滾點，進化全程可追溯
-- **內部體檢（Workflow V）**：機械自查（ledger spec_check 五判據）→ Vera 抽驗日誌與 dist → Knox 掃規矩冗餘 → Ed 裁決必修/豁免/緩議 → 走進化提案；觸發＝操作人要求／minor 累計 +5／大版本前，未觸發不空跑
+- **內部體檢（Workflow V）**：機械自查（ledger spec_check 九判據）→ Vera 抽驗日誌與 dist → Knox 掃規矩冗餘（`scripts/knox_scan.py`）→ Ed 裁決必修/豁免/緩議 → 走進化提案；觸發＝操作人要求／minor 累計 +5／大版本前，未觸發不空跑
 - **規劃期第一性原理分解**：Remy對每條需求標註「硬約束／慣例」歸類（慣例必附依據），Archie設計文件必含「基本事實表」（各註來源），類比式設計在規劃期即被攔截
 - **操作人模式可切換**：門外漢／標準／專家三檔，Phase 0 聲明、隨時切換；門外漢模式附白話摘要與行為驗收清單、技術決策代勞 opt-out；不可逆門禁與測試門任何模式都不放鬆
 - **門外漢模式五護欄**：模式探測（偏門外漢語言主動建議切換）、代勞決策清單（人話記錄、可逐條翻案）、人話交接卡（成品位置＋使用說明＋回訪召喚語）、快捷回覆提問（A/B 選項可一句答完）、「感覺不對」有效信號通道
@@ -269,11 +269,7 @@ Expert 包內建 `skills/ontology-modeling/`，吸收自開源框架 [ontology_m
 ~/.workbuddy/plugins/marketplaces/my-experts/plugins/julia-dev/
 ```
 
-然後執行註冊命令使其可見：
-
-```bash
-python3 scripts/register_expert.py <expert-dir>
-```
+平台直接從該 marketplace 目錄載入專家包；本倉不提供註冊腳本，無須執行註冊命令。若專家未出現在清單中，請在 WorkBuddy 的專家／外掛管理頁重新載入該 marketplace。
 
 ## 開發迭代史
 

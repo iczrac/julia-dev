@@ -268,11 +268,7 @@ Expert 包内建 `skills/ontology-modeling/`，吸收自开源框架 [ontology_m
 ~/.workbuddy/plugins/marketplaces/my-experts/plugins/julia-dev/
 ```
 
-然后执行注册命令使其可见：
-
-```bash
-python3 scripts/register_expert.py <expert-dir>
-```
+平台直接从该 marketplace 目录加载专家包；本仓不提供注册脚本，无须执行注册命令。若专家未出现在列表中，请在 WorkBuddy 的专家／插件管理页重新加载该 marketplace。
 
 ## 开发迭代史
 

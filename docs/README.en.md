@@ -269,11 +269,7 @@ Place the expert package directory under the experts directory:
 ~/.workbuddy/plugins/marketplaces/my-experts/plugins/julia-dev/
 ```
 
-Then register it to make it visible:
-
-```bash
-python3 scripts/register_expert.py <expert-dir>
-```
+The platform loads the expert package directly from this marketplace directory; this repository does not ship a registration script. If the expert does not appear in the list, reload the marketplace from the WorkBuddy expert/plugin settings.
 
 ## Acknowledgments
 
