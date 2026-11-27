@@ -13028,13 +13028,30 @@
         "risk": "medium",
         "assets_digest": "e45067bd15702428",
         "board_skeleton": "c2a20142d1c41c18"
+      },
+      {
+        "seq": 6,
+        "at": "2026-11-27T03:51:51Z",
+        "action": "apply",
+        "from": "2.29.0",
+        "to": "2.29.0",
+        "approved_by": "iczrac",
+        "migrations": [
+          "M3-tool-sync",
+          "M5-method-assets",
+          "M7-asset-install"
+        ],
+        "backup": "20261127T035128Z-e68b2565",
+        "risk": "medium",
+        "assets_digest": "667d576d1bd37947",
+        "board_skeleton": "c2a20142d1c41c18"
       }
     ],
     "tools": {
-      "governance/build_capability_model.py": "5523959cc6846cd9c58fc7f7cc0c3f769aa19f9003becedd5521a809f75e9155",
+      "governance/build_capability_model.py": "a0403822f9b20242effd7eca7e1518600e09cc136827a24247f2a20aa845b75d",
       "governance/binding_advisory.py": "e5368433f594854857fff87002430ee692401ec4b7125168b7699cb00f1dde0b",
       "governance/derived_issues.py": "4ff4097765996071e256302f91439a9464a5203840d2df64fb5d93df6ea13a21",
-      "governance/verify_ledger.py": "7155e43b0135fb01f75d93f6e1ee8412355a32f993439d0fbd1d35cea472b369",
+      "governance/verify_ledger.py": "f8e281b5704d11b80fc145cca9045f74b85d24eed6f8985ed08ec55fe3c7b10d",
       "governance/registry_codec.py": "958ecad87b8a4743b1b8e5f4ca439c9a22c2fb818d586c6ef0e79739f293ab7a",
       "governance/run_tests.py": "80b687eab9f62cea607406efc7cb526809a30e1a2467ce88100638613a3669e7",
       "governance/board_path.py": "90c94e9463f7b1e87d6309fa67a73c82f2ec7aa5f409b65e6b24a668d7069c7a",
@@ -13048,19 +13065,19 @@
     },
     "method_assets": {
       "algorithm": "sha256-files-v1",
-      "digest": "e45067bd157024280cbbdf5a29e26e241f530b23cdada5ee7c482350dfb5094d",
-      "file_count": 118,
+      "digest": "667d576d1bd379478cc6bd3be7d74d180ff6ffa1097098d2f90fa649401f5c59",
+      "file_count": 119,
       "counts": {
         "experts": 9,
         "skills": 24,
-        "scripts": 39,
+        "scripts": 40,
         "templates": 9,
         "method_docs": 36,
         "standard": 1
       },
       "source": "方法论仓库 tag（权威源，不复制；只读副本由 M7 安装）"
     },
-    "ontology_digest": "6824fdec8770a92f08bbb8c453f5509c9ab3c0c7dd7aa1ee0cc301a744c6e081",
+    "ontology_digest": "bbb5a46beb869ec943e00c83c24e7dfa5cae507268a25e5fc6de15f88f1bc6ec",
     "board_skeleton": {
       "digest": "c2a20142d1c41c18bdaa096f1a29740b8ee632d30aef2a4b2a9688190eec89d2",
       "source": "templates/index.html.template",
@@ -13068,7 +13085,7 @@
     },
     "installed_assets": {
       "schema": "installed-assets-binding/1",
-      "digest": "635f9b6413c63decc763b3f8f9233d157ec44f6e087e44f127a6e1fedb244064",
+      "digest": "e7007413b65dc11bbdb92260e63c1a8d78950657d0b034fda4852b54f72c8afe",
       "file_count": 33,
       "counts": {
         "experts": 9,
